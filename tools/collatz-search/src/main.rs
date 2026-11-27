@@ -100,6 +100,14 @@ enum Command {
         #[arg(long, default_value_t = 10)]
         limit: usize,
     },
+    /// Show verified intervals as Markdown and optionally save the table in the shared state.
+    Coverage {
+        #[arg(long)]
+        state: PathBuf,
+        /// Atomically replace coverage.md in the state directory.
+        #[arg(long)]
+        save: bool,
+    },
     /// Follow a single orbit using arbitrary-precision arithmetic and cycle detection.
     Trace {
         #[arg(long)]
@@ -224,6 +232,7 @@ fn main() -> Result<()> {
             state.status()
         }
         Command::History { state, lane, limit } => State::open(&state)?.history(lane, limit),
+        Command::Coverage { state, save } => State::open(&state)?.coverage(save),
         Command::Trace {
             start,
             steps,

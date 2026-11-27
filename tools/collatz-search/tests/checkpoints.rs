@@ -67,6 +67,12 @@ fn workers_resume_without_overlaps_or_claiming_across_gaps() {
     );
     state.run("work", &["--lane", "6", "--threads", "1"]);
     assert_eq!(state.frontier(), "32");
+    let coverage = state.command("coverage", &["--save"]).output().unwrap();
+    assert!(coverage.status.success());
+    let report = std::fs::read_to_string(state.0.join("coverage.md")).unwrap();
+    assert_eq!(coverage.stdout, report.as_bytes());
+    assert!(report.contains("**Contiguous convergence given the configured base** `[1, 32)`"));
+    assert!(report.contains("| 6 | `[64, 65)` | `[64, 72)` | 4 | `65` | 1 |"));
 
     let children: Vec<_> = ["alpha", "beta", "gamma"]
         .into_iter()
@@ -100,6 +106,11 @@ fn workers_resume_without_overlaps_or_claiming_across_gaps() {
         &["--lane", "6", "--steps", "1000", "--limit", "64"],
     );
     assert_eq!(state.frontier(), "72");
+    let coverage = state.command("coverage", &["--save"]).output().unwrap();
+    assert!(coverage.status.success());
+    let report = std::fs::read_to_string(state.0.join("coverage.md")).unwrap();
+    assert!(report.contains("**Contiguous convergence given the configured base** `[1, 72)`"));
+    assert!(report.contains("| 6 | `[64, 72)` | `[64, 72)` | 0 | — | 1 |"));
 
     state.run("cycle-work", &["--odd-exp", "5"]);
     let a = state.run(

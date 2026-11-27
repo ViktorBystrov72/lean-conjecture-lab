@@ -2,6 +2,7 @@ use anyhow::{Context, Result, bail, ensure};
 use fs2::FileExt;
 use serde::{Deserialize, Serialize, de::DeserializeOwned};
 use serde_json::json;
+use std::fmt::Write as _;
 use std::fs::{self, File, OpenOptions};
 use std::io::{ErrorKind, Write};
 use std::ops::RangeInclusive;
@@ -194,7 +195,7 @@ impl State {
         for exp in self.config.first_exp..=self.config.last_exp {
             let lane = self.lane(exp);
             if frontier >= lane.start && frontier < lane.end {
-                frontier = frontier.max(lane.progress()?.limit().parse()?);
+                frontier = lane.extend_prefix(frontier, lane.progress()?.limit().parse()?);
                 if frontier < lane.end {
                     break;
                 }
@@ -409,12 +410,8 @@ impl State {
             let lane = self.lane(exp);
             let p = lane.progress()?;
             let covered = p.limit().parse::<u128>()?;
-            if frontier >= lane.start && frontier < lane.end {
-                frontier = frontier.max(covered);
-            }
-            if scanned >= lane.start && scanned < lane.end {
-                scanned = scanned.max(p.next.parse()?);
-            }
+            frontier = lane.extend_prefix(frontier, covered);
+            scanned = lane.extend_prefix(scanned, p.next.parse()?);
             let note = lane.path.join("active.json");
             let active =
                 if lane.path.is_dir() && try_lock(&lane.path.join("worker.lock"))?.is_none() {
@@ -482,6 +479,60 @@ impl State {
         }
         events.sort_unstable_by_key(|e| (e.completed_at_unix_ms, e.lane, e.sequence));
         print_json(&json!({"events": &events[events.len().saturating_sub(limit)..]}))
+    }
+
+    pub fn coverage(&self, save: bool) -> Result<()> {
+        let _lock = if save {
+            let lock = open_lock_file(&self.root.join("coverage.lock"))?;
+            FileExt::lock_exclusive(&lock)?;
+            Some(lock)
+        } else {
+            None
+        };
+        let mut table = String::from(
+            "| Lane | Descent checked without gaps | Scanned | Unresolved starts | First unresolved | Completed blocks |\n\
+             | ---: | --- | --- | ---: | --- | ---: |\n",
+        );
+        let mut frontier = self.known;
+        for exp in self.config.first_exp..=self.config.last_exp {
+            let lane = self.lane(exp);
+            let p = lane.progress()?;
+            frontier = lane.extend_prefix(frontier, p.limit().parse()?);
+            let first_pending = p
+                .pending
+                .first()
+                .map_or("—".to_owned(), |x| format!("`{}`", x.n));
+            writeln!(
+                table,
+                "| {exp} | `[{}, {})` | `[{}, {})` | {} | {} | {} |",
+                lane.start,
+                p.limit(),
+                lane.start,
+                p.next,
+                p.pending.len(),
+                first_pending,
+                p.completed_blocks,
+            )?;
+        }
+        let report = format!(
+            "# Collatz verification coverage\n\n\
+             All upper endpoints are exclusive. The configured base is `[1, {})`.\n\n\
+             **Contiguous convergence given the configured base** `[1, {frontier})`. \
+             This run extends the base by {} starts.\n\n\
+             Each lane shows descent checks from its start up to its first unresolved start \
+             or its scan cursor. The first gap fixes the end of the contiguous prefix.\n\n\
+             {table}",
+            self.known,
+            frontier - self.known,
+        );
+        if save {
+            write_atomic(&self.root.join("coverage.md"), |file| {
+                file.write_all(report.as_bytes())?;
+                Ok(())
+            })?;
+        }
+        std::io::stdout().lock().write_all(report.as_bytes())?;
+        Ok(())
     }
 
     pub fn cycle_work(&self, exp: u32, list: usize) -> Result<()> {
@@ -621,6 +672,14 @@ struct Lane {
 }
 
 impl Lane {
+    fn extend_prefix(&self, prefix: u128, covered: u128) -> u128 {
+        if (self.start..self.end).contains(&prefix) {
+            prefix.max(covered)
+        } else {
+            prefix
+        }
+    }
+
     fn progress(&self) -> Result<Progress> {
         let p: Progress =
             read_json(&self.path.join("progress.json"))?.unwrap_or_else(|| Progress {
@@ -741,10 +800,17 @@ fn read_json<T: DeserializeOwned>(path: &Path) -> Result<Option<T>> {
 }
 
 fn write_json<T: Serialize>(path: &Path, data: &T) -> Result<()> {
+    write_atomic(path, |file| {
+        serde_json::to_writer(&mut *file, data)?;
+        file.write_all(b"\n")?;
+        Ok(())
+    })
+}
+
+fn write_atomic(path: &Path, write: impl FnOnce(&mut File) -> Result<()>) -> Result<()> {
     let temp = path.with_extension("tmp");
     let mut file = File::create(&temp)?;
-    serde_json::to_writer(&mut file, data)?;
-    file.write_all(b"\n")?;
+    write(&mut file)?;
     file.sync_all()?;
     fs::rename(temp, path)?;
     let Some(parent) = path.parent() else {
