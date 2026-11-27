@@ -1,6 +1,6 @@
 # Independent endpoint guards for the four double-probe orbits
 
-**Result.** The directed interval checks here accept every nonempty leaf in the published case tables for orbits 82, 92, 115 and 137. These 26 leaves use two perpendicular wall probes and two independently oriented separating faces. The checks derive the side bound from the supplied outer pose enclosures. They do not independently certify the construction of those enclosures or the 38 empty leaves in the three residual tables.
+**Result.** The directed interval checks here accept every nonempty leaf in the published case tables for orbits 82, 92, 115 and 137. These 26 leaves use two perpendicular wall probes and two independently oriented separating faces. The checks derive the side bound from the supplied outer pose enclosures. Separate full-side replays now compute the enclosures in all four classes. [Three residual classes](independent-residual/) · [Class 137](independent137/) · [The 38 empty leaves and the other exceptional empty regions](../endpoint-empty/)
 
 | Orbit | Nonempty leaves checked | Pairs of middle-tile angular bands | Empty leaves outside this guard |
 | ---: | ---: | ---: | ---: |
