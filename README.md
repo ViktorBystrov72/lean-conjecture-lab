@@ -10,11 +10,23 @@ Proofs and counterexamples to published mathematical questions. Each entry links
 
 ✅ means Lean checked the full statement in the result column. The result page credits the original authors and documents the scope of the literature search.
 
-## Computer-assisted verification
+## Packing eighteen unit squares
 
-[The minimum side for eighteen unit squares](research/pack-18-squares/) is $(7+\sqrt7)/2$. This branch records an independent computational verification of Mira Cult's optimality argument for Hämäläinen's construction. Geometry checkers cover all 187 classes. Lean checks supporting geometric and algebraic lemmas. [Proof and scope](research/pack-18-squares/follow-up/endpoint.md) · [Recorded replay](research/pack-18-squares/follow-up/endpoint-replay.txt)
+**We independently confirmed Mira Cult's optimality result for Hämäläinen's 1980 packing.** The smallest square that holds eighteen unit squares has side $(7+\sqrt7)/2 \approx 4.822875655532295$. Each tile can move and rotate freely, and tiles may touch. The construction below attains the minimum. [Historical construction](https://erich-friedman.github.io/papers/squares/squares.html#figure7) · [Mira Cult's 2026 proof](https://github.com/Mira-Cult/math/tree/78bec6aacebf304d942a9225e16c2f18165778ff/notes/geometry/unit-square-packing-18)
 
-## Verify
+<img src="research/pack-18-squares/layouts/hamalainen-rack.svg" width="400" alt="Eighteen unit squares in Hämäläinen’s packing, with one assigned dot per tile and three crosses for the unassigned marks.">
+
+The dots and crosses explain how the proof covers every arrangement. Each tile can be assigned a distinct point from the same set of 21. The three unused points, shown as crosses here, determine one of 187 cases up to rotation and reflection.
+
+We used Mira Cult’s points, division into cases and geometric argument. Our C++ and Python programs independently recomputed the possible positions and orientations of the tiles. They excluded 181 cases outright and checked all 193 regions of the other six. Together those checks rule out every smaller container. Lean verifies the supporting chord and separating-line inequalities. [Proof and scope](research/pack-18-squares/follow-up/endpoint.md) · [Verification output](research/pack-18-squares/follow-up/endpoint-replay.txt) · [Lean lemmas](ConjectureLab/PackingEndpoint.lean)
+
+To replay the packing result from the repository root with Python 3.10 or later and a C++17 compiler, run
+
+```sh
+python3 research/pack-18-squares/follow-up/verify_endpoint.py --workers 3
+```
+
+## Verify the OEIS result
 
 From a clone with [Elan](https://lean-lang.org/install/) and Python 3 installed, run the following commands. The repository pins Lean and Mathlib to version 4.36.0.
 
