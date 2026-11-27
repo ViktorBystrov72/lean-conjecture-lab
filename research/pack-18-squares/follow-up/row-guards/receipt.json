@@ -1,0 +1,11 @@
+{
+  "outer_data_sha256": "de8e3ae4cb397094c689bcb62df633f60e0521094915317c8a2f460e66a00f20",
+  "accepted": {
+    "53-chord": 42,
+    "53-faces": 29,
+    "55-chord": 4,
+    "55-faces": 3
+  },
+  "inconclusive": [],
+  "corrupted_inputs_rejected": 8
+}

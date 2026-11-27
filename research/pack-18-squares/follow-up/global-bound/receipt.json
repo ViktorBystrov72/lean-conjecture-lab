@@ -1,0 +1,15 @@
+{
+  "side": "19/4",
+  "square_count": 18,
+  "rack": "RACK COVERED 391887 leaves 783262 nodes, max depth 19",
+  "hole_triples": 1330,
+  "symmetry_classes": 187,
+  "angles_by_case_count": {
+    "16": 81,
+    "32": 90,
+    "48": 16
+  },
+  "source_sha256": "055d0ff0c503d66e24e3905e08f480f2db64d342e5f4d64e57ae3b0c9928c6a7",
+  "case_settings_sha256": "590c798307500cde23d4bde2d2f718c466d80a882b37aa5937aa077ad7d3b79a",
+  "conclusions_sha256": "ab470cf5bf01e6b40b340ad006a7f67db272decd3ae966548186c80c174c9154"
+}

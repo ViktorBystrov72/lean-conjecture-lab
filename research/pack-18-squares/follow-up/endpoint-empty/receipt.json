@@ -1,0 +1,1163 @@
+{
+  "side_nano": 4822876000,
+  "pin": "78bec6aacebf304d942a9225e16c2f18165778ff",
+  "leaves": [
+    {
+      "case": 53,
+      "leaf": "1.0",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 15 round 5 A",
+        "offset": 0,
+        "bytes": 7905,
+        "sha256": "0fcb32c4f62849b8a33f5cea17b9f0d37a060a61800a73db5e815333fc5f8121"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "2.0",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 15 round 5 A",
+        "offset": 7905,
+        "bytes": 7742,
+        "sha256": "30d0e4f1f67d4d4a44f8bbf3ad3804cbb8d6404e9844b4e9a8bec79085c3215b"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "3.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2030575 index 7 round 8 A",
+        "offset": 15647,
+        "bytes": 11577,
+        "sha256": "6727dfbfff3ff77bd4b141be81dd9d02da2c85f0f3f8bbd2ed896ee564adf61b"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "4.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2030575 index 7 round 8 A",
+        "offset": 27224,
+        "bytes": 10872,
+        "sha256": "ee32e99a59609a4468090d7a34c1ff973146a77f7258e5efb9a1b87f4f819307"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "5.0",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 7 round 6 A",
+        "offset": 38096,
+        "bytes": 7105,
+        "sha256": "4b761b03a1baf04de95b399dec3170050da3979dbd32a11bc5fc4d9a194c5bc3"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "6.0",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 6 A",
+        "offset": 45201,
+        "bytes": 8125,
+        "sha256": "b70a9770a60c4451973ee89e34e9f2cdf624de314e80690ff727d4a33d8264dc"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "7.0",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 7 A",
+        "offset": 53326,
+        "bytes": 8595,
+        "sha256": "1d0bd9b0c9359743d0b16291f0e4613ea87b2910e7d78e9375aed40812afc3b4"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "8.0",
+      "required": true,
+      "proof": {
+        "bands": 256,
+        "rounds": 120,
+        "verdict": "EXCLUDED mask 2030575 index 7 round 7 A",
+        "offset": 61921,
+        "bytes": 10938,
+        "sha256": "bc765e68f24fa81e27f98b5996707b44ec05c93eeb327ba0bf06a321dbeaf195"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "9.0",
+      "required": true,
+      "proof": {
+        "bands": 256,
+        "rounds": 120,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 72859,
+        "bytes": 6432,
+        "sha256": "2442a404d32cdfd56aedac305722e1ebb449a73a9260e6c96bfa5cb3ecb540a5"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "10.0",
+      "required": true,
+      "proof": {
+        "bands": 256,
+        "rounds": 120,
+        "verdict": "EXCLUDED mask 2030575 index 8 round 5 A",
+        "offset": 79291,
+        "bytes": 13707,
+        "sha256": "2cb03e46241aaf9e570cad1dc5bfe6b72e50d53b9bdb551641ac2f496640f4c7"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "11.0",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 210,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 92998,
+        "bytes": 6221,
+        "sha256": "a7e72699643ce5f69661564507851e37374c0facf87972a352357bc7a6051b62"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "25.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 1 round 6 A",
+        "offset": 99219,
+        "bytes": 18966,
+        "sha256": "7f4b31e5b4ca7e230ff1d1ac397104c73088d022189d640b1e6dfd68a7a4cf5a"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "25.1",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 118185,
+        "bytes": 12220,
+        "sha256": "5f376ad7436e89a82a9ac3ea511d83013b45ffa97c90b2ccd4245ce126b21d5a"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "25.2",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 210,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 4 A",
+        "offset": 130405,
+        "bytes": 9104,
+        "sha256": "de55abbd1fbb4553107b40e43d128fe0ee308aa42d575df9d8d97436ba0ff103"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "25.3",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 12 round 5 A",
+        "offset": 139509,
+        "bytes": 22527,
+        "sha256": "b46b03de2e8a594af6511fb061c63e5d7d3fce71bb4772a797d56f1a8b95cd8c"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "25.4",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 162036,
+        "bytes": 4556,
+        "sha256": "1fd70019e2d903f8ac026cc1fc56e2fe41cf5ba4517384d1df6679e411c86033"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "25.5",
+      "required": true,
+      "proof": {
+        "bands": 1280,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 5 A",
+        "offset": 166592,
+        "bytes": 14245,
+        "sha256": "11539d11f85e42ae43da6430735c3d063d0ea1f1fdcc63f16efb6caa736c5072"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "25.6",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 4 round 6 A",
+        "offset": 180837,
+        "bytes": 14742,
+        "sha256": "88fdccf540f013340d4c991399aa19379006893a35f1d92c09f70d80be99c590"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "26.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 195579,
+        "bytes": 11043,
+        "sha256": "f1d417e7c570d792de5d0d3a901455dd3b3867187fe191643fbbcd8d78dc119c"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "26.1",
+      "required": true,
+      "proof": {
+        "bands": 256,
+        "rounds": 120,
+        "verdict": "EXCLUDED mask 2030575 index 5 round 6 A",
+        "offset": 206622,
+        "bytes": 16788,
+        "sha256": "f7436756f285b82137ed82e37f2a86da93694f8a09f2db2b1562507154500ef7"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "26.2",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 210,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 4 A",
+        "offset": 223410,
+        "bytes": 9638,
+        "sha256": "f5e418bd5691ca32286d85d88921186aac8405800fe009f733a3756f6ed3e158"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "26.3",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 5 A",
+        "offset": 233048,
+        "bytes": 24407,
+        "sha256": "0dcdada263d545b4cad299f4127bade2672bfb6c69bed23ae8490bc0176583fb"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "26.4",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 257455,
+        "bytes": 5334,
+        "sha256": "469f365fda7905415cfd43ffafc61d4b22df752c102700f1727d88fbdf8ad1c4"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "26.5",
+      "required": true,
+      "proof": {
+        "bands": 1280,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 5 A",
+        "offset": 262789,
+        "bytes": 13283,
+        "sha256": "aac97554991004b625419abda19513fdccc055894750047c7cb2385da8dcc0c2"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "26.6",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 4 round 6 A",
+        "offset": 276072,
+        "bytes": 16301,
+        "sha256": "b69a94e89c874a911d2d7f758715c49bd044acd049afc4fdccfbdb40db2e0cbb"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.0",
+      "required": true,
+      "proof": {
+        "bands": 256,
+        "rounds": 120,
+        "verdict": "EXCLUDED mask 2030575 index 8 round 8 A",
+        "offset": 292373,
+        "bytes": 18774,
+        "sha256": "23797ed5392728bcadc10f9e8ec2d795724c2c6893b721b06dd99d68442355fa"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.1",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 5 A",
+        "offset": 311147,
+        "bytes": 16242,
+        "sha256": "ce48defccc574ced50d00d283ad92d01f9f4fc676e00e94fca443fcc29fdb137"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.2",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 210,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 4 A",
+        "offset": 327389,
+        "bytes": 9601,
+        "sha256": "1eb4938d59df6b6e588d800195778f7ef71aaea4a54608226d215b1f72a0ec5c"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.3",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 210,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 5 A",
+        "offset": 336990,
+        "bytes": 15156,
+        "sha256": "d36ce0a4173268538c2c4c8068eca9aacf78ffe0a8c861faf4a9e40322a86892"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.4",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 352146,
+        "bytes": 4595,
+        "sha256": "02327d12a2ae59384696880abd73b15bae55f4f9171b78733bc79801fe5e20b1"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.5",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 7 A",
+        "offset": 356741,
+        "bytes": 24266,
+        "sha256": "c01f93c513fdeb553155ac25a6754bc07810065d5096f5c53389102db9169d91"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.6",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 4 round 6 A",
+        "offset": 381007,
+        "bytes": 12416,
+        "sha256": "392c2376afe6e3b43d8100792f046a1e68542b4b283fec518a07f5aad4b59ef8"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "27.7",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 210,
+        "verdict": "EXCLUDED mask 2030575 index 4 round 6 A",
+        "offset": 393423,
+        "bytes": 14252,
+        "sha256": "b2a09dc4a46bceecf77513274189cd9b64bb2ec8a53da5b945f5a02658da63d9"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "28.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 407675,
+        "bytes": 10809,
+        "sha256": "bf12b2b55d4e21f8bd5c98670bb52f61f84fe302ff127b4dad4ef8b3d6004594"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "28.1",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 4 round 5 A",
+        "offset": 418484,
+        "bytes": 15799,
+        "sha256": "f8e94a99ba9122b9aa084793aa30260c5d05f6cf4703c9a5379da7382f0f6330"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "28.2",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 434283,
+        "bytes": 10863,
+        "sha256": "dc917bbb288db25a6a2f1dc1e1e048b7bea04e309c38ece84300451825d4d326"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "28.3",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 4 round 5 A",
+        "offset": 445146,
+        "bytes": 10012,
+        "sha256": "2eb257a3c1f3f0669c4aeeb359729cbe2c249aefbc06098c837a15a6f449ee55"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "28.4",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 13 round 3 A",
+        "offset": 455158,
+        "bytes": 5001,
+        "sha256": "161fc7dcbd407a97dab0de0f3ea69daaca9afa1c651352bc165d1dfcaf1ddc5c"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "28.5",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 9 round 7 A",
+        "offset": 460159,
+        "bytes": 25046,
+        "sha256": "42b7f4c082e916ed2313ba35ec9231db521d5a4b81feb7085d4597d6da1f4b02"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "28.6",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 5 round 6 A",
+        "offset": 485205,
+        "bytes": 12488,
+        "sha256": "5a49724588ed61c73864e0e8b748eaae8956c09423eb334d01f00273c4bd7736"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "30.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 8 round 5 A",
+        "offset": 497693,
+        "bytes": 11898,
+        "sha256": "8e9395c56bd018596584dd7a484ff07641d530e33bb6d03f17a849992d28afd6"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "31.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030575 index 8 round 5 A",
+        "offset": 509591,
+        "bytes": 13205,
+        "sha256": "63f9956d8e8f52fb25bd0c3da82416c9d83a26588f50b8eff69dc8e1bc63d009"
+      }
+    },
+    {
+      "case": 53,
+      "leaf": "32.0",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2030575 index 4 round 24 A",
+        "offset": 522796,
+        "bytes": 57619,
+        "sha256": "378e96ab48178fdaf82276747e54db8c017a0931c9981b1169477121499b70b3"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "5.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030590 index 9 round 24 A",
+        "offset": 580415,
+        "bytes": 51236,
+        "sha256": "4638da5fc432a6c1811dd7c62875bb8cf62aa1559ad1ce30f90943dd791c1ae7"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "6.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030590 index 5 round 30 A",
+        "offset": 631651,
+        "bytes": 52084,
+        "sha256": "39f033aad25472231fd271de876a81d8cdfd0c484e9e8a7c3cc609f95f07d6dc"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "7.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030590 index 12 round 10 A",
+        "offset": 683735,
+        "bytes": 11296,
+        "sha256": "2e24e6ad95ef66993bc94c4908298d2eee47c0dd5e933ce15802292c72ea3b1e"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "8.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030590 index 4 round 10 A",
+        "offset": 695031,
+        "bytes": 11848,
+        "sha256": "c7b10c67118a8e7542a6dbc9a8f9e6681e91cb36c305b4b885e78517b29d3f41"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "9.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030590 index 0 round 10 A",
+        "offset": 706879,
+        "bytes": 11185,
+        "sha256": "4f673dc2f057b91f6e8a51fdd34fd489ea1c01821b10e608ccee0ca8f5b7b197"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "10.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030590 index 13 round 4 A",
+        "offset": 718064,
+        "bytes": 1949,
+        "sha256": "571b50688d350df26423b955307f49af555a094842fc950751f8946cc3620a4e"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "11.0",
+      "required": true,
+      "proof": {
+        "bands": 256,
+        "rounds": 120,
+        "verdict": "EXCLUDED mask 2030590 index 5 round 7 A",
+        "offset": 720013,
+        "bytes": 8498,
+        "sha256": "84489161da79578b1afe664897e6a45840c62d826dbde39eac8a32fa12bd54f1"
+      }
+    },
+    {
+      "case": 55,
+      "leaf": "12.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2030590 index 8 round 3 A",
+        "offset": 728511,
+        "bytes": 396,
+        "sha256": "95123805d389b1f112a2dbd74fc94ae94ddc1688be858b84d0c21dd847a999dc"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "0.0",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2078703 index 11 round 10 A",
+        "offset": 728907,
+        "bytes": 17400,
+        "sha256": "394a1d80cc9ee1e78762aeb3acda544f552ec2df66a32f97c7d5bcd65c208480"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "0.1",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2078703 index 12 round 10 A",
+        "offset": 746307,
+        "bytes": 24552,
+        "sha256": "01f1cc83e5ed8fc26261f65f48abbd139984a4ffd7bf660cfd094962af190dde"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "2.2",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2078703 index 5 round 8 A",
+        "offset": 770859,
+        "bytes": 10641,
+        "sha256": "cace37ae6b961dec917478f76b9d1570dbbfcdd8b86db3be71730fdc24bd332d"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "3.0",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 42,
+        "verdict": "EXCLUDED mask 2078703 index 7 round 9 A",
+        "offset": 781500,
+        "bytes": 20843,
+        "sha256": "3bdce51301089e390682076b18db84b580297db828b48ecd5135f76c00f58912"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "4.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2078703 index 7 round 9 A",
+        "offset": 802343,
+        "bytes": 22093,
+        "sha256": "6fcca262a1712bc682748f93907e1c78dd374f7c5df9f7940cf96733f6172f46"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "4.1",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2078703 index 12 round 8 A",
+        "offset": 824436,
+        "bytes": 20615,
+        "sha256": "3a35a6b4ac2fe5a9c3e31271e2fd665a5a2045ab818ee454418d8fec300cf538"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "5.0",
+      "required": true,
+      "proof": {
+        "bands": 768,
+        "rounds": 42,
+        "verdict": "EXCLUDED mask 2078703 index 7 round 9 A",
+        "offset": 845051,
+        "bytes": 21206,
+        "sha256": "483658c4a93254dab0df24e046c9d00a69d1a169b2fa50fb4087c86313feb13a"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "6.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2078703 index 7 round 9 A",
+        "offset": 866257,
+        "bytes": 23391,
+        "sha256": "811c37659a9406dc976ee130e26e40d37bb9e0e0210d6256c35ededd09e09547"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "6.1",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2078703 index 13 round 6 A",
+        "offset": 889648,
+        "bytes": 16845,
+        "sha256": "d0dc1bbb1b1b01648adbc0f41629027cc6a95696943ff59aaf52922705f8c9d5"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "7.0",
+      "required": false,
+      "proof": {
+        "bands": 64,
+        "rounds": 2,
+        "verdict": "EXCLUDED mask 2078703 index 9 round 0 A",
+        "offset": 906493,
+        "bytes": 54,
+        "sha256": "c1d5f6c8cc3ea951f6b0bdc365a9b552f62b847e0429bff27f5f90c12ebab8ae"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "8.0",
+      "required": false,
+      "proof": {
+        "bands": 64,
+        "rounds": 2,
+        "verdict": "EXCLUDED mask 2078703 index 10 round 0 A",
+        "offset": 906547,
+        "bytes": 60,
+        "sha256": "73a21b227ff3a15a79c6165d73da9b53d4cc220e22008eec8b33808254ebc468"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "10.0",
+      "required": false,
+      "proof": {
+        "bands": 64,
+        "rounds": 2,
+        "verdict": "EXCLUDED mask 2078703 index 1 round 0 A",
+        "offset": 906607,
+        "bytes": 6,
+        "sha256": "a17138988e1387532b5cb0bd7a23f18a11d537123873e67154dada3c6359e53e"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "11.0",
+      "required": false,
+      "proof": {
+        "bands": 64,
+        "rounds": 2,
+        "verdict": "EXCLUDED mask 2078703 index 1 round 0 A",
+        "offset": 906613,
+        "bytes": 6,
+        "sha256": "a17138988e1387532b5cb0bd7a23f18a11d537123873e67154dada3c6359e53e"
+      }
+    },
+    {
+      "case": 82,
+      "leaf": "12.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2078703 index 12 round 7 A",
+        "offset": 906619,
+        "bytes": 28291,
+        "sha256": "efa9401181c17339df2b89b4cbfdaa4a3b8817f68a2a4bc27e79ce402c3ff443"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "2.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2080719 index 9 round 6 A",
+        "offset": 934910,
+        "bytes": 6859,
+        "sha256": "94531d2c7febd68d12a7d6b6106f31680efde525b992ba36a579531e7c4c85f2"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "2.1",
+      "required": false,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2080719 index 9 round 5 A",
+        "offset": 941769,
+        "bytes": 4502,
+        "sha256": "19033b296297469acbfc0d28624ed323ca5cfa66932919dbb4e89232d6b3392e"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "2.2",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2080719 index 8 round 5 A",
+        "offset": 946271,
+        "bytes": 4362,
+        "sha256": "b75f4ffefef941f222c18494db15427283d5a12b91ea5e8fcfabeb9c42213261"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "2.3",
+      "required": false,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2080719 index 9 round 5 A",
+        "offset": 950633,
+        "bytes": 3810,
+        "sha256": "d1aa5e96c81a9efb49470a3b353e127c1c9d98b5728d347be40308f0ace4b40d"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "2.4",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2080719 index 8 round 5 A",
+        "offset": 954443,
+        "bytes": 4076,
+        "sha256": "d7e3b9a5874077d99e7a1fc7a5bd53fc974fbd6a56fde0e0ca9641d5ec4cb678"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "3.0",
+      "required": true,
+      "proof": {
+        "bands": 384,
+        "rounds": 140,
+        "verdict": "EXCLUDED mask 2080719 index 6 round 6 A",
+        "offset": 958519,
+        "bytes": 7237,
+        "sha256": "e57e79e78a817feeb53e0e70019ea0149abb73fb02f5535529ae075f846b4192"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "3.1",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2080719 index 16 round 6 A",
+        "offset": 965756,
+        "bytes": 6620,
+        "sha256": "f528ca53fffe781f96b3f3d58d75bd8235ccc0223ce1ee0c362dc43d5039d9a2"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "3.3",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2080719 index 16 round 6 A",
+        "offset": 972376,
+        "bytes": 6775,
+        "sha256": "554c1889972ba424650b8ecc1bd2e0ccb8266dd2f54a528cec04026443c56940"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "3.5",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2080719 index 16 round 6 A",
+        "offset": 979151,
+        "bytes": 5539,
+        "sha256": "b37388400a1285890d81a20d41d5bd407960b895df5477eebcc50363580fddad"
+      }
+    },
+    {
+      "case": 92,
+      "leaf": "3.7",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2080719 index 16 round 6 A",
+        "offset": 984690,
+        "bytes": 5921,
+        "sha256": "245272e45d512561301a3b4d22bea118e5044aadf97719706e3137c2a3781214"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "0.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 16 round 8 A",
+        "offset": 990611,
+        "bytes": 4496,
+        "sha256": "220e46107d23f1e89cde26d048c3ff445e82f688834ffd13369cd1abd383b92b"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "1.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 11 round 5 A",
+        "offset": 995107,
+        "bytes": 7558,
+        "sha256": "41580c36e2c0f516553badb8f1c7933e57272b5c4123bbad8801a64720c65285"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "1.1",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 15 round 4 A",
+        "offset": 1002665,
+        "bytes": 5127,
+        "sha256": "4b0f931301b6bd4775722e0bfc528f65a9a0d64595d16102d1965faf83b924ff"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "2.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 11 round 5 A",
+        "offset": 1007792,
+        "bytes": 5878,
+        "sha256": "e86825cbdf120c7c4e5e7334f147f2e817c6b818376cb026af06b53e30661540"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "2.1",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 15 round 4 A",
+        "offset": 1013670,
+        "bytes": 6090,
+        "sha256": "1b9b526db87e709bf34acb7681fd648f270331cc6cae80686cf57c3bf9ece300"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "3.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 4 round 11 A",
+        "offset": 1019760,
+        "bytes": 16053,
+        "sha256": "586515e47015edad90891a4e757887679975cb5d3afdd1a349df9a368db75201"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "3.1",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 12 round 10 A",
+        "offset": 1035813,
+        "bytes": 18964,
+        "sha256": "a19c513cfeefc8819542f955985e281adb817056abbd8dbe0128c851ddc560e7"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "4.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 10 round 8 A",
+        "offset": 1054777,
+        "bytes": 12500,
+        "sha256": "61badca786cf2e409b2e67cc8e1a06303ab24873eede0750b8e40022a05dfb39"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "4.1",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 12 round 4 A",
+        "offset": 1067277,
+        "bytes": 3400,
+        "sha256": "81f6d1f6724fb90e7b77e08315b12537feee6da5bf6f752a57085f01338202c6"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "5.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 8 round 12 A",
+        "offset": 1070677,
+        "bytes": 27942,
+        "sha256": "aca63fa361715abf5619405b0af0517bab9dfc8763d0cefa71dfb14c09ab7b41"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "6.1",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2094063 index 2 round 5 A",
+        "offset": 1098619,
+        "bytes": 5940,
+        "sha256": "394c788c01d2686cd27e92383b8d175314399bec4f411f47d5754ac955c5dc32"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "8.1",
+      "required": true,
+      "proof": {
+        "bands": 128,
+        "rounds": 70,
+        "verdict": "EXCLUDED mask 2094063 index 5 round 6 A",
+        "offset": 1104559,
+        "bytes": 8413,
+        "sha256": "ede7d8e4a5dd5c5a6402256a775571bb102c94160bed36979aa219c6c4f839a5"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "9.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 13 round 4 A",
+        "offset": 1112972,
+        "bytes": 2627,
+        "sha256": "c5cebaca7fdf67db2ae3a800fd0f7b772c2bc4bb6a09d496d2c47ea97e422b76"
+      }
+    },
+    {
+      "case": 115,
+      "leaf": "10.0",
+      "required": true,
+      "proof": {
+        "bands": 64,
+        "rounds": 26,
+        "verdict": "EXCLUDED mask 2094063 index 7 round 9 A",
+        "offset": 1115599,
+        "bytes": 13544,
+        "sha256": "1afafd73aca5e3422698541c44054ec71f8bf812d1c434d69e0164849571d768"
+      }
+    }
+  ]
+}

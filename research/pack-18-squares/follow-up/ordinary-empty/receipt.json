@@ -1,0 +1,1098 @@
+{
+  "side_nano": 4822876000,
+  "pin": "78bec6aacebf304d942a9225e16c2f18165778ff",
+  "leaves": [
+    {
+      "case": 0,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1047550 index 13 round 5 A",
+        "offset": 0,
+        "bytes": 5568,
+        "sha256": "2bfbdc95ff09ea6dfa61445392fd439d28b246d46c083061a345353df5a646b9"
+      }
+    },
+    {
+      "case": 0,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1047550 index 4 round 7 A",
+        "offset": 5568,
+        "bytes": 12659,
+        "sha256": "fa420daf1e3f77a22ff63fda86250cc0e5bfe77fa5f17d2e43c4edcecedadd71"
+      }
+    },
+    {
+      "case": 0,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1047550 index 5 round 6 A",
+        "offset": 18227,
+        "bytes": 9675,
+        "sha256": "892221704e8ef282c211cb7c161ff4b0563f951f0556d724fde1726d5f400167"
+      }
+    },
+    {
+      "case": 0,
+      "leaf": 3,
+      "proof": {
+        "bands": 384,
+        "rounds": 48,
+        "verdict": "EXCLUDED mask 1047550 index 5 round 17 A",
+        "offset": 27902,
+        "bytes": 25165,
+        "sha256": "2754360da71dfa9bb7344bf6a73c4794ee4b25f734736dfeeab0e551ef156f5f"
+      }
+    },
+    {
+      "case": 0,
+      "leaf": 4,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1047550 index 13 round 9 A",
+        "offset": 53067,
+        "bytes": 11879,
+        "sha256": "34222d0f28b8fb6d943fbe1aab185cd36ff81c2cb5ba80a054c2e0a59ecedaca"
+      }
+    },
+    {
+      "case": 0,
+      "leaf": 5,
+      "proof": {
+        "bands": 384,
+        "rounds": 48,
+        "verdict": "EXCLUDED mask 1047550 index 14 round 6 A",
+        "offset": 64946,
+        "bytes": 6017,
+        "sha256": "64bbef1f80ce4b3b68a1ed5ab9fa78a2b2d336972a803a6553bc1a1cc9178b41"
+      }
+    },
+    {
+      "case": 0,
+      "leaf": 6,
+      "proof": {
+        "bands": 384,
+        "rounds": 48,
+        "verdict": "EXCLUDED mask 1047550 index 10 round 9 A",
+        "offset": 70963,
+        "bytes": 13671,
+        "sha256": "17ebd20f4dd25aeaef50f2d20bd272173171b7a1365c9d2f4cd1fb785aee6813"
+      }
+    },
+    {
+      "case": 0,
+      "leaf": 7,
+      "proof": {
+        "bands": 384,
+        "rounds": 48,
+        "verdict": "EXCLUDED mask 1047550 index 8 round 8 A",
+        "offset": 84634,
+        "bytes": 12745,
+        "sha256": "31538964c77e1f6b820d0bdd94f6c6ab9c9d673dcd0afd41e328dc3892bd25ed"
+      }
+    },
+    {
+      "case": 8,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1571838 index 11 round 6 A",
+        "offset": 97379,
+        "bytes": 9010,
+        "sha256": "a03c491be471699630fbde132eddcb66bc07aa0a4fb1ce129320084adf142589"
+      }
+    },
+    {
+      "case": 8,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1571838 index 13 round 6 A",
+        "offset": 106389,
+        "bytes": 14949,
+        "sha256": "56d6362b64cd384365eeba69fe958946de839f1aad63687a563a7857b1e3b966"
+      }
+    },
+    {
+      "case": 8,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1571838 index 7 round 10 A",
+        "offset": 121338,
+        "bytes": 20488,
+        "sha256": "d907c6b73f39e1230e273484bebcf3926b25faf02c939a1e09eb363abb563430"
+      }
+    },
+    {
+      "case": 8,
+      "leaf": 3,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1571838 index 14 round 4 A",
+        "offset": 141826,
+        "bytes": 5245,
+        "sha256": "295d9d51fb902e05ce924f470c31fd86c5309a3ae35763751086a54754822fa4"
+      }
+    },
+    {
+      "case": 8,
+      "leaf": 4,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1571838 index 8 round 10 A",
+        "offset": 147071,
+        "bytes": 19681,
+        "sha256": "8302e644a8297aca9943cc9abf3a03e628169eed823eb222de462393bf51bc6a"
+      }
+    },
+    {
+      "case": 8,
+      "leaf": 5,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1571838 index 4 round 7 A",
+        "offset": 166752,
+        "bytes": 11076,
+        "sha256": "8469d1dc058f6f830ec35b31ccb0b86fddd757dfbec2dbc084aa5621b273bb40"
+      }
+    },
+    {
+      "case": 8,
+      "leaf": 6,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1571838 index 17 round 5 A",
+        "offset": 177828,
+        "bytes": 8455,
+        "sha256": "663aaae900155ee3a0b481906966b358f9716e3b6fa833286b85d8691ef46136"
+      }
+    },
+    {
+      "case": 23,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 1833982 index 11 round 8 A",
+        "offset": 186283,
+        "bytes": 4218,
+        "sha256": "396236189afeca1df179ceb15c354d8375df02af6c425a39719c1bd7fa017900"
+      }
+    },
+    {
+      "case": 39,
+      "leaf": 0,
+      "proof": {
+        "bands": 320,
+        "rounds": 56,
+        "verdict": "EXCLUDED mask 1965054 index 17 round 4 A",
+        "offset": 190501,
+        "bytes": 881,
+        "sha256": "59d0741e7a29bce29f7f6e22dab77163e58d23415221866724c9e9dc64394151"
+      }
+    },
+    {
+      "case": 58,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2031535 index 9 round 11 A",
+        "offset": 191382,
+        "bytes": 9188,
+        "sha256": "1d9564cc6c9beeb6ee771d6931181de8a8302b1377c920bdbcbe402c25bb8a78"
+      }
+    },
+    {
+      "case": 59,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2031547 index 4 round 10 A",
+        "offset": 200570,
+        "bytes": 7884,
+        "sha256": "732a6d33d018b4f55502886479ed67ace69950d60b76d874aa85e496382670fe"
+      }
+    },
+    {
+      "case": 60,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2031550 index 9 round 9 A",
+        "offset": 208454,
+        "bytes": 6025,
+        "sha256": "7b779b50361a53235c3b7b03734ec907e063074c7b86ab7196625d7460c6753a"
+      }
+    },
+    {
+      "case": 69,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2062334 index 17 round 4 A",
+        "offset": 214479,
+        "bytes": 3979,
+        "sha256": "06a7d42c21a4b6a084f3dff7620711bbaa324a055a9ddc3ff84f458e0c3a50cb"
+      }
+    },
+    {
+      "case": 70,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2063358 index 5 round 11 A",
+        "offset": 218458,
+        "bytes": 17092,
+        "sha256": "77b8fa04d063ea029851297b2d2bdd12bf7fb5b7f65bcc9b30c2d71d0a43a6d4"
+      }
+    },
+    {
+      "case": 84,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2078718 index 12 round 8 A",
+        "offset": 235550,
+        "bytes": 5934,
+        "sha256": "8c5a726fcb8d91c6fcc6ca656d686081ed62d28805dc22c2741b24942d91745d"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 10 round 5 A",
+        "offset": 241484,
+        "bytes": 8792,
+        "sha256": "011bc2a17afa552ebc37ecaf7258aefd1caea7d62fe26ec4b9a33115cbfc40b6"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 6 round 6 A",
+        "offset": 250276,
+        "bytes": 8209,
+        "sha256": "da1b1bde5f8924dcb62096723270816aeb2eafdaafc21656783c1be6813b5356"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 17 round 3 A",
+        "offset": 258485,
+        "bytes": 5646,
+        "sha256": "4817899736e6aae21435bb34ab44b05643b074bccb15fc5f12f44231dcdc7d0f"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 3,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 17 round 4 A",
+        "offset": 264131,
+        "bytes": 5899,
+        "sha256": "aed08b72f108ef2664505c24e4b78d0d1174299f73b28e98f4f4344140b425e8"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 4,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 10 round 5 A",
+        "offset": 270030,
+        "bytes": 7905,
+        "sha256": "7e7cdb6131da8d30455e694f1643325c59c0d6a24f34360b0ff8ad02528714d5"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 5,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 17 round 3 A",
+        "offset": 277935,
+        "bytes": 5727,
+        "sha256": "67afd757713ac2750da8f220a7d00f9d7faeefa98792f31cae0ddde8eec8384a"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 6,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 17 round 4 A",
+        "offset": 283662,
+        "bytes": 7998,
+        "sha256": "640543a372ab80195a5cca438220c4b3c638d9ef6fe0bd3be3e646c06b640af1"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 7,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 9 round 3 A",
+        "offset": 291660,
+        "bytes": 2951,
+        "sha256": "927c26fde42293b4ac90e77a669d12d8d763521be4929dc6a50ea9fdfbd99438"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 8,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 10 round 5 A",
+        "offset": 294611,
+        "bytes": 7936,
+        "sha256": "18539279faf1332e406c55371268115ae6c910f5534f6f42792d531550a5ba0a"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 9,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 8 round 6 A",
+        "offset": 302547,
+        "bytes": 6474,
+        "sha256": "a531259d2850dde018ac34965f79c28d1e5fe50051a3c11a85ac772a1fef30b3"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 10,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 10 round 5 A",
+        "offset": 309021,
+        "bytes": 7959,
+        "sha256": "964a000983d8cae5d35e452048e2f3cb21aee38a1cabfc56452af0d6f5bfdefd"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 11,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 8 round 6 A",
+        "offset": 316980,
+        "bytes": 6613,
+        "sha256": "db39a5a125599b4dd7915f0424cf56eccc5d178f2714a51a6516489b098cab0a"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 12,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 12 round 3 A",
+        "offset": 323593,
+        "bytes": 4812,
+        "sha256": "30a89aeee9daa466a5656297fdabcbb8614b0766f7446fe9872e9daaaf99afd3"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 13,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 17 round 3 A",
+        "offset": 328405,
+        "bytes": 4244,
+        "sha256": "585fcc44c48015ade74fffca8048f821d0a916f8af80fe7f2df4214ab9abfb3d"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 14,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 12 round 2 A",
+        "offset": 332649,
+        "bytes": 2634,
+        "sha256": "5fa8f2b5c63e61d4284ef58e0f2fda6e75f915bdb3994fd0639948877f5fec22"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 15,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 15 round 3 A",
+        "offset": 335283,
+        "bytes": 5193,
+        "sha256": "f1b7432bc182bf63f6f970bea40dc3e8e0ae0b2680cd7037fb09f8a4f4bde4e0"
+      }
+    },
+    {
+      "case": 85,
+      "leaf": 16,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2079679 index 9 round 2 A",
+        "offset": 340476,
+        "bytes": 1329,
+        "sha256": "110d29cda30dba95f295d0d4bb766e5bfe4ac3030b6c1456be46c4d845f04bdb"
+      }
+    },
+    {
+      "case": 89,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2080687 index 13 round 3 A",
+        "offset": 341805,
+        "bytes": 1565,
+        "sha256": "c3740e69a8dc872a3018eae6a653274fe49f8b88c2eb8f385602f9fbc77cdd32"
+      }
+    },
+    {
+      "case": 89,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2080687 index 12 round 5 A",
+        "offset": 343370,
+        "bytes": 4397,
+        "sha256": "f539313138f54ccf51ea5db587b3284cf2c82bd0bbcfa8c50bd4bb2c0e9c6633"
+      }
+    },
+    {
+      "case": 89,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2080687 index 9 round 5 A",
+        "offset": 347767,
+        "bytes": 3493,
+        "sha256": "8680543fe94468215af32b34ae656d35a8b3affd3d8f1f3f8735cb87ec0fd633"
+      }
+    },
+    {
+      "case": 90,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2080699 index 6 round 7 A",
+        "offset": 351260,
+        "bytes": 6667,
+        "sha256": "108c87833f8b807b4918ec4dc3ffb310840b4f14beec7dd7060e0610f55cc23c"
+      }
+    },
+    {
+      "case": 94,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2080734 index 13 round 10 A",
+        "offset": 357927,
+        "bytes": 10196,
+        "sha256": "40cdbf4d364df88362423f16d4379d9a7bf3182215028e495e0abcfd235053bf"
+      }
+    },
+    {
+      "case": 97,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2080758 index 9 round 5 A",
+        "offset": 368123,
+        "bytes": 1531,
+        "sha256": "442b972ded02bb2fa82f3a9639a7a73a244c2c4d69be257e036247d3a6a93bbd"
+      }
+    },
+    {
+      "case": 100,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2087934 index 13 round 4 A",
+        "offset": 369654,
+        "bytes": 2693,
+        "sha256": "6d41880a0ecf9f24cf9e302eafba9efc53ef3df54647a8fb53fe5709726c8449"
+      }
+    },
+    {
+      "case": 100,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2087934 index 6 round 9 A",
+        "offset": 372347,
+        "bytes": 6651,
+        "sha256": "584e7206d1700c4ec7efa93d8b41eb69edb1c012c5c5c0f05132083b86a403b7"
+      }
+    },
+    {
+      "case": 100,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2087934 index 9 round 4 A",
+        "offset": 378998,
+        "bytes": 5680,
+        "sha256": "194da67d4d0bd694283a6e4d962b1956514a47ce1174d51e86e25394125cf297"
+      }
+    },
+    {
+      "case": 116,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094075 index 8 round 7 A",
+        "offset": 384678,
+        "bytes": 2804,
+        "sha256": "d79ce61940d21a30cbf566300d14355dbcd3fece4cd02c6a80ca830af730eb58"
+      }
+    },
+    {
+      "case": 117,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094078 index 11 round 4 A",
+        "offset": 387482,
+        "bytes": 1599,
+        "sha256": "c1057f741f1c0abfd4c51ce3d88eae50b3314b7cc0aa314719ddc6cd91b773f7"
+      }
+    },
+    {
+      "case": 117,
+      "leaf": 1,
+      "proof": {
+        "bands": 320,
+        "rounds": 56,
+        "verdict": "EXCLUDED mask 2094078 index 17 round 4 A",
+        "offset": 389081,
+        "bytes": 1057,
+        "sha256": "87302dabd0adf76e737b9202d781a085e50207bb1f52c782144b9099d90ab007"
+      }
+    },
+    {
+      "case": 117,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094078 index 13 round 4 A",
+        "offset": 390138,
+        "bytes": 1115,
+        "sha256": "f9a272ab687c97e52fadd459b6fc870b866a746584edacc162be9de56ebee2fd"
+      }
+    },
+    {
+      "case": 118,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094527 index 11 round 6 A",
+        "offset": 391253,
+        "bytes": 5029,
+        "sha256": "ee099d180c2d850e4cdd08465b56d7526bd720cab58ea12611f5e864fbfebcf0"
+      }
+    },
+    {
+      "case": 118,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094527 index 11 round 7 A",
+        "offset": 396282,
+        "bytes": 7427,
+        "sha256": "614a26dcc0c34a3e458118f84db197daf3ccdb6d6606bdc25891f1bcc25cee78"
+      }
+    },
+    {
+      "case": 118,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094527 index 11 round 6 A",
+        "offset": 403709,
+        "bytes": 6231,
+        "sha256": "545251ae6dc72e1dd600057160de459b7cd8256b4ce34c83e820add0ea40e096"
+      }
+    },
+    {
+      "case": 118,
+      "leaf": 3,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094527 index 15 round 4 A",
+        "offset": 409940,
+        "bytes": 5805,
+        "sha256": "df0eddc6120e31458e034c57ebedaefc1f32750232387556aaeeb0b4c39d1f08"
+      }
+    },
+    {
+      "case": 118,
+      "leaf": 4,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094527 index 11 round 6 A",
+        "offset": 415745,
+        "bytes": 4360,
+        "sha256": "aa31b560dbc96621cf85a5c74840a9b92b0079a3e606ad75b26307800834fc4b"
+      }
+    },
+    {
+      "case": 119,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2094590 index 11 round 7 A",
+        "offset": 420105,
+        "bytes": 4881,
+        "sha256": "7a7bc0434d44156a5a673936600453066906e20e93de15c41081017d15e39732"
+      }
+    },
+    {
+      "case": 121,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095023 index 13 round 5 A",
+        "offset": 424986,
+        "bytes": 2129,
+        "sha256": "e01d73f8eac05367c1607247b086bbba301ecf8d89df9b32d8e7006979e6a93d"
+      }
+    },
+    {
+      "case": 122,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095035 index 7 round 6 A",
+        "offset": 427115,
+        "bytes": 3033,
+        "sha256": "5f25b73c0efe3c52c0fdea9989ef307f43cc4a3e557ff5ed0a29dc9a4120a8fa"
+      }
+    },
+    {
+      "case": 123,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095038 index 16 round 4 A",
+        "offset": 430148,
+        "bytes": 1098,
+        "sha256": "df38e901c75e9672febfba4e9dccfd04df4832fee0d624f1da4d6b097b17e8d4"
+      }
+    },
+    {
+      "case": 125,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095070 index 11 round 3 A",
+        "offset": 431246,
+        "bytes": 583,
+        "sha256": "6450c9ed7245681c418e4ba7ed031b91790e8fa10f952c4bba134b6d6f2548bc"
+      }
+    },
+    {
+      "case": 126,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095083 index 11 round 4 A",
+        "offset": 431829,
+        "bytes": 615,
+        "sha256": "a53492a7840ff6fc0cbbb00adec08dd5ddd251bb81986086e97ae6bed5e29c81"
+      }
+    },
+    {
+      "case": 128,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095094 index 11 round 4 A",
+        "offset": 432444,
+        "bytes": 2090,
+        "sha256": "579a3ddf8c6e91d8bc709c5c081b3a09e95568638beab53b4eb87512db9c27f1"
+      }
+    },
+    {
+      "case": 130,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095551 index 11 round 6 A",
+        "offset": 434534,
+        "bytes": 4341,
+        "sha256": "7e515ad7972f4942d9eea05343591e8872075d07203e51f9ae40cd6d65919e9c"
+      }
+    },
+    {
+      "case": 130,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2095551 index 5 round 6 A",
+        "offset": 438875,
+        "bytes": 1477,
+        "sha256": "3525c1eec8118d08f69940ba5394350997becebd4e5e82f200011df9257afce0"
+      }
+    },
+    {
+      "case": 131,
+      "leaf": 0,
+      "proof": {
+        "bands": 320,
+        "rounds": 56,
+        "verdict": "EXCLUDED mask 2095614 index 11 round 8 A",
+        "offset": 440352,
+        "bytes": 5791,
+        "sha256": "a6e9fb5000a2835175a74e6bab69df06e20e7420cbc000f120ea8ecd1e1cf549"
+      }
+    },
+    {
+      "case": 134,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096047 index 11 round 6 A",
+        "offset": 446143,
+        "bytes": 3732,
+        "sha256": "a093be544a91d93113470e30d333c3de904168c986b0dc85ee331db91894a569"
+      }
+    },
+    {
+      "case": 135,
+      "leaf": 0,
+      "proof": {
+        "bands": 320,
+        "rounds": 56,
+        "verdict": "EXCLUDED mask 2096059 index 8 round 5 A",
+        "offset": 449875,
+        "bytes": 5907,
+        "sha256": "63168ea0a1b9e63fde9bb7996c0ddb3ab77661f74ba184ca88a7dddce110459e"
+      }
+    },
+    {
+      "case": 136,
+      "leaf": 0,
+      "proof": {
+        "bands": 320,
+        "rounds": 56,
+        "verdict": "EXCLUDED mask 2096062 index 4 round 9 A",
+        "offset": 455782,
+        "bytes": 5368,
+        "sha256": "c1007f2a25b64b867129de2bc43253eae8a47ae252c25d654cbdf782347f3e0f"
+      }
+    },
+    {
+      "case": 138,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096091 index 8 round 8 A",
+        "offset": 461150,
+        "bytes": 2935,
+        "sha256": "8d78136db3b1554983f0b6e8a470ff6ecd94f5daf0e667849d8132264603d7e3"
+      }
+    },
+    {
+      "case": 139,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096094 index 10 round 4 A",
+        "offset": 464085,
+        "bytes": 2401,
+        "sha256": "967d17a249af7e4015016c960f45a1b584935ff650599021abb3e4c8ef895e2c"
+      }
+    },
+    {
+      "case": 139,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096094 index 9 round 3 A",
+        "offset": 466486,
+        "bytes": 2589,
+        "sha256": "1230ffc91c9fe784ccafe0f96ca149a93c63b18c8f71df9761b83bcc206f0a2a"
+      }
+    },
+    {
+      "case": 139,
+      "leaf": 2,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096094 index 8 round 7 A",
+        "offset": 469075,
+        "bytes": 4874,
+        "sha256": "90c175360d7bc1efbc7b5cf0cb08d99e7e79107ff5a445dd2cd697ab266d8a00"
+      }
+    },
+    {
+      "case": 139,
+      "leaf": 3,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096094 index 10 round 4 A",
+        "offset": 473949,
+        "bytes": 3859,
+        "sha256": "cfd46e08c910513409756ab5cc728896f794bf76d05f0d1d5f1816dc6cb2c021"
+      }
+    },
+    {
+      "case": 139,
+      "leaf": 4,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096094 index 7 round 4 A",
+        "offset": 477808,
+        "bytes": 5408,
+        "sha256": "a31090df0f933e382cb7222eb1568b495d43d10b388e84a7a19081dd7186b37a"
+      }
+    },
+    {
+      "case": 139,
+      "leaf": 5,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096094 index 8 round 5 A",
+        "offset": 483216,
+        "bytes": 3806,
+        "sha256": "5ca442b35154805a8d329e2b979d0d6cf0aa9bc817c68f71876709926db4f268"
+      }
+    },
+    {
+      "case": 140,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096107 index 11 round 7 A",
+        "offset": 487022,
+        "bytes": 4635,
+        "sha256": "ea9c3aa151981a23536bf64ac9415ef9c38135516521701d362c8c1001b42a6c"
+      }
+    },
+    {
+      "case": 141,
+      "leaf": 0,
+      "proof": {
+        "bands": 320,
+        "rounds": 56,
+        "verdict": "EXCLUDED mask 2096110 index 11 round 7 A",
+        "offset": 491657,
+        "bytes": 3098,
+        "sha256": "97750560b9cfcebd79d439699e7a471a3f1522f83638c3097a7db830297fd590"
+      }
+    },
+    {
+      "case": 142,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096115 index 12 round 8 A",
+        "offset": 494755,
+        "bytes": 1996,
+        "sha256": "ee2a8a45a89e4617f7e34808b657157ff9cdb82d1cfd62702d2dd77a4d792ce7"
+      }
+    },
+    {
+      "case": 143,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096118 index 11 round 5 A",
+        "offset": 496751,
+        "bytes": 4436,
+        "sha256": "e3a89aba0df275030ed6ab31a12e5dd812d58608dfb682b735b6f1764cb9a6d4"
+      }
+    },
+    {
+      "case": 143,
+      "leaf": 1,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096118 index 9 round 4 A",
+        "offset": 501187,
+        "bytes": 2619,
+        "sha256": "fadfb6539cd1c240e42ec0e2af9bfa00a3306ddffdbddaf04a7cbc72f4064b1e"
+      }
+    },
+    {
+      "case": 144,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096122 index 12 round 9 A",
+        "offset": 503806,
+        "bytes": 3929,
+        "sha256": "89c02fff4b4d4e9cbd69092acefb44eebf24ed395681fc3d0c6dacf087855615"
+      }
+    },
+    {
+      "case": 145,
+      "leaf": 0,
+      "proof": {
+        "bands": 320,
+        "rounds": 56,
+        "verdict": "EXCLUDED mask 2096124 index 17 round 6 A",
+        "offset": 507735,
+        "bytes": 3181,
+        "sha256": "f70f89122068879c39799bec80f3c197af1b6500ab6c47ef9cedc01201f9ae76"
+      }
+    },
+    {
+      "case": 146,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096382 index 5 round 4 A",
+        "offset": 510916,
+        "bytes": 1516,
+        "sha256": "4c1ff9d6abe651af2f05fc46e54eb68684ecffb358c12d3c5a3c3ea74d4d4c16"
+      }
+    },
+    {
+      "case": 150,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096591 index 12 round 3 A",
+        "offset": 512432,
+        "bytes": 485,
+        "sha256": "7461c5148377f119d3cf811ef2897d9255bf738cd5c88ac93e68cb0b81867a22"
+      }
+    },
+    {
+      "case": 151,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096603 index 12 round 3 A",
+        "offset": 512917,
+        "bytes": 422,
+        "sha256": "e98c3f04631ec8f0699df3bbcdd097f955b82d50d80268e9af326015e267fb5b"
+      }
+    },
+    {
+      "case": 152,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096606 index 12 round 3 A",
+        "offset": 513339,
+        "bytes": 422,
+        "sha256": "e98c3f04631ec8f0699df3bbcdd097f955b82d50d80268e9af326015e267fb5b"
+      }
+    },
+    {
+      "case": 154,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096627 index 4 round 5 A",
+        "offset": 513761,
+        "bytes": 1833,
+        "sha256": "6fe5fc896d37ec28ad675f31ce24f103737307f0eb568d71de13318197376539"
+      }
+    },
+    {
+      "case": 157,
+      "leaf": 0,
+      "proof": {
+        "bands": 128,
+        "rounds": 32,
+        "verdict": "EXCLUDED mask 2096636 index 12 round 3 A",
+        "offset": 515594,
+        "bytes": 926,
+        "sha256": "de0089349fea6094bf53d1ff1f5ee8ca87dc3a5cdd90e7604d5aedbaea829fdc"
+      }
+    }
+  ]
+}

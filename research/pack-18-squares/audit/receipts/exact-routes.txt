@@ -1,0 +1,6 @@
+terminal table sizes {137: 6, 82: 20, 53: 114, 55: 15, 92: 19, 115: 19}
+gustafson-exact.json [((0, 0, 0), 82, '9.1', 'faces')]
+cantrell-exact.json [((0, 1, 0), 137, '2', 'faces'), ((0, 1, 1), 137, '0', 'faces')]
+gensane-ryckelynck-exact.json [((0, 0, 1), 53, '0.0', 'chord'), ((0, 1, 0), 53, '0.0', 'chord')]
+hamalainen-exact.json [((0, 0, 0), 53, '28.8', 'chord'), ((0, 1, 1), 53, '28.8', 'chord')]
+mira-six-tilt-exact.json [((0, 0, 0), 53, '0.0', 'chord'), ((0, 1, 1), 53, '0.0', 'chord')]

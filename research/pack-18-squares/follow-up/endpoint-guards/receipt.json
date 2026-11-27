@@ -1,0 +1,65 @@
+{
+  "case": 137,
+  "mask": "1ffbcf",
+  "enclosure_payload_sha256": "9f7f3909d29342c7c1beec0435a8e81870f6f44c0ba0bab95a6dcd7cbe1473ec",
+  "interval_scale": 1000000000000,
+  "terminal_angle_pairs": 19095,
+  "outward_interval_guards_passed": 6,
+  "negative_controls_rejected": 24,
+  "leaves": [
+    {
+      "leaf": 0,
+      "reflected": true,
+      "first_middle_bands": 51,
+      "second_middle_bands": 51,
+      "band_pairs": 2601,
+      "first_probe_gap_units": 254960300212,
+      "second_probe_gap_units": 333554259791
+    },
+    {
+      "leaf": 1,
+      "reflected": true,
+      "first_middle_bands": 48,
+      "second_middle_bands": 48,
+      "band_pairs": 2304,
+      "first_probe_gap_units": 265058680637,
+      "second_probe_gap_units": 161791206951
+    },
+    {
+      "leaf": 2,
+      "reflected": false,
+      "first_middle_bands": 56,
+      "second_middle_bands": 56,
+      "band_pairs": 3136,
+      "first_probe_gap_units": 267988849874,
+      "second_probe_gap_units": 354651247448
+    },
+    {
+      "leaf": 3,
+      "reflected": false,
+      "first_middle_bands": 66,
+      "second_middle_bands": 66,
+      "band_pairs": 4356,
+      "first_probe_gap_units": 331921163586,
+      "second_probe_gap_units": 158474625501
+    },
+    {
+      "leaf": 4,
+      "reflected": true,
+      "first_middle_bands": 47,
+      "second_middle_bands": 47,
+      "band_pairs": 2209,
+      "first_probe_gap_units": 259623029343,
+      "second_probe_gap_units": 295454843065
+    },
+    {
+      "leaf": 5,
+      "reflected": false,
+      "first_middle_bands": 67,
+      "second_middle_bands": 67,
+      "band_pairs": 4489,
+      "first_probe_gap_units": 259165847075,
+      "second_probe_gap_units": 158276265259
+    }
+  ]
+}

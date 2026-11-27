@@ -1,0 +1,63 @@
+{
+  "side": "24/5",
+  "rack_side": "1205719/250000",
+  "side_nanounits": 4800000000,
+  "kernel": "independent, including direct endpoint supports",
+  "cases": [
+    22,
+    54,
+    132
+  ],
+  "table_commit": "78bec6aacebf304d942a9225e16c2f18165778ff",
+  "table_sha256": "d6fa37860cde0d0e8f8ddedc25508f478fe30112be16e79697cb9ab59c54f086",
+  "leaves": [
+    {
+      "case": 22,
+      "leaf": 0,
+      "mask": "1bfbfb",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 14 round 9"
+    },
+    {
+      "case": 22,
+      "leaf": 1,
+      "mask": "1bfbfb",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 9 round 10"
+    },
+    {
+      "case": 54,
+      "leaf": 0,
+      "mask": "1efbfb",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 9 round 9"
+    },
+    {
+      "case": 54,
+      "leaf": 1,
+      "mask": "1efbfb",
+      "bands": 80,
+      "rounds": 34,
+      "verdict": "EXCLUDED empty owner 0 round 7"
+    },
+    {
+      "case": 132,
+      "leaf": 0,
+      "mask": "1ffafe",
+      "bands": 80,
+      "rounds": 34,
+      "verdict": "EXCLUDED empty owner 16 round 11"
+    },
+    {
+      "case": 132,
+      "leaf": 1,
+      "mask": "1ffafe",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 13 round 12"
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "pin": "78bec6aacebf304d942a9225e16c2f18165778ff",
+  "cases": {
+    "53": {
+      "mask": "0x1efbef",
+      "roots": 33,
+      "leaves": {
+        "chord": 42,
+        "empty": 43,
+        "faces": 29
+      },
+      "count": 114,
+      "symmetries": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "root_states": 3556,
+      "child_states": 977,
+      "empty_by_cuts_roots": [],
+      "empty_by_cuts_leaves": [],
+      "full_leaf_states": 51940,
+      "reduced_leaf_states": 51940,
+      "removed": [],
+      "retained_actions": {
+        "chord": 42,
+        "empty": 43,
+        "faces": 29
+      },
+      "necessary_even_among_all_originals": 114
+    },
+    "55": {
+      "mask": "0x1efbfe",
+      "roots": 13,
+      "leaves": {
+        "chord": 4,
+        "empty": 8,
+        "faces": 3
+      },
+      "count": 15,
+      "symmetries": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "root_states": 26,
+      "child_states": 17,
+      "empty_by_cuts_roots": [],
+      "empty_by_cuts_leaves": [],
+      "full_leaf_states": 34,
+      "reduced_leaf_states": 34,
+      "removed": [],
+      "retained_actions": {
+        "chord": 4,
+        "empty": 8,
+        "faces": 3
+      },
+      "necessary_even_among_all_originals": 15
+    },
+    "82": {
+      "mask": "0x1fb7ef",
+      "roots": 13,
+      "leaves": {
+        "empty": 14,
+        "faces": 6
+      },
+      "count": 20,
+      "symmetries": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "root_states": 546,
+      "child_states": 34,
+      "empty_by_cuts_roots": [
+        7,
+        8,
+        10,
+        11
+      ],
+      "empty_by_cuts_leaves": [
+        "7.0",
+        "8.0",
+        "10.0",
+        "11.0"
+      ],
+      "full_leaf_states": 18560,
+      "reduced_leaf_states": 18560,
+      "removed": [
+        "10.0",
+        "11.0",
+        "7.0",
+        "8.0"
+      ],
+      "retained_actions": {
+        "empty": 10,
+        "faces": 6
+      },
+      "necessary_even_among_all_originals": 16,
+      "exact_root_enclosures": {
+        "1": {
+          "stored_root": 0,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "2": {
+          "stored_root": 1,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "3": {
+          "stored_root": 2,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "6": {
+          "stored_root": 3,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "7": {
+          "stored_root": 4,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "8": {
+          "stored_root": 5,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "9": {
+          "stored_root": 6,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "0x0": {
+          "stored_root": 7,
+          "exact_pair_empty": true,
+          "stored_root_empty": true
+        },
+        "0x4": {
+          "stored_root": 8,
+          "exact_pair_empty": true,
+          "stored_root_empty": true
+        },
+        "0x5": {
+          "stored_root": 9,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "4x4": {
+          "stored_root": 10,
+          "exact_pair_empty": true,
+          "stored_root_empty": true
+        },
+        "4x5": {
+          "stored_root": 11,
+          "exact_pair_empty": true,
+          "stored_root_empty": true
+        },
+        "5x5": {
+          "stored_root": 12,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        }
+      }
+    },
+    "92": {
+      "mask": "0x1fbfcf",
+      "roots": 5,
+      "leaves": {
+        "empty": 10,
+        "faces": 9
+      },
+      "count": 19,
+      "symmetries": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "root_states": 91,
+      "child_states": 37,
+      "empty_by_cuts_roots": [],
+      "empty_by_cuts_leaves": [],
+      "full_leaf_states": 40374,
+      "reduced_leaf_states": 24720,
+      "removed": [
+        "2.1",
+        "2.3",
+        "4.1"
+      ],
+      "retained_actions": {
+        "empty": 8,
+        "faces": 8
+      },
+      "necessary_even_among_all_originals": 16,
+      "exact_root_enclosures": {
+        "0": {
+          "stored_root": 0,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "3": {
+          "stored_root": 1,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "1x1": {
+          "stored_root": 2,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "1x2": {
+          "stored_root": 3,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        },
+        "2x2": {
+          "stored_root": 4,
+          "exact_pair_empty": false,
+          "stored_root_empty": false
+        }
+      }
+    },
+    "115": {
+      "mask": "0x1ff3ef",
+      "roots": 13,
+      "leaves": {
+        "empty": 14,
+        "faces": 5
+      },
+      "count": 19,
+      "symmetries": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "root_states": 901,
+      "child_states": 31,
+      "empty_by_cuts_roots": [],
+      "empty_by_cuts_leaves": [],
+      "full_leaf_states": 9548,
+      "reduced_leaf_states": 9548,
+      "removed": [],
+      "retained_actions": {
+        "empty": 14,
+        "faces": 5
+      },
+      "necessary_even_among_all_originals": 19
+    },
+    "137": {
+      "mask": "0x1ffbcf",
+      "roots": 6,
+      "leaves": {
+        "faces": 6
+      },
+      "count": 6,
+      "symmetries": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "root_states": 89,
+      "child_states": 6,
+      "empty_by_cuts_roots": [],
+      "empty_by_cuts_leaves": [],
+      "full_leaf_states": 89,
+      "reduced_leaf_states": 227,
+      "removed": [
+        "3.0"
+      ],
+      "retained_actions": {
+        "faces": 5
+      },
+      "necessary_even_among_all_originals": 5
+    }
+  },
+  "total_actions": {
+    "chord": 46,
+    "empty": 89,
+    "faces": 58
+  },
+  "controls": {
+    "82_identity_only_uncovered": {
+      "1.y": "4822876",
+      "5.x": "0",
+      "10.t": "0",
+      "12.x": "4822876",
+      "20.t": "0"
+    },
+    "82_narrowed_reflected_angle_uncovered": {
+      "1.y": "4822876",
+      "10.t": "1249/3008",
+      "12.x": "2913956"
+    },
+    "82_missing_descendant_detected": true
+  },
+  "total_terminals": 193,
+  "retained_actions": {
+    "chord": 46,
+    "empty": 83,
+    "faces": 56
+  },
+  "retained_terminals": 185
+}

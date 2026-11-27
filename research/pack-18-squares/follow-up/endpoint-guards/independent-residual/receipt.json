@@ -1,0 +1,240 @@
+[
+  {
+    "case": 82,
+    "leaf": "1.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "ff974b1d9101b516f0c25046f868e9a9adb582dda28821f11b23b84881c98666",
+    "result": "EXCLUDED mask 2078703 index 13 round 5 A"
+  },
+  {
+    "case": 82,
+    "leaf": "1.1",
+    "bands": 512,
+    "rounds": 32,
+    "trace_sha256": "5c0b2deee9a20cb8fe0b8d379e4be89152e95224a8888dfe6fe60abebd8b389a",
+    "result": {
+      "first_middle_bands": 44,
+      "second_middle_bands": 44,
+      "band_pairs": 1936,
+      "first_probe_gap_units": 25365452271,
+      "second_probe_gap_units": 950710653419
+    }
+  },
+  {
+    "case": 82,
+    "leaf": "2.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "887b8472dcb05b58e2b99bbae4024542e0676b7e355cd309916c1e37ce87b754",
+    "result": "EXCLUDED mask 2078703 index 5 round 3 A"
+  },
+  {
+    "case": 82,
+    "leaf": "2.1",
+    "bands": 512,
+    "rounds": 32,
+    "trace_sha256": "23860a587f87e532e4f6f0e61e523486031cef283cdaeda1878d46fc9cc74e0c",
+    "result": {
+      "first_middle_bands": 44,
+      "second_middle_bands": 44,
+      "band_pairs": 1936,
+      "first_probe_gap_units": 25209144614,
+      "second_probe_gap_units": 950527345763
+    }
+  },
+  {
+    "case": 82,
+    "leaf": "9.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "05f7f1f17d9c31746cbf08960c62696c003492aa8fc8665910ac197253b3b8d4",
+    "result": "EXCLUDED mask 2078703 index 17 round 4 A"
+  },
+  {
+    "case": 82,
+    "leaf": "9.1",
+    "bands": 512,
+    "rounds": 32,
+    "trace_sha256": "dd6802d6e43e9d04096685a65b99152c086875a73b4a9f87a758003d24c0a4cf",
+    "result": {
+      "first_middle_bands": 39,
+      "second_middle_bands": 45,
+      "band_pairs": 1755,
+      "first_probe_gap_units": 384886968156,
+      "second_probe_gap_units": 256367668340
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "0.0",
+    "bands": 256,
+    "rounds": 32,
+    "trace_sha256": "27a76d4a7b3d12854348cbdbd3cd93330cd98769bd152c7790a7f3f44c1db3ae",
+    "result": {
+      "first_middle_bands": 25,
+      "second_middle_bands": 25,
+      "band_pairs": 625,
+      "first_probe_gap_units": 290810979384,
+      "second_probe_gap_units": 249919580563
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "1.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "0e2edb61730c442186b764be97771d79119af312af22dde29d7dafea5de431e3",
+    "result": {
+      "first_middle_bands": 20,
+      "second_middle_bands": 20,
+      "band_pairs": 400,
+      "first_probe_gap_units": 267302701703,
+      "second_probe_gap_units": 229699180818
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "3.2",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "5bf5df6127f282114d7af030ce00c5e4650701bad83f4dc20c0c85b9ff9226c0",
+    "result": {
+      "first_middle_bands": 10,
+      "second_middle_bands": 6,
+      "band_pairs": 60,
+      "first_probe_gap_units": 395318189130,
+      "second_probe_gap_units": 106697160609
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "3.4",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "f8b8e99a31e56719e8dbf330e082c9c99eef1c54e555142591786559e697abd5",
+    "result": {
+      "first_middle_bands": 9,
+      "second_middle_bands": 6,
+      "band_pairs": 54,
+      "first_probe_gap_units": 408363804625,
+      "second_probe_gap_units": 107372160609
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "3.6",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "813005676a8ec8bc6a5e5532d30c294418615bb09ed7eeebc782e7daf6ef239c",
+    "result": {
+      "first_middle_bands": 6,
+      "second_middle_bands": 4,
+      "band_pairs": 24,
+      "first_probe_gap_units": 441157432283,
+      "second_probe_gap_units": 141709064593
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "3.8",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "8e013a75b8acbb1052d737d696be9938060e200cb6b2d1afb9d63989c0f2e90a",
+    "result": {
+      "first_middle_bands": 6,
+      "second_middle_bands": 4,
+      "band_pairs": 24,
+      "first_probe_gap_units": 435767967856,
+      "second_probe_gap_units": 141740064593
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "4.0",
+    "bands": 256,
+    "rounds": 32,
+    "trace_sha256": "72d4b4ab5715c1e1e8411fef99d24350ee11c8ed1a0ac7c75644e2cf7b23a962",
+    "result": {
+      "first_middle_bands": 1,
+      "second_middle_bands": 1,
+      "band_pairs": 1,
+      "first_probe_gap_units": 529920829792,
+      "second_probe_gap_units": 164565961814
+    }
+  },
+  {
+    "case": 92,
+    "leaf": "4.1",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "5ac4d090081199c14971303b0d28389dad672c0e364e2ba9e87cb86a5b23ba5a",
+    "result": "EXCLUDED mask 2080719 index 9 round 5 A"
+  },
+  {
+    "case": 92,
+    "leaf": "4.2",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "e08a72937d917665d6b2fbcc56cd00e3d300990b10605ff25a0c90f18c445a4f",
+    "result": {
+      "first_middle_bands": 13,
+      "second_middle_bands": 8,
+      "band_pairs": 104,
+      "first_probe_gap_units": 355177294642,
+      "second_probe_gap_units": 43159079543
+    }
+  },
+  {
+    "case": 115,
+    "leaf": "6.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "0ab53078712d9bb0030df814fcbe063206f6c4ed7573a3db12969a3c3c3d203c",
+    "result": {
+      "first_middle_bands": 14,
+      "second_middle_bands": 16,
+      "band_pairs": 224,
+      "first_probe_gap_units": 303675938003,
+      "second_probe_gap_units": 257922002170
+    }
+  },
+  {
+    "case": 115,
+    "leaf": "7.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "1d7d6f18b4e1c768af479aa24c0a3b1afe8957238ebbb0b4e9f1c2ee2e8fe319",
+    "result": "EXCLUDED mask 2094063 index 7 round 7 A"
+  },
+  {
+    "case": 115,
+    "leaf": "8.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "8ad0414070b2d0dda0b72e3815f658d8f56eb061996cc43ec955f69201b9e497",
+    "result": {
+      "first_middle_bands": 14,
+      "second_middle_bands": 16,
+      "band_pairs": 224,
+      "first_probe_gap_units": 303842151371,
+      "second_probe_gap_units": 264640253463
+    }
+  },
+  {
+    "case": 115,
+    "leaf": "11.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "3a6c4db0f4296288e07eef9810fda663963fa0743877674b51779bbd79b293c9",
+    "result": "EXCLUDED mask 2094063 index 5 round 6 A"
+  },
+  {
+    "case": 115,
+    "leaf": "12.0",
+    "bands": 128,
+    "rounds": 30,
+    "trace_sha256": "89dcd1e9082c8c71f3e6418648e4af5ff38a3aa15d72417925bf0ecdeaa46574",
+    "result": "EXCLUDED mask 2094063 index 5 round 6 A"
+  }
+]

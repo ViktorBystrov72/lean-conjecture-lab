@@ -1,0 +1,7 @@
+batches/batch-a/best.json side 4.82287565553374 strictly below target? False algebraic comparison 1.528648928e-11
+batches/batch-b/best.json side 4.8228756555331866 strictly below target? False algebraic comparison 9.429514001e-12
+batches/batch-c/best.json side 4.822875655532382 strictly below target? False algebraic comparison 9.171002556e-13
+batches/batch-d/best.json side 4.8228756555323855 strictly below target? False algebraic comparison 9.564161838e-13
+batches/batch-e/best.json side 4.8228756555322994 strictly below target? False algebraic comparison 3.834069699e-14
+batches/batch-grid/best.json side 4.8228761860595473 strictly below target? False algebraic comparison 5.614573816e-06
+batches/batch-neighbors/best.json side 4.8228756555356238 strictly below target? False algebraic comparison 3.522164217e-11

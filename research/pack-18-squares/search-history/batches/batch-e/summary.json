@@ -1,0 +1,16 @@
+{
+ "rng": 181701,
+ "starts": 6000,
+ "best": 4.822875655532356,
+ "best_index": 1856,
+ "seconds": 67.28510004200507,
+ "counts": {
+  "within_1e-5": 1342,
+  "within_0.01": 2174
+ },
+ "seed_files": [
+  "seeds/gustafson-fig7.json",
+  "seeds/cantrell-fig7.json",
+  "seeds/gensane-ryckelynck-fig7.json"
+ ]
+}

@@ -1,0 +1,84 @@
+{
+  "mask": "1ffbcf",
+  "side_nano": 4822876000,
+  "leaves": [
+    {
+      "leaf": 0,
+      "bands": 128,
+      "rounds": 38,
+      "sha256": "19cb6bdbe5210b55b9caa61d6a4c629c6854f9b6d917b31387624902912cc1e1",
+      "guard": {
+        "first_middle_bands": 19,
+        "second_middle_bands": 19,
+        "band_pairs": 361,
+        "first_probe_gap_units": 72599559631,
+        "second_probe_gap_units": 136130370889
+      }
+    },
+    {
+      "leaf": 1,
+      "bands": 512,
+      "rounds": 20,
+      "sha256": "e198c2a8bd0d4958f61d94ca89c3bc7eb1c0884e3b3b9905bdefaac6e25532a4",
+      "guard": {
+        "first_middle_bands": 36,
+        "second_middle_bands": 36,
+        "band_pairs": 1296,
+        "first_probe_gap_units": 240135029829,
+        "second_probe_gap_units": 148977504094
+      }
+    },
+    {
+      "leaf": 2,
+      "bands": 128,
+      "rounds": 30,
+      "sha256": "6e62dd477e8248eaeb4c801c258fc3c851931a17e480dce60bbe25e08730ccf5",
+      "guard": {
+        "first_middle_bands": 22,
+        "second_middle_bands": 22,
+        "band_pairs": 484,
+        "first_probe_gap_units": 134903658942,
+        "second_probe_gap_units": 207724289744
+      }
+    },
+    {
+      "leaf": 3,
+      "bands": 128,
+      "rounds": 65,
+      "sha256": "1a365dd4328ec15fd2143ca24ef515a65fef32e5b7ed02c3dae6e9d837611ec8",
+      "guard": {
+        "first_middle_bands": 25,
+        "second_middle_bands": 23,
+        "band_pairs": 575,
+        "first_probe_gap_units": 177580406694,
+        "second_probe_gap_units": 24305415517
+      }
+    },
+    {
+      "leaf": 4,
+      "bands": 128,
+      "rounds": 65,
+      "sha256": "f076a6de015d2020fa75ee2e18b9e1299b404a138b7c883ec56bf97f9dc7945d",
+      "guard": {
+        "first_middle_bands": 17,
+        "second_middle_bands": 16,
+        "band_pairs": 272,
+        "first_probe_gap_units": 109166636497,
+        "second_probe_gap_units": 54579019094
+      }
+    },
+    {
+      "leaf": 5,
+      "bands": 128,
+      "rounds": 65,
+      "sha256": "f7918323af7532e34075b2f568a745e7bdcb5248d6a9789e90ab537f7a4b58c8",
+      "guard": {
+        "first_middle_bands": 24,
+        "second_middle_bands": 22,
+        "band_pairs": 528,
+        "first_probe_gap_units": 109463026597,
+        "second_probe_gap_units": 23660378240
+      }
+    }
+  ]
+}

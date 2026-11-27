@@ -1,0 +1,34 @@
+{
+  "test_side": "1205719/250000",
+  "grid_scale": 500000000,
+  "angle_bands": 128,
+  "source_coverage": "Nearest-mark assignments; cases 56 and 93 of the 187-case decomposition. No centre split.",
+  "replay": "python3 replay.py --sanitize",
+  "cases": {
+    "56": {
+      "checked_core_points": 105,
+      "records": 85,
+      "sha256": "c24f17ad7bd672654b49cb1fc4ca4645f0baf9ff381b6a236f33d54b122ff492",
+      "outcome": "EXCLUDED case 56 index 13 round 4 A"
+    },
+    "93": {
+      "checked_core_points": 330,
+      "records": 171,
+      "sha256": "88d952b253a7752416579f3c50644e30f822bc64d3f000b2917d61b7b869f48f",
+      "outcome": "EXCLUDED case 93 index 9 round 9 A"
+    },
+    "53": {
+      "checked_core_points": 157,
+      "records": 180,
+      "sha256": "d310926388db8f45797952c4c7d4c6b25e0052babc66816dfd3a8d9b36662e76",
+      "outcome": "UNDECIDED; exact packing retained"
+    }
+  },
+  "physical_control": {
+    "owner_snapshots": 3258,
+    "verified_core_vertices": 9805,
+    "rounds": 10,
+    "witness_sha256": "ae9cc65c90e1ce05970eab431e35b363273e6573866a550a2dd8228ad66939fb"
+  },
+  "negative_control": "Moved one guaranteed core point to (0,0); checker rejected the modified trace."
+}

@@ -1,0 +1,2 @@
+'RackSearch2.feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RackSearch2.strictlyLarger' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,142 @@
+{
+  "side": "12057189/2500000",
+  "layouts": 128,
+  "all_centres_per_coordinate_drift": "1/8192",
+  "orientations": "unrestricted for all 18 tiles",
+  "controls": {
+    "spacious": "physical witness found",
+    "touching": "allowed",
+    "overlap": "detected",
+    "occupied_unit_box": "excluded",
+    "tight_grid": "feasible tangent retained"
+  },
+  "methods": {
+    "angular_core": 13,
+    "voronoi": 115
+  },
+  "drifts": {
+    "1/512": 127,
+    "1/8192": 1
+  },
+  "sample_indices_sha256": "39e038af5e6c3de7ef91d1199f8027521780d3870ab192d0a603378868531304",
+  "exact_voronoi_radii_sha256": "447b625ee66dc50cf416ff3064279d3ca51f491d2cd1fdacad87b8f237c0c7a4",
+  "branch_and_bound": [
+    {
+      "layout": 0,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 313,
+      "depth": 11,
+      "pending": 0
+    },
+    {
+      "layout": 1,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 875,
+      "depth": 28,
+      "pending": 0
+    },
+    {
+      "layout": 2,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 495,
+      "depth": 17,
+      "pending": 0
+    },
+    {
+      "layout": 3,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 723,
+      "depth": 25,
+      "pending": 0
+    },
+    {
+      "layout": 4,
+      "method": "angular_core",
+      "drift": "1/8192",
+      "bins": 128,
+      "nodes": 991,
+      "depth": 32,
+      "pending": 0
+    },
+    {
+      "layout": 5,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 745,
+      "depth": 26,
+      "pending": 0
+    },
+    {
+      "layout": 74,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 331,
+      "depth": 12,
+      "pending": 0
+    },
+    {
+      "layout": 75,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 333,
+      "depth": 12,
+      "pending": 0
+    },
+    {
+      "layout": 93,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 361,
+      "depth": 15,
+      "pending": 0
+    },
+    {
+      "layout": 94,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 345,
+      "depth": 14,
+      "pending": 0
+    },
+    {
+      "layout": 122,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 807,
+      "depth": 27,
+      "pending": 0
+    },
+    {
+      "layout": 126,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 1017,
+      "depth": 32,
+      "pending": 0
+    },
+    {
+      "layout": 127,
+      "method": "angular_core",
+      "drift": "1/512",
+      "bins": 64,
+      "nodes": 1101,
+      "depth": 34,
+      "pending": 0
+    }
+  ]
+}
