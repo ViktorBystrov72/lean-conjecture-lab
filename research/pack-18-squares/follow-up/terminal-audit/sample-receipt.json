@@ -1,0 +1,98 @@
+{
+  "test_side": "4822876/1000000",
+  "rack": "RACK COVERED 391887 leaves 783262 nodes, max depth 19",
+  "sample_excluded": [
+    2,
+    56,
+    80,
+    86,
+    91,
+    93
+  ],
+  "subcases": [
+    {
+      "case": 2,
+      "mask": "fffbe",
+      "options": [],
+      "bands": 96,
+      "budget": 20,
+      "verdict": "EXCLUDED empty owner 16 round 14"
+    },
+    {
+      "case": 56,
+      "mask": "1efdfe",
+      "options": [],
+      "bands": 96,
+      "budget": 20,
+      "verdict": "EXCLUDED guaranteed overlap 4 12 round 11"
+    },
+    {
+      "case": 80,
+      "mask": "1f7ffa",
+      "options": [],
+      "bands": 32,
+      "budget": 15,
+      "verdict": "EXCLUDED empty owner 1 round 8"
+    },
+    {
+      "case": 86,
+      "mask": "1fbbfe",
+      "options": [
+        "--cut",
+        "11",
+        "y-le",
+        "3128620000"
+      ],
+      "bands": 96,
+      "budget": 35,
+      "verdict": "EXCLUDED guaranteed overlap 1 5 round 15"
+    },
+    {
+      "case": 86,
+      "mask": "1fbbfe",
+      "options": [
+        "--cut",
+        "11",
+        "y-ge",
+        "3128620000"
+      ],
+      "bands": 128,
+      "budget": 40,
+      "verdict": "EXCLUDED guaranteed overlap 5 11 round 17"
+    },
+    {
+      "case": 91,
+      "mask": "1fbfbe",
+      "options": [
+        "--cut",
+        "10",
+        "x-le",
+        "2394491000"
+      ],
+      "bands": 96,
+      "budget": 35,
+      "verdict": "EXCLUDED guaranteed overlap 11 16 round 16"
+    },
+    {
+      "case": 91,
+      "mask": "1fbfbe",
+      "options": [
+        "--cut",
+        "10",
+        "x-ge",
+        "2394491000"
+      ],
+      "bands": 96,
+      "budget": 35,
+      "verdict": "EXCLUDED empty owner 10 round 25"
+    },
+    {
+      "case": 93,
+      "mask": "1fbfdb",
+      "options": [],
+      "bands": 128,
+      "budget": 40,
+      "verdict": "EXCLUDED guaranteed overlap 10 15 round 22"
+    }
+  ]
+}

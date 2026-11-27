@@ -1,0 +1,913 @@
+{
+  "test_side": "4822876/1000000",
+  "source_cover_cases": 181,
+  "source_cover_leaves": 235,
+  "prior_independent_count": 118,
+  "additional_completed_count": 18,
+  "independent_total": 136,
+  "remaining_empty_orbits": [
+    0,
+    8,
+    23,
+    39,
+    58,
+    59,
+    60,
+    69,
+    70,
+    84,
+    85,
+    89,
+    90,
+    94,
+    97,
+    100,
+    116,
+    117,
+    118,
+    119,
+    121,
+    122,
+    123,
+    125,
+    126,
+    128,
+    130,
+    131,
+    134,
+    135,
+    136,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    150,
+    151,
+    152,
+    154,
+    157
+  ],
+  "mixed_orbits": [
+    53,
+    55,
+    82,
+    92,
+    115,
+    137
+  ],
+  "completed_orbits": [
+    {
+      "case": 7,
+      "mask": "17f7fe",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 12 round 7"
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "mask": "17ffbe",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED guaranteed overlap 10 14 round 11"
+        }
+      ]
+    },
+    {
+      "case": 22,
+      "mask": "1bfbfb",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED empty owner 9 round 15"
+        },
+        {
+          "leaf": 1,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED guaranteed overlap 11 14 round 15"
+        }
+      ]
+    },
+    {
+      "case": 36,
+      "mask": "1dbffe",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 16 round 12"
+        }
+      ]
+    },
+    {
+      "case": 54,
+      "mask": "1efbfb",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED guaranteed overlap 12 15 round 11"
+        },
+        {
+          "leaf": 1,
+          "kernel": "endpoints",
+          "bands": 80,
+          "rounds": 34,
+          "verdict": "EXCLUDED empty owner 0 round 15"
+        }
+      ]
+    },
+    {
+      "case": 63,
+      "mask": "1effeb",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 9 round 10"
+        }
+      ]
+    },
+    {
+      "case": 64,
+      "mask": "1effee",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 1 round 12"
+        }
+      ]
+    },
+    {
+      "case": 74,
+      "mask": "1f7fcf",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 10 round 9"
+        }
+      ]
+    },
+    {
+      "case": 76,
+      "mask": "1f7fde",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 14 round 10"
+        }
+      ]
+    },
+    {
+      "case": 88,
+      "mask": "1fbefe",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 10 round 11"
+        }
+      ]
+    },
+    {
+      "case": 95,
+      "mask": "1fbfee",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 96,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 16 round 10"
+        }
+      ]
+    },
+    {
+      "case": 98,
+      "mask": "1fbffa",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED guaranteed overlap 11 13 round 9"
+        }
+      ]
+    },
+    {
+      "case": 99,
+      "mask": "1fbffc",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 96,
+          "rounds": 30,
+          "verdict": "EXCLUDED guaranteed overlap 10 16 round 11"
+        }
+      ]
+    },
+    {
+      "case": 101,
+      "mask": "1fddfe",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED guaranteed overlap 11 14 round 13"
+        }
+      ]
+    },
+    {
+      "case": 103,
+      "mask": "1fdfbe",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED empty owner 9 round 10"
+        }
+      ]
+    },
+    {
+      "case": 120,
+      "mask": "1ff77e",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "core",
+          "bands": 80,
+          "rounds": 30,
+          "verdict": "EXCLUDED guaranteed overlap 5 10 round 12"
+        }
+      ]
+    },
+    {
+      "case": 132,
+      "mask": "1ffafe",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "endpoints",
+          "bands": 80,
+          "rounds": 34,
+          "verdict": "EXCLUDED guaranteed overlap 6 11 round 14"
+        },
+        {
+          "leaf": 1,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED empty owner 13 round 14"
+        }
+      ]
+    },
+    {
+      "case": 133,
+      "mask": "1ffb7e",
+      "leaves": [
+        {
+          "leaf": 0,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED guaranteed overlap 15 19 round 17"
+        },
+        {
+          "leaf": 1,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED guaranteed overlap 4 6 round 11"
+        },
+        {
+          "leaf": 2,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED guaranteed overlap 9 12 round 18"
+        },
+        {
+          "leaf": 3,
+          "kernel": "endpoints",
+          "bands": 48,
+          "rounds": 24,
+          "verdict": "EXCLUDED empty owner 15 round 23"
+        }
+      ]
+    }
+  ],
+  "partial_leaves_without_whole_case_credit": [
+    {
+      "case": 117,
+      "total_leaves": 3,
+      "excluded_leaves": [
+        0,
+        2
+      ]
+    },
+    {
+      "case": 130,
+      "total_leaves": 2,
+      "excluded_leaves": [
+        1
+      ]
+    },
+    {
+      "case": 139,
+      "total_leaves": 6,
+      "excluded_leaves": [
+        0,
+        1,
+        4
+      ]
+    }
+  ],
+  "all_attempts": [
+    {
+      "case": 95,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 96,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 16 round 10"
+    },
+    {
+      "case": 99,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 96,
+      "rounds": 30,
+      "verdict": "EXCLUDED guaranteed overlap 10 16 round 11"
+    },
+    {
+      "case": 7,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 12 round 7"
+    },
+    {
+      "case": 11,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED guaranteed overlap 10 14 round 11"
+    },
+    {
+      "case": 36,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 16 round 12"
+    },
+    {
+      "case": 58,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 23,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 59,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 60,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 63,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 9 round 10"
+    },
+    {
+      "case": 64,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 1 round 12"
+    },
+    {
+      "case": 74,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 10 round 9"
+    },
+    {
+      "case": 76,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 14 round 10"
+    },
+    {
+      "case": 70,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 88,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 10 round 11"
+    },
+    {
+      "case": 84,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 90,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 98,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED guaranteed overlap 11 13 round 9"
+    },
+    {
+      "case": 97,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 101,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED guaranteed overlap 11 14 round 13"
+    },
+    {
+      "case": 103,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED empty owner 9 round 10"
+    },
+    {
+      "case": 119,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 120,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "EXCLUDED guaranteed overlap 5 10 round 12"
+    },
+    {
+      "case": 116,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 121,
+      "leaf": 0,
+      "kernel": "core",
+      "bands": 80,
+      "rounds": 30,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 22,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED guaranteed overlap 11 14 round 15"
+    },
+    {
+      "case": 22,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 9 round 15"
+    },
+    {
+      "case": 54,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED guaranteed overlap 12 15 round 11"
+    },
+    {
+      "case": 54,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 130,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 130,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 15 round 14"
+    },
+    {
+      "case": 132,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 13 round 14"
+    },
+    {
+      "case": 132,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 143,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 143,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 89,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 89,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 89,
+      "leaf": 2,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 100,
+      "leaf": 2,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 100,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 100,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 117,
+      "leaf": 2,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 9 round 16"
+    },
+    {
+      "case": 117,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 133,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED guaranteed overlap 15 19 round 17"
+    },
+    {
+      "case": 117,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 15 round 13"
+    },
+    {
+      "case": 133,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED guaranteed overlap 4 6 round 11"
+    },
+    {
+      "case": 133,
+      "leaf": 2,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED guaranteed overlap 9 12 round 18"
+    },
+    {
+      "case": 133,
+      "leaf": 3,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 15 round 23"
+    },
+    {
+      "case": 118,
+      "leaf": 2,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 118,
+      "leaf": 3,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 118,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 118,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 118,
+      "leaf": 4,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 139,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 6 round 8"
+    },
+    {
+      "case": 139,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 7 round 11"
+    },
+    {
+      "case": 139,
+      "leaf": 3,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 139,
+      "leaf": 4,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "EXCLUDED empty owner 13 round 12"
+    },
+    {
+      "case": 139,
+      "leaf": 2,
+      "kernel": "endpoints",
+      "bands": 48,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 23,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 64,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 39,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 64,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 58,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 64,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 59,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 64,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 60,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 64,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 69,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 64,
+      "rounds": 24,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 54,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 80,
+      "rounds": 34,
+      "verdict": "EXCLUDED empty owner 0 round 15"
+    },
+    {
+      "case": 130,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 80,
+      "rounds": 34,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 117,
+      "leaf": 1,
+      "kernel": "endpoints",
+      "bands": 80,
+      "rounds": 34,
+      "verdict": "INCONCLUSIVE budget"
+    },
+    {
+      "case": 132,
+      "leaf": 0,
+      "kernel": "endpoints",
+      "bands": 80,
+      "rounds": 34,
+      "verdict": "EXCLUDED guaranteed overlap 6 11 round 14"
+    }
+  ]
+}

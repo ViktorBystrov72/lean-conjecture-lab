@@ -1,0 +1,26 @@
+[
+  {
+    "layout": "hamalainen-exact.json",
+    "owner": 2,
+    "mask": "1efbef",
+    "actual_centres_retained": 18
+  },
+  {
+    "layout": "gustafson-exact.json",
+    "owner": 3,
+    "mask": "1fb7ef",
+    "actual_centres_retained": 18
+  },
+  {
+    "layout": "cantrell-exact.json",
+    "owner": 3,
+    "mask": "1e7bff",
+    "actual_centres_retained": 18
+  },
+  {
+    "layout": "gensane-ryckelynck-exact.json",
+    "owner": 3,
+    "mask": "1f7bdf",
+    "actual_centres_retained": 18
+  }
+]

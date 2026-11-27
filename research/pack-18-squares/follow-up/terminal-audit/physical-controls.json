@@ -1,0 +1,30 @@
+[
+  {
+    "layout": "hamalainen-exact.json",
+    "mask": "1efbef",
+    "bands": 32,
+    "rounds": 12,
+    "survived": 18
+  },
+  {
+    "layout": "gustafson-exact.json",
+    "mask": "1fb7ef",
+    "bands": 32,
+    "rounds": 12,
+    "survived": 18
+  },
+  {
+    "layout": "cantrell-exact.json",
+    "mask": "1e7bff",
+    "bands": 32,
+    "rounds": 12,
+    "survived": 18
+  },
+  {
+    "layout": "gensane-ryckelynck-exact.json",
+    "mask": "1f7bdf",
+    "bands": 32,
+    "rounds": 12,
+    "survived": 18
+  }
+]
