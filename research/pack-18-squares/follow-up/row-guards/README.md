@@ -1,6 +1,6 @@
 # Endpoint guards for cases 53 and 55
 
-An independently written checker accepts the geometric implications in all 78 terminals labelled with a guard in these two case tables. For case 53 it accepts 42 chord guards and 29 separating-face guards. For case 55 it accepts four chord guards and three separating-face guards. The result is conditional on the outer pose enclosures covering all real poses in their leaves. The data are derived from the **producer's** geometry worker. This test neither proves the enclosures correct nor decides the 51 leaves marked empty in these two classes. [Pinned source](https://github.com/Mira-Cult/math/tree/78bec6aacebf304d942a9225e16c2f18165778ff/notes/geometry/unit-square-packing-18)
+An independently written checker accepts the geometric implications in all 78 terminals labelled with a guard in these two case tables. For case 53 it accepts 42 chord guards and 29 separating-face guards. For case 55 it accepts four chord guards and three separating-face guards. The result is conditional on the outer pose enclosures covering all real poses in their leaves. The data are derived from the **producer's** geometry worker. This test neither proves the enclosures correct nor decides the 51 leaves marked empty in these two classes. The [independent geometry for case 55](independent55/) now covers that whole class. [Pinned source](https://github.com/Mira-Cult/math/tree/78bec6aacebf304d942a9225e16c2f18165778ff/notes/geometry/unit-square-packing-18)
 
 ## Wall rows
 
@@ -22,7 +22,12 @@ For a **chord terminal** let $D=Q-P$, and let $z$ be a middle tile centre. Some 
 $$
 D\cdot u > |D\cdot Ju|+2|\det(D,P-z)|,
 $$
-where $Ju$ is a quarter turn of $u$. This implies that the full line through $P,Q$ meets the relative interiors of both opposite faces perpendicular to $u$. The inequality follows by checking the transverse coordinate at each of the two face intersections. The determinant is affine separately in $P,Q,z$, so its absolute maximum over their boxes occurs at corners. For the left-hand lower bound we test each endpoint of the angular arc, both signs in $u\pm Ju$, and all corner pairs. A positive bound for both angular endpoints persists throughout their short arc, since a unit arc vector is a positive combination of its endpoints with coefficient sum at least one.
+where $Ju$ is a quarter turn of $u$. This implies that the full line through $P,Q$ meets the relative interiors of both opposite faces perpendicular to $u$. The inequality follows by checking the transverse coordinate at each of the two face intersections. At both endpoints of each angular band we test
+$$
+D\cdot(u+\sigma Ju)+2\tau\det(D,P-z)>0
+\qquad (\sigma,\tau\in\{-1,1\}).
+$$
+For a fixed orientation and signs, this expression is affine in each of $P,Q,z$ separately. It therefore suffices to check all triples of box vertices. Each vertex pair $P,Q$ supplies the same displacement $D=Q-P$ to both terms. For fixed vertices the two determinant signs give a nonnegative threshold $2|\det(D,P-z)|$. Every unit direction on the short angular arc is a nonnegative linear combination of its endpoint directions with coefficient sum at least one. The same combination applies to $u+\sigma Ju$, so a strict lower bound above that threshold at both angular endpoints holds throughout the arc.
 
 We also verify $(P-z)\cdot u<1/2$ and $(Q-z)\cdot u>-1/2$. The two terminal corners belong to different tiles from the two middle tiles, so they cannot lie in either middle tile’s interior in a legal packing. The segment must therefore traverse the whole chord. Each of the two traversed chords has length at least one and their interiors are disjoint. For $(a,b)=D/|D|$ this gives $(a,b)\cdot D\ge2$.
 

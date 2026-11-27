@@ -101,15 +101,20 @@ def chord(rows,P,Q):
     pp,qq=list(corners(P)),list(corners(Q))
     for centre,lo,hi in rows:
         zz=list(corners(centre))
-        # This determinant is affine separately in each vertex of P,Q,Z.
-        det=max(abs(cross(minus(q,p),minus(p,z))) for q,p,z in product(qq,pp,zz))
+        # For each endpoint pair use its own displacement on both sides.
+        # With fixed normal and determinant sign the difference is
+        # affine separately in p, q and z.
+        tests=[]
+        for p,q in product(pp,qq):
+            d=minus(q,p)
+            bound=2*max(abs(cross(d,minus(p,z))) for z in zz)
+            tests.append((d,bound))
         before,after=gap(P,centre),gap(Q,centre)
         for _ in range(4):
             # For positive endpoint lower bounds the intermediate unit vector
             # is a positive combination of the endpoints with weight sum >= 1.
             normals=[(c+sign*(-s),s+sign*c) for c,s in (lo,hi) for sign in (-1,1)]
-            lower=min(dot(minus(q,p),n) for q,p,n in product(qq,pp,normals))
-            if lower>2*det:
+            if all(dot(d,n)>bound for d,bound in tests for n in normals):
                 u=span([lo,hi])
                 if interval_dot(before,u)[1]<HALF and interval_dot(after,u)[0]>-HALF:break
             lo,hi=J(lo),J(hi)

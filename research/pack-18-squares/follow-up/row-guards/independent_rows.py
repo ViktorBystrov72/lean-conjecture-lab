@@ -1,6 +1,7 @@
 """Reconstruct continuous pose bounds for the single-probe endpoint cases."""
 import argparse
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 import gzip
 from hashlib import sha256
 import json
@@ -92,6 +93,7 @@ def main():
     parser.add_argument('case', type=int, choices=[53, 55])
     parser.add_argument('--source', type=Path, help='local directory with pinned upstream JSON')
     parser.add_argument('--sanitize', action='store_true')
+    parser.add_argument('--workers', type=int, default=3, choices=range(1, 9))
     args = parser.parse_args()
     folder = HERE / f'independent{args.case}'
     receipt = json.loads((folder / 'receipt.json').read_text())
@@ -101,26 +103,29 @@ def main():
     if (receipt['case'] != args.case or not names or len(set(names)) != len(names)
             or not set(names) <= set(expected)):
         raise ValueError('Wrong case or duplicate/unknown leaf')
-    counts = Counter()
     with tempfile.TemporaryDirectory() as tmp:
         work = Path(tmp)
         kernel = work / 'verify'
         subprocess.run([sys.executable, HERE / 'independent480/build.py', kernel, '--export-boxes',
                         *(['--extended-bands'] if args.case == 53 else []),
                         *(['--sanitize'] if args.sanitize else [])], check=True)
-        for row in leaves:
+        def replay(row):
             name = row['leaf']
+            directory = work / name
+            directory.mkdir()
             trace = gzip.decompress((folder / 'certificates' / f'{name}.txt.gz').read_bytes())
             if sha256(trace).hexdigest() != row['sha256']:
                 raise ValueError(f'Wrong trace for {name}')
-            points = work / 'points'
+            points = directory / 'points'
             points.write_bytes(trace)
             job = select_guard(expected[name], row.get('sym'), row.get('kind'))
             verdict = run_leaf(kernel, job, row['bands'], row['rounds'], points,
-                               work / 'boxes')
+                               directory / 'boxes')
             if verdict != row['result']:
                 raise ValueError(f'Wrong outcome for {name}: {verdict}')
-            counts[verdict] += 1
+            return verdict
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            counts = Counter(pool.map(replay, leaves))
     print(f'Case {args.case}: {len(names)}/{len(expected)} guard leaves verified. {dict(counts)}')
 
 

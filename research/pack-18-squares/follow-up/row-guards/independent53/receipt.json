@@ -1,0 +1,760 @@
+{
+  "case": 53,
+  "leaves": [
+    {
+      "leaf": "0.0",
+      "bands": 256,
+      "rounds": 55,
+      "result": "guard",
+      "sha256": "d793e7e18a9cb25ecc8c7809053c6f75a77268804c56f5f4ea0e7a9c96979e2b"
+    },
+    {
+      "leaf": "12.0",
+      "bands": 256,
+      "rounds": 55,
+      "result": "guard",
+      "sha256": "4ade773336e13c731a993b0e9772e76dbfe230b5cd1aee2e696f59f402ae56dc",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "13.0",
+      "bands": 512,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "2c5908be75fe49cb266b79c210ad3caa03bda9e8586951692a265ce1ffcbb3b5"
+    },
+    {
+      "leaf": "14.0",
+      "bands": 256,
+      "rounds": 55,
+      "result": "guard",
+      "sha256": "bc0db3562ab4b3029f0a729e87175919bc76930af79ca560655796be5c07babc",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "15.0",
+      "bands": 512,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "b7b2e929e204be96323c6184901ecb869ca07264c533e272327b273d57e28d44"
+    },
+    {
+      "leaf": "16.0",
+      "bands": 768,
+      "rounds": 115,
+      "result": "guard",
+      "sha256": "2f5f76c14fa6cb8c0a59d12fc74ef1ee1a2001efa7c14111d14cc842d77fae03"
+    },
+    {
+      "leaf": "17.0",
+      "bands": 768,
+      "rounds": 115,
+      "result": "guard",
+      "sha256": "4eb25a8b05b5789a78040142fba1c6b449527c21c673d488c5a3b6714d21dcb5"
+    },
+    {
+      "leaf": "18.0",
+      "bands": 768,
+      "rounds": 115,
+      "result": "guard",
+      "sha256": "45565c6fbdea44cb4c15c6bbdc76dbdca3b788db99a3dfbd608570fced636b91"
+    },
+    {
+      "leaf": "19.0",
+      "bands": 768,
+      "rounds": 115,
+      "result": "guard",
+      "sha256": "d4fbcddd7c32e08025a25951ab88eaa48ab26ba3e64401c765a4bf4346bdfe81"
+    },
+    {
+      "leaf": "20.0",
+      "bands": 512,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "055114bf84966a907db0fa75b0ee8dc7df8932471fcc71117248859ac463dc15",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "21.0",
+      "bands": 768,
+      "rounds": 115,
+      "result": "guard",
+      "sha256": "316c938b48b58a23c03e330e8eb0408951509108670c23c3e3f9ce8ac003454b",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "22.0",
+      "bands": 768,
+      "rounds": 115,
+      "result": "guard",
+      "sha256": "a4b09df430ad3a653ee54eba02fd04ccd179fc61c48e3c929260e6415997f9aa"
+    },
+    {
+      "leaf": "23.0",
+      "bands": 1280,
+      "rounds": 45,
+      "result": "guard",
+      "sha256": "d828a1a9b38f8f48feed3ddfc77e1c15d7a96e54363c65344882c838e64b376d"
+    },
+    {
+      "leaf": "23.1",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "7cf7a69d64d95a358bb820f4abaf8ff822ef7eb560cbb7fdc885870c6f454cb5"
+    },
+    {
+      "leaf": "23.2",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "4385d1d5155b76ede4bd09a3e5311a08d3bb096eaccd97f96834732bece64da9"
+    },
+    {
+      "leaf": "23.3",
+      "bands": 1280,
+      "rounds": 45,
+      "result": "guard",
+      "sha256": "d9cad1a8f6fcf92d3b7f0d825d1f8e388f28a5ad0d9e2b6deba85690f184519a"
+    },
+    {
+      "leaf": "24.0",
+      "bands": 1280,
+      "rounds": 45,
+      "result": "guard",
+      "sha256": "c1f59edefa9242045391789b250fc113cea547fa3ff86bdfdb4a07c348887d7f"
+    },
+    {
+      "leaf": "24.1",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "b5fa56706ac8cd35479fbb58df9ceead6624da522bc76458b1e621f93a9b400e",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "24.2",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "4efede505276d84f8d15e54c51bb39398b0ff1cc405655620b04515aaabfa9e2",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "24.3",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "a924ba84c2c8a677bcbcad12b094bc9a1daf96f330e5f2bc8582cdb710f877ec",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "24.4",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "03dcd064d6023a394a853556b9854541e91b87e10acdaa262446beae37593836",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "25.7",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "a3e24ab3ef8078f6c397b6ef8e7717782ec66977c6b3326ae55cb3a64cfa828d",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "25.8",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "c50c825a06a6f821f4cb68a51f10cd2653bbefa5657d04fdaaaf67999d3e1c09",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "25.9",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "8128bfc281fe9c59254a84e5e03c85a15a75924ea6033c334553c20e9a641df5",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "25.10",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "7d603e7d5c850b8eef241fb73e91d3adcb8e42e820172fbf757c151ee7363e1a",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "25.11",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "2870322646154cedd14624044da9960bd8fe891bb735aedf61553d15eccbc74a",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "25.12",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "6ce503110e597ed43eb69d482f37e54d2a5359865b831f27f79056bce22df061"
+    },
+    {
+      "leaf": "25.13",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "f46ae052edc477dbaf919b1d94f4890c56b7b630b56ca4ac4e37fafbfcb9948c",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "25.14",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "8b0c1656abab47a35d494ebca35d5ffe0979446a5cf6a94f72b36288c5471211",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "26.7",
+      "bands": 1280,
+      "rounds": 45,
+      "result": "guard",
+      "sha256": "4cf0b2b70312b68fe210b2e2b566d18a7765b6f110baff936bc49fcf72f24b61"
+    },
+    {
+      "leaf": "26.8",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "9795313f4ee904b8750020d1c6fe96b209449bde682ff7dd7addadacdc615830",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "26.9",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "c397a91918f64c2dde7140cedf9417413253efa95c255e9f522380801e765bf7",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "26.10",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "51ac1712c07671d924646d753790c52d396ddefc97b44fd04fb22500997fb481"
+    },
+    {
+      "leaf": "26.11",
+      "bands": 1280,
+      "rounds": 45,
+      "result": "guard",
+      "sha256": "211210369b8fff2cd07f17df5a90a7af8bbf68ec67d82dcd37039aa9bb7206eb"
+    },
+    {
+      "leaf": "26.12",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "7af3bbd0ae7a1f2251e1e32f15f0c5cb06acdf023c429f2d3461a22f401058bf"
+    },
+    {
+      "leaf": "26.13",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "c363ab10fadeec4557eb8d493fbc39bc5ad5dbedb5b5c42ac68aec59155bd4e4"
+    },
+    {
+      "leaf": "26.14",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "2573c41463f0c4a79e42b06a0818ce70aa3bd5970a7dad54a06b7899d5bf1655",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "26.15",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "e7eddb3994404598beef27fa87381f3046b3784d0f63fb2a231a696dcbc21c40",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "26.16",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "a62395e3d197b45f1a71a6bfdf462f127e9dd23089906b1ece44eeed3b8c14da",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "26.17",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "5a6b62ba0d5c400d7cb32ad2da8326cb6af937159f1c1923c3121a86d704b729",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "26.18",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "9cfc72fb2afc533dc836fd7f3c6a55c653c62155f99c097096845ecf4187d879"
+    },
+    {
+      "leaf": "26.19",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "a34f1378625e34048222431b43e6a54c18c18a26b66ca6a41b1cb795f6e16d14"
+    },
+    {
+      "leaf": "27.8",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "68934cef3e2534d16b2aebbea2da99938697fe9c4f5912312127b4b0e112c1e7"
+    },
+    {
+      "leaf": "27.9",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "dfbcc42a1c296aa2f163d21d4e6d77170a644af648c1d50333c7521d4fb5137e",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "27.10",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "2924ae14c1c90deafc9b5dcf181dfd001a5b8bb9db8ed9083bcf0d19469f090d",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "27.11",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "f3385c80d8af49b13c08becb3d8ec9ffaa0aa6f1ac3a7375cee24b475532add2",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "27.12",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "2e084826f202c57f9b7c7b7146e1a037bffba03b446ee8ecb686e738efb36826",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "27.13",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "9c8cf6c032b3c204940665f9934cb1f6bd944afecde64a69ad27cd0b42aab72f"
+    },
+    {
+      "leaf": "27.14",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "05cdc988f249cdd6cab0ed6c1b18a3abe603895da510a0ad2bcb2be219051ce4",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "27.15",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "033a5576e8ae45c1ea1f2803d667fd921982b17824b1a44f111033e516a8522b",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "27.16",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "95019f90e9f86e3c2e43f38b10943cbf5f4c358592493e8eb605b268499f6dfe"
+    },
+    {
+      "leaf": "27.17",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "da4574ede0e40a496ce832bb2b95047bbed9415a9abd699f4e2d1e75dde88e79",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "27.18",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "44db426cdf19c4cc659cedbd1d8b33ca4de18ca37c3d8d7788106c3e9fd011be",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "27.19",
+      "bands": 1280,
+      "rounds": 42,
+      "result": "guard",
+      "sha256": "d106be5d5f15f0949f2d6ff5e5709595a3ec63771df7660917a1973cbb2652bf",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "28.7",
+      "bands": 1024,
+      "rounds": 32,
+      "result": "guard",
+      "sha256": "717ad7cd3e1a2e58f6f01766a3501572ed0866b4892031f9f913a311a2669ad7",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "28.8",
+      "bands": 1024,
+      "rounds": 32,
+      "result": "guard",
+      "sha256": "f7c24372eca91140c5856dc7244d9f2c70b4b43ed135f0b0b14a9c2e92b5add2",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.9",
+      "bands": 1280,
+      "rounds": 38,
+      "result": "guard",
+      "sha256": "27787537c599d42b03603d8d7f88a2d98860077cdcd454f07beebe59b82f4e2a",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "28.10",
+      "bands": 1024,
+      "rounds": 32,
+      "result": "guard",
+      "sha256": "98ddba9faea9b37eef76c26e48dda3215b4100d327c9a5abf31f621bb06864b8",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "28.11",
+      "bands": 1024,
+      "rounds": 32,
+      "result": "guard",
+      "sha256": "d7f59cd1f2dfbc542a22edad1c337b4aa9253befb349b53542afba8dc10e05a9",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.12",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "959e497b4ecac4b703d8b4744ec715f974df00b25c5df4d47d5be073e446853d",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.13",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "3895024e55a18ec2af39c80f42093d56893e5d18ce2933fb503e229a494bf0a0",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.14",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "0a53b7aa6e8a7c31e4af4e2e0e4fc31c789e4d9477e4fb0834197a895424eba3",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.15",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "0b401e138846eae8d4037b64280643f78e3e3362a1a56fce930ba5db5f65fc19",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.16",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "70bb1dd712b15074933117fa3cd1f552c6be3024578ab297cf240e797c18715e",
+      "sym": [
+        0,
+        1,
+        1
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.17",
+      "bands": 1024,
+      "rounds": 32,
+      "result": "guard",
+      "sha256": "f3c1936c23945cf0c2af0610fc0fe10c4999c4e03c6924a182365ee513e6cce6",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "chord"
+    },
+    {
+      "leaf": "28.18",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "9aa6fe4aecc349b33fde1d68ca72da0aa40ff293a00f8035880803c4626d1505"
+    },
+    {
+      "leaf": "28.19",
+      "bands": 640,
+      "rounds": 105,
+      "result": "guard",
+      "sha256": "17ca1fe2f02e9f9c33535d60113aa43f5abaec10215a4eefaa6a49776e92b5cc"
+    },
+    {
+      "leaf": "28.20",
+      "bands": 1024,
+      "rounds": 32,
+      "result": "guard",
+      "sha256": "fffe40577c7e2c40c0c325d46f606971299bade171883dbb188f33be39947205",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "28.21",
+      "bands": 1024,
+      "rounds": 32,
+      "result": "guard",
+      "sha256": "8ff503773f88786956a21d7cfa3c56fd31cd21d16cdab04fab6debb918114468",
+      "sym": [
+        0,
+        0,
+        0
+      ],
+      "kind": "faces"
+    },
+    {
+      "leaf": "28.22",
+      "bands": 384,
+      "rounds": 88,
+      "result": "guard",
+      "sha256": "2779dbe6910b708cf2a9728b37f7d861e78951103bde1f00c58d8a6037e6b7cf"
+    },
+    {
+      "leaf": "29.0",
+      "bands": 1280,
+      "rounds": 45,
+      "result": "guard",
+      "sha256": "8fb2ce6eb5ce6457485691c92c8a0b0b9cd9db678eae119e5ad643b65f8a3aa5"
+    }
+  ]
+}

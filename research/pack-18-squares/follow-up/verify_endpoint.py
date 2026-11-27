@@ -106,7 +106,7 @@ def main():
         run('endpoint-guards/independent137/replay.py')
         run('endpoint-guards/independent-residual/replay.py', '--jobs', args.workers)
         for case in (55, 53):
-            run('row-guards/independent_rows.py', case, '--source', source)
+            run('row-guards/independent_rows.py', case, '--source', source, '--workers', args.workers)
         run('endpoint-cover/geometry_inventory.py', '--source', source, '--require-complete')
         print('All 187 classes preclude a packing below the exact construction side.', flush=True)
 
