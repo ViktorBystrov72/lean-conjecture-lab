@@ -1,0 +1,30 @@
+{
+  "fixed": {
+    "seed": 183271,
+    "layouts": 128,
+    "side": "12057189/2500000",
+    "motion": "0",
+    "limit_per_layout": 3200,
+    "depth": 75,
+    "outcomes": {
+      "excluded": 128
+    },
+    "pool_sha256": "42cc2a46f6285288f3ba12dbb0079e28851d61fabcebf5c3f77e703edc9a5d57",
+    "nodes": 31384,
+    "max_depth": 12
+  },
+  "moving": {
+    "seed": 183271,
+    "layouts": 128,
+    "side": "12057189/2500000",
+    "motion": "1/32",
+    "limit_per_layout": 3500,
+    "depth": 75,
+    "outcomes": {
+      "excluded": 128
+    },
+    "pool_sha256": "42cc2a46f6285288f3ba12dbb0079e28851d61fabcebf5c3f77e703edc9a5d57",
+    "nodes": 65172,
+    "max_depth": 22
+  }
+}

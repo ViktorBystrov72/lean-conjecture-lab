@@ -19,7 +19,7 @@ Proofs and counterexamples to published mathematical questions. Each entry links
 From a clone with [Elan](https://lean-lang.org/install/) and Python 3 installed, run the following commands. The repository pins Lean and Mathlib to version 4.36.0.
 
 ```sh
-lake exe cache get Mathlib.Algebra.BigOperators.Fin Mathlib.Data.Fintype.BigOperators Mathlib.Tactic.FinCases Mathlib.RingTheory.PowerSeries.Basic Mathlib.Tactic.Ring
+lake exe cache get Mathlib.Algebra.BigOperators.Fin Mathlib.Data.Fintype.BigOperators Mathlib.Tactic.FinCases Mathlib.RingTheory.PowerSeries.Basic Mathlib.Tactic.Ring Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds Mathlib.Tactic.FieldSimp Mathlib.Tactic.LinearCombination
 lake build
 lake env lean results/oeis-a250346/Audit.lean
 lake env leanchecker ConjectureLab.ShiftedArrays

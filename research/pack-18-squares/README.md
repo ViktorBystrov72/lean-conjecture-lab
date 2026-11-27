@@ -27,6 +27,8 @@ The mark-conditioned search ran 20,744 continuous starts, covering all 187 symme
 
 Another 15,800 starts and contact-motion directions tested larger tile replacements, recombination and curved paths away from known configurations. The best certified finalist exceeded $H$ by approximately $6.70\times 10^{-16}$. Both searches have separate replayable Lean proofs for their selected finalists. [Methods and exact finalist](follow-up/patch/)
 
+We also released the eighteenth tile completely. Lean certifies an exclusion around one reference layout even at side 4.85, with independent small translations and rotations of the other seventeen. Exact geometric searches examine another family of 128 sampled layouts, including arbitrary rotations of all eighteen squares. [Insertion experiments, exact scope and replay](insertion/)
+
 ## Exhaustive search within a finite placement pool
 
 We also fixed a smaller rational container of side **4.8228756**. A pool of 7,140 prescribed individual poses combined historical layouts, rotations and reflections of the container, positions from other square counts, additional rational orientations and recombinations of coordinates of axis-aligned tiles. We allowed the search to mix tiles from different layouts. Two poses were declared incompatible if their interiors overlapped, as determined by exact integer projections.
