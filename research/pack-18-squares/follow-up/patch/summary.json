@@ -1,0 +1,299 @@
+{
+  "distinct_starts": 15800,
+  "patch_runs": 4800,
+  "splice_runs": 8400,
+  "flex_runs": 1600,
+  "contact_curvature_runs": 1000,
+  "candidate_batch": "batch2-screen",
+  "best_certified_side": "5523738281607369412151538109163/1145320484319581724530881381256",
+  "best_approximate_gap": "6.70354677563150578613951975497960681178508471697457440E-16",
+  "improvement": false,
+  "runs": [
+    {
+      "batch": "batch1-screen",
+      "seed": 1809471,
+      "starts": 2400,
+      "best": 4.822875655532354,
+      "target": 4.822875655532295,
+      "archive_size": 330,
+      "counts_by_size": {
+        "7": 409,
+        "4": 395,
+        "8": 404,
+        "9": 391,
+        "6": 406,
+        "5": 395
+      },
+      "grouped_polishes": 374,
+      "seed_files": [
+        "cantrell-fig7.json",
+        "gensane-ryckelynck-fig7.json",
+        "gustafson-fig7.json",
+        "hamalainen.json",
+        "mira-six-tilt.json"
+      ],
+      "splice": false,
+      "near_candidates_screened": 236,
+      "best_rational_side": "1344804340942597545007404291525553754457108/278838692305902465984543574904578842517229",
+      "individual_angle_polishes": 633
+    },
+    {
+      "batch": "batch2-screen",
+      "seed": 7120718,
+      "starts": 2400,
+      "best": 4.822875655532354,
+      "target": 4.822875655532295,
+      "archive_size": 330,
+      "counts_by_size": {
+        "5": 399,
+        "7": 389,
+        "6": 396,
+        "4": 436,
+        "8": 405,
+        "9": 375
+      },
+      "grouped_polishes": 376,
+      "seed_files": [
+        "cantrell-fig7.json",
+        "gensane-ryckelynck-fig7.json",
+        "gustafson-fig7.json",
+        "hamalainen.json",
+        "mira-six-tilt.json"
+      ],
+      "splice": false,
+      "near_candidates_screened": 254,
+      "best_rational_side": "5523738281607369412151538109163/1145320484319581724530881381256",
+      "individual_angle_polishes": 644
+    },
+    {
+      "batch": "splice-a",
+      "seed": 8140554,
+      "starts": 4200,
+      "best": 4.822875655532354,
+      "target": 4.822875655532295,
+      "archive_size": 330,
+      "counts_by_size": {
+        "4": 738,
+        "7": 667,
+        "6": 749,
+        "8": 671,
+        "5": 711,
+        "9": 664
+      },
+      "grouped_polishes": 690,
+      "seed_files": [
+        "cantrell-fig7.json",
+        "gensane-ryckelynck-fig7.json",
+        "gustafson-fig7.json",
+        "hamalainen.json",
+        "mira-six-tilt.json"
+      ],
+      "splice": true,
+      "near_candidates_screened": 586,
+      "best_rational_side": "14114482536104269796265461440991/2926569860849225726825866083903",
+      "individual_angle_polishes": 884
+    },
+    {
+      "batch": "splice-b",
+      "seed": 8140555,
+      "starts": 4200,
+      "best": 4.822875655532354,
+      "target": 4.822875655532295,
+      "archive_size": 330,
+      "counts_by_size": {
+        "4": 727,
+        "8": 682,
+        "7": 698,
+        "5": 669,
+        "9": 730,
+        "6": 694
+      },
+      "grouped_polishes": 726,
+      "seed_files": [
+        "cantrell-fig7.json",
+        "gensane-ryckelynck-fig7.json",
+        "gustafson-fig7.json",
+        "hamalainen.json",
+        "mira-six-tilt.json"
+      ],
+      "splice": true,
+      "near_candidates_screened": 623,
+      "best_rational_side": "48228756555323453/10000000000000102",
+      "individual_angle_polishes": 932
+    },
+    {
+      "batch": "flex-a",
+      "seed": 493818,
+      "layouts": [
+        {
+          "layout": "gustafson",
+          "attempts": 320,
+          "first_order_paths": 320,
+          "forced_rows_numerical": 78,
+          "tangent_hull_dimension_numerical": 11,
+          "traced_accelerations": 220,
+          "min_predicted_side_acceleration": -5.0,
+          "exact_sides_compared": 1280,
+          "predicted_below_minus_1e_neg7": 220
+        },
+        {
+          "layout": "cantrell",
+          "attempts": 320,
+          "first_order_paths": 320,
+          "forced_rows_numerical": 26,
+          "tangent_hull_dimension_numerical": 39,
+          "traced_accelerations": 156,
+          "min_predicted_side_acceleration": -5.0,
+          "exact_sides_compared": 1280,
+          "predicted_below_minus_1e_neg7": 150
+        },
+        {
+          "layout": "mira-six-tilt",
+          "attempts": 320,
+          "first_order_paths": 320,
+          "forced_rows_numerical": 60,
+          "tangent_hull_dimension_numerical": 26,
+          "traced_accelerations": 227,
+          "min_predicted_side_acceleration": -5.0,
+          "exact_sides_compared": 1280,
+          "predicted_below_minus_1e_neg7": 223
+        }
+      ],
+      "best_rational": "241143782776612362/49999999999997347",
+      "strict_improvement": false
+    },
+    {
+      "batch": "flex-b",
+      "seed": 493819,
+      "layouts": [
+        {
+          "layout": "hamalainen",
+          "attempts": 320,
+          "first_order_paths": 320,
+          "forced_rows_numerical": 52,
+          "tangent_hull_dimension_numerical": 26,
+          "traced_accelerations": 288,
+          "min_predicted_side_acceleration": -5.0,
+          "exact_sides_compared": 1280,
+          "predicted_below_minus_1e_neg7": 282
+        },
+        {
+          "layout": "gensane-ryckelynck",
+          "attempts": 320,
+          "first_order_paths": 320,
+          "forced_rows_numerical": 52,
+          "tangent_hull_dimension_numerical": 26,
+          "traced_accelerations": 203,
+          "min_predicted_side_acceleration": -5.0,
+          "exact_sides_compared": 1280,
+          "predicted_below_minus_1e_neg7": 200
+        }
+      ],
+      "best_rational": "31459619059239097691501848601404758013905385964270369/6523000240147578568272519822246404641639260757200929",
+      "strict_improvement": false
+    },
+    {
+      "batch": "curvature-a",
+      "seed": 260714,
+      "layouts": [
+        {
+          "layout": "gustafson",
+          "attempts": 200,
+          "first_order_flexes": 200,
+          "contact_lps_feasible": 200,
+          "inward_lp_predictions": 0,
+          "most_negative_predicted_coefficient": 0.7559289460182231,
+          "exact_compared": 800
+        },
+        {
+          "layout": "cantrell",
+          "attempts": 200,
+          "first_order_flexes": 200,
+          "contact_lps_feasible": 200,
+          "inward_lp_predictions": 0,
+          "most_negative_predicted_coefficient": 0.000643405715332719,
+          "exact_compared": 800
+        },
+        {
+          "layout": "mira-six-tilt",
+          "attempts": 200,
+          "first_order_flexes": 200,
+          "contact_lps_feasible": 200,
+          "inward_lp_predictions": 0,
+          "most_negative_predicted_coefficient": 0.0,
+          "exact_compared": 800
+        }
+      ],
+      "best": "634588902043723/131578947368421",
+      "below": false
+    },
+    {
+      "batch": "curvature-b",
+      "seed": 260715,
+      "layouts": [
+        {
+          "layout": "hamalainen",
+          "attempts": 200,
+          "first_order_flexes": 200,
+          "contact_lps_feasible": 200,
+          "inward_lp_predictions": 0,
+          "most_negative_predicted_coefficient": 0.0,
+          "exact_compared": 800
+        },
+        {
+          "layout": "gensane-ryckelynck",
+          "attempts": 200,
+          "first_order_flexes": 200,
+          "contact_lps_feasible": 200,
+          "inward_lp_predictions": 0,
+          "most_negative_predicted_coefficient": 0.04619602181605015,
+          "exact_compared": 800
+        }
+      ],
+      "best": "24114378277661473/4999999999999998",
+      "below": false
+    }
+  ],
+  "packaged_replay_digests": [
+    {
+      "batch": "batch1-screen",
+      "witness_sha256": "bfec659389df1ec4213142128ff7a9c9b40147c7de347e19f1cb1a06f7fdc6f2",
+      "trace_sha256": "9a64a09b1ac26b7d306f660283ed68201bd6cff181f16485d48cc7a0226abe11"
+    },
+    {
+      "batch": "batch2-screen",
+      "witness_sha256": "ae4d6eeb373afef1a2dd1928be7f1cd933d6c4ef64e15b52575888eeec0952d0",
+      "trace_sha256": "71ef57ae8bc3ccd7c2c9a7fc7287068557b8a563c7c12e6d429d3883e22cef2b"
+    },
+    {
+      "batch": "curvature-a",
+      "witness_sha256": "b08a3cbf7eaefb2a69ec21f43910f6f1787822a5e5608c67e0252bb1391aa45d",
+      "trace_sha256": "40f199d762da296e173527a5cb9246f16c091fb8aa825bfb114f12a8fd228581"
+    },
+    {
+      "batch": "curvature-b",
+      "witness_sha256": "14af6f0274c74c191cfef4ce1b6b9874124c2e88f26fd6ab0d6dcfe03ed1ee1f",
+      "trace_sha256": "0d449a737b2173768d6b80bb02ee217a74042235780303ec60bce93a6239eb45"
+    },
+    {
+      "batch": "flex-a",
+      "witness_sha256": "3f4d18267a95cef21fa8773eb9789ff180c2c27d62c8289e34325fba99fbcc35",
+      "trace_sha256": "0cab48cd7cbe95cda3c9c8b612820abdc4f3cf18c036239b2d70345001d0c802"
+    },
+    {
+      "batch": "flex-b",
+      "witness_sha256": "58878fd852451b72a0b41bf18a345a09f21d05d0842c9335e15c49ec6d7e8fbb",
+      "trace_sha256": "ba19f3bfe2ca8ad14ceeb1205d645e37aac238c36619195ac5bbfcf4eaada3b7"
+    },
+    {
+      "batch": "splice-a",
+      "witness_sha256": "76363d369b6d132027b47dad69307c26e49c1ec16d23ec58bef0eb7c8e2c3567",
+      "trace_sha256": "429ac56384c217205d5222b5d5a03fe270fb7042af6bc4f966cff6ead1c924ea"
+    },
+    {
+      "batch": "splice-b",
+      "witness_sha256": "d21b12f002a85a395dae00a6be79db77b5d28e5058c07f79da218dec9e70eea7",
+      "trace_sha256": "56b3729ca4a1f31731a1e16fccefb436e6503069b8de647625d56785243f6cbf"
+    }
+  ]
+}

@@ -21,6 +21,12 @@ It exceeds $H$ by $3.62285533345988\ldots\times10^{-15}$. The sign comes from an
 
 To repair a candidate, choose a rational approximation $t$ to each half-angle tangent and use the exact frame $((1-t^2)/(1+t^2),2t/(1+t^2))$. For each pair, compute how far apart its centres must be on each of the four possible separating axes. Choose the smallest sufficient dilation of the centres for that pair, then take the maximum of these dilations across all pairs. The bounding box of the repaired squares gives a certified enclosing side. This procedure calculates a side from the coordinates themselves and can reject a spurious improvement caused by floating-point arithmetic. [Standalone Python implementation](certify_candidate.py)
 
+## Follow-up counterexample searches
+
+The mark-conditioned search ran 20,744 continuous starts, covering all 187 symmetry classes as initial conditions. Seven archived candidates appeared to improve on $H$ before exact repair. The best valid finalist exceeded $H$ by approximately $2.18\times 10^{-15}$. [Methods, receipts and Lean check](follow-up/rack/)
+
+Another 15,800 starts and contact-motion directions tested larger tile replacements, recombination and curved paths away from known configurations. The best certified finalist exceeded $H$ by approximately $6.70\times 10^{-16}$. Both searches have separate replayable Lean proofs for their selected finalists. [Methods and exact finalist](follow-up/patch/)
+
 ## Exhaustive search within a finite placement pool
 
 We also fixed a smaller rational container of side **4.8228756**. A pool of 7,140 prescribed individual poses combined historical layouts, rotations and reflections of the container, positions from other square counts, additional rational orientations and recombinations of coordinates of axis-aligned tiles. We allowed the search to mix tiles from different layouts. Two poses were declared incompatible if their interiors overlapped, as determined by exact integer projections.
