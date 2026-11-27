@@ -29,6 +29,10 @@ Another 15,800 starts and contact-motion directions tested larger tile replaceme
 
 We also released the eighteenth tile completely. Lean certifies an exclusion around one reference layout even at side 4.85, with independent small translations and rotations of the other seventeen. Exact geometric searches examine another family of 128 sampled layouts, including arbitrary rotations of all eighteen squares. [Insertion experiments, exact scope and replay](insertion/)
 
+The next searches also moved all 18 centres and angles. One started 7,200 times from random domain boundaries, stripes, shells and maximin points without using known layouts. The other used the geometry of 19- and 21-tile packings, allowing selected tiles to shrink gradually or exchange size with new tiles. None of the 6,572 transfer trajectories produced a strict improvement. [Independent starts](follow-up/global-starts/) · [Tile transfers](follow-up/ghost/)
+
+An exact real-arithmetic formulation tests the full counterexample question without preassigning any tile, contact or rack mark. Its unrestricted run stopped at the solver time limit. The accompanying rounding argument explains why a strict improvement, if it exists, also admits a rational witness. [Global formulation and controls](unrestricted/)
+
 ## Exhaustive search within a finite placement pool
 
 We also fixed a smaller rational container of side **4.8228756**. A pool of 7,140 prescribed individual poses combined historical layouts, rotations and reflections of the container, positions from other square counts, additional rational orientations and recombinations of coordinates of axis-aligned tiles. We allowed the search to mix tiles from different layouts. Two poses were declared incompatible if their interiors overlapped, as determined by exact integer projections.
