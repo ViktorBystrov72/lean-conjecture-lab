@@ -28,6 +28,8 @@ Our replay used exact integers. Even starts halve immediately. For $n\equiv1\pmo
 
 On 27 November 2026 we checked the next $2^{27}$ consecutive starts, from $E$ to $2\,392\,518\,188\,130\,652\,811\,914$ (exclusive). Every start descended below itself. Together with the base in the table, this establishes convergence for every positive start below the new endpoint. The run took 43.99 seconds on an Apple M3 Pro with one Python 3.9.6 process. A control run over $2^{23}$ starts starting at $2^{71}$ took 2.77 seconds. [Verifier](verify_frontier.py)
 
+Later the same day, the Rust and Metal verifier checked the full work unit $[B,B+2^{40})$. All starts descended in 56.513 seconds of scan time on an Apple M3 Pro. Assuming Barina's verification below $B$, this extends the contiguous prefix to $1\le n<2\,392\,518\,189\,229\,950\,369\,792$. The CPU and Metal implementations also agreed on a separate $2^{34}$-start interval inside that work unit. [Implementation, timings, and replay command](../../tools/collatz-search/README.md#apple-m3-pro-control-runs)
+
 Checking a huge individual input answers a different question about the computation. Andreas-Stephan Elsenhans reports a successful run for a number with **20 billion decimal digits** in §4.6. The paper gives no exhaustive verification of the intervening integers. [Research in Number Theory, 24 November 2026](https://doi.org/10.1007/s40993-026-00811-5)
 
 ## What is known for infinitely many starts

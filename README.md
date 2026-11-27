@@ -39,6 +39,8 @@ python3 research/pack-18-squares/follow-up/verify_endpoint.py --workers 3
 
 [The classical Collatz conjecture](results/collatz-3x-plus-1/) remains open. The report distinguishes the verified range from results on the density of starting values and examines recent proof claims. [Lean](ConjectureLab/Collatz.lean) states the conjecture, proves that the ordinary and shortcut maps reach 1 from the same starts, and checks the trajectory of 27.
 
+[Rust and Metal experiments](tools/collatz-search/) provide shared range assignments, exact trajectory checks, and cycle screening on Apple Silicon.
+
 ## Verify the OEIS result
 
 From a clone with [Elan](https://lean-lang.org/install/) and Python 3 installed, run the following commands. The repository pins Lean and Mathlib to version 4.36.0.
