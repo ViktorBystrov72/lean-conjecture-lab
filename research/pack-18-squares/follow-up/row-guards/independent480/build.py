@@ -61,7 +61,7 @@ def only(text,old,new):
     return text.replace(old,new)
 
 
-def build(output,proposer=False,sanitize=False,export_boxes=False):
+def build(output,proposer=False,sanitize=False,export_boxes=False,extended_bands=False):
     original=BASE.read_bytes()
     if hashlib.sha256(original).hexdigest()!=BASE_SHA:raise ValueError("Base verifier digest has changed")
     text='#include <charconv>\n'+original.decode()
@@ -72,7 +72,8 @@ def build(output,proposer=False,sanitize=False,export_boxes=False):
     if proposer:
         prefix=(HERE/'point_suggestions.inc').read_text()
         init='CandidateTrace trace(argv[4],argv[5]);'
-    text=text[:lo]+prefix+'\n'+PARSE.replace('TRACE_INIT',init)+text[hi:]
+    parser_code=only(PARSE,'bandCount>768','bandCount>1280') if extended_bands else PARSE
+    text=text[:lo]+prefix+'\n'+parser_code.replace('TRACE_INIT',init)+text[hi:]
     if proposer:text='#include <cmath>\n#include <memory>\n'+text
     text=only(text,'if (i != drop[0] && i != drop[1] && i != drop[2])','if (mask & (1u << i))')
     text=only(text,'p = {{w, w}, {U - w, w}, {U - w, U - w}, {w, U - w}};',
@@ -116,4 +117,5 @@ if __name__=='__main__':
     ap.add_argument('--proposer',action='store_true',help='also compile an optional floating heuristic for proposing exactly checked core points')
     ap.add_argument('--sanitize',action='store_true')
     ap.add_argument('--export-boxes',action='store_true',help='after an undecided run optionally export outer rectangles to PACK18_OUTER_BOXES')
-    a=ap.parse_args();build(a.output.resolve(),a.proposer,a.sanitize,a.export_boxes)
+    ap.add_argument('--extended-bands',action='store_true',help='allow up to 1,280 uniform angle bands')
+    a=ap.parse_args();build(a.output.resolve(),a.proposer,a.sanitize,a.export_boxes,a.extended_bands)

@@ -1,0 +1,54 @@
+{
+  "case": 55,
+  "leaves": [
+    {
+      "leaf": "0.0",
+      "bands": 512,
+      "rounds": 48,
+      "result": "guard",
+      "sha256": "5a285f8ec9b41393965ee6f7472fd555ca830b123fec5e68998bd70d87765ea4"
+    },
+    {
+      "leaf": "1.0",
+      "bands": 384,
+      "rounds": 55,
+      "result": "guard",
+      "sha256": "7dd745c771e56f999d5644ddae1e85a789a55125f762063d576b9bc9c1341d96"
+    },
+    {
+      "leaf": "1.1",
+      "bands": 512,
+      "rounds": 48,
+      "result": "guard",
+      "sha256": "2d3d6f7f813c839f13fa3463951b8a0678d99e21df6e9a2d4c339a479e9aca84"
+    },
+    {
+      "leaf": "2.0",
+      "bands": 512,
+      "rounds": 48,
+      "result": "guard",
+      "sha256": "b00791063190b95986725cd0a6fac7fcbb0331bba169affdae35b8093a400c59"
+    },
+    {
+      "leaf": "3.0",
+      "bands": 384,
+      "rounds": 55,
+      "result": "guard",
+      "sha256": "21c36aa89c14dcf75c9baf9d754e119f220f32b6ca3d8cc24856a77d656ff784"
+    },
+    {
+      "leaf": "4.0",
+      "bands": 384,
+      "rounds": 55,
+      "result": "guard",
+      "sha256": "e73d77f78782db1aed0ec400b937ce721debb83f666f27b28620bc0f68c8cb4d"
+    },
+    {
+      "leaf": "5.1",
+      "bands": 768,
+      "rounds": 55,
+      "result": "empty",
+      "sha256": "6b75fabe6e778c7ed0a5caa0627203998fc02fb6b3c3b400620be966f7b65760"
+    }
+  ]
+}

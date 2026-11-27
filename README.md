@@ -12,7 +12,7 @@ Proofs and counterexamples to published mathematical questions. Each entry links
 
 ## Research in progress
 
-[Can eighteen unit squares beat Hämäläinen’s packing?](research/pack-18-squares/) The unrestricted problem is open in the case register, with a published optimality claim under independent review. This branch records a finite-pool exclusion, exact contact constraints, and a Lean-checked trial.
+[Can eighteen unit squares beat Hämäläinen’s packing?](research/pack-18-squares/) The unrestricted problem is open in the case register, with a published optimality claim under independent review. This branch records an unrestricted computer-assisted lower bound of 4.80 and narrows any possible improvement over the historical construction to one rack class. [Full-side calculation](research/pack-18-squares/follow-up/endpoint.md)
 
 ## Verify
 
