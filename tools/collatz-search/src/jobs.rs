@@ -4,7 +4,9 @@ use serde::{Deserialize, Serialize, de::DeserializeOwned};
 use serde_json::json;
 use std::fs::{self, File, OpenOptions};
 use std::io::{ErrorKind, Write};
+use std::ops::RangeInclusive;
 use std::path::{Path, PathBuf};
+use std::time::{SystemTime, UNIX_EPOCH};
 
 use crate::cycle;
 use crate::descent::{MAX_BLOCK_BITS, MAX_PENDING, MAX_SIEVE_BITS};
@@ -30,6 +32,22 @@ struct Progress {
     completed_blocks: u128,
     pending: Vec<Pending>,
     cycle: Option<serde_json::Value>,
+    #[serde(default)]
+    last_event: Option<Event>,
+}
+
+#[derive(Deserialize, Serialize)]
+struct Event {
+    sequence: u64,
+    lane: u32,
+    completed_at_unix_ms: u64,
+    stage: String,
+    details: serde_json::Value,
+}
+
+#[derive(Deserialize, Serialize)]
+struct Goal {
+    target_below: String,
 }
 
 #[derive(Deserialize, Serialize)]
@@ -48,12 +66,13 @@ impl State {
     pub fn init(
         root: &Path,
         known: u128,
-        first: u32,
-        last: u32,
+        exponents: RangeInclusive<u32>,
         block_bits: u32,
         sieve_bits: u32,
         steps: u32,
+        target: Option<u128>,
     ) -> Result<()> {
+        let (first, last) = exponents.into_inner();
         ensure!(known >= 2, "known prefix must end at 2 or higher");
         ensure!(
             1 <= first && first <= last && last <= 126,
@@ -63,6 +82,9 @@ impl State {
             block_bits <= MAX_BLOCK_BITS && sieve_bits <= MAX_SIEVE_BITS && steps > 0,
             "invalid block, sieve or step budget"
         );
+        if let Some(target) = target {
+            validate_target(known, first, last, target)?;
+        }
         fs::create_dir_all(root)?;
         let _lock = try_lock(&root.join("init.lock"))?
             .context("another process is initializing this state")?;
@@ -72,6 +94,12 @@ impl State {
             "state already initialized: {}",
             root.display()
         );
+        write_json(
+            &root.join("goal.json"),
+            &target.map(|target| Goal {
+                target_below: target.to_string(),
+            }),
+        )?;
         write_json(
             &path,
             &Config {
@@ -123,6 +151,94 @@ impl State {
         }
     }
 
+    fn target(&self) -> Result<Option<u128>> {
+        let goal = read_json::<Option<Goal>>(&self.root.join("goal.json"))?.flatten();
+        goal.map(|goal| {
+            let target = goal.target_below.parse()?;
+            validate_target(
+                self.known,
+                self.config.first_exp,
+                self.config.last_exp,
+                target,
+            )?;
+            Ok(target)
+        })
+        .transpose()
+    }
+
+    pub fn set_target(&self, target: u128) -> Result<()> {
+        validate_target(
+            self.known,
+            self.config.first_exp,
+            self.config.last_exp,
+            target,
+        )?;
+        let _lock = try_lock(&self.root.join("run.lock"))?
+            .context("wait for active scan and trace workers to finish their current invocation before changing the target")?;
+        write_json(
+            &self.root.join("goal.json"),
+            &Goal {
+                target_below: target.to_string(),
+            },
+        )
+    }
+
+    fn lock_run(&self) -> Result<File> {
+        let file = open_lock_file(&self.root.join("run.lock"))?;
+        FileExt::lock_shared(&file)?;
+        Ok(file)
+    }
+
+    fn frontier(&self) -> Result<u128> {
+        let mut frontier = self.known;
+        for exp in self.config.first_exp..=self.config.last_exp {
+            let lane = self.lane(exp);
+            if frontier >= lane.start && frontier < lane.end {
+                frontier = frontier.max(lane.progress()?.limit().parse()?);
+                if frontier < lane.end {
+                    break;
+                }
+            }
+        }
+        Ok(frontier)
+    }
+
+    fn report_goal(&self, target: Option<u128>) -> Result<bool> {
+        if let Some(target) = target {
+            let frontier = self.frontier()?;
+            if frontier >= target {
+                print_json(&json!({
+                    "status": "goal_reached", "target_below": target.to_string(),
+                    "verified_below_given_base": frontier.to_string()
+                }))?;
+                return Ok(true);
+            }
+        }
+        Ok(false)
+    }
+
+    fn counterexample(&self) -> Result<Option<serde_json::Value>> {
+        read_json(&self.root.join("counterexample.json"))
+    }
+
+    fn record_cycle(&self, witness: serde_json::Value) -> Result<()> {
+        let lock = open_lock_file(&self.root.join("counterexample.lock"))?;
+        FileExt::lock_exclusive(&lock)?;
+        let path = self.root.join("counterexample.json");
+        if !path.exists() {
+            write_json(&path, &witness)?;
+        }
+        Ok(())
+    }
+
+    fn report_cycle(&self) -> Result<bool> {
+        if let Some(witness) = self.counterexample()? {
+            print_json(&json!({"status": "cycle_witness", "counterexample": witness}))?;
+            return Ok(true);
+        }
+        Ok(false)
+    }
+
     fn claim(
         &self,
         requested: Option<u32>,
@@ -139,6 +255,7 @@ impl State {
             fs::create_dir_all(&lane.path)?;
             if let Some(lock) = try_lock(&lane.path.join("worker.lock"))? {
                 let progress = lane.progress()?;
+                lane.archive_last_event(&progress)?;
                 if ready(&lane, &progress)? {
                     return Ok(Some((lane, progress, lock)));
                 }
@@ -156,12 +273,19 @@ impl State {
         worker: &str,
     ) -> Result<()> {
         ensure!(blocks > 0, "block count must be positive");
+        let _run = self.lock_run()?;
+        let target = self.target()?;
+        if self.report_cycle()? || self.report_goal(target)? {
+            return Ok(());
+        }
         let Some((lane, mut progress, _lock)) = self.claim(requested, |lane, progress| {
-            Ok(progress.cycle.is_none() && progress.next.parse::<u128>()? < lane.end)
+            Ok(progress.cycle.is_none()
+                && progress.next.parse::<u128>()? < lane.end.min(target.unwrap_or(lane.end)))
         })?
         else {
             return print_json(&json!({"status": "no_claimable_lane"}));
         };
+        let end = lane.end.min(target.unwrap_or(lane.end));
         let _device_lock = if matches!(backend, Backend::Metal) {
             Some(
                 try_lock(&self.root.join("metal.lock"))?
@@ -172,13 +296,14 @@ impl State {
         };
         let scan = Scan::new(backend, threads, self.config.sieve_bits, self.config.steps)?;
         for _ in 0..blocks {
+            if self.report_cycle()? {
+                return Ok(());
+            }
             let start: u128 = progress.next.parse()?;
-            if start == lane.end {
+            if start == end {
                 break;
             }
-            let stop = start
-                .saturating_add(1 << self.config.block_bits)
-                .min(lane.end);
+            let stop = start.saturating_add(1 << self.config.block_bits).min(end);
             let _lease = lane.note_active(worker, backend.label(), start, stop)?;
             let (result, seconds) = scan.block(start, stop, self.config.steps)?;
             ensure!(
@@ -193,13 +318,23 @@ impl State {
                 }));
             progress.next = stop.to_string();
             progress.completed_blocks += 1;
-            lane.save(&progress)?;
+            let details = json!({
+                "worker": worker, "backend": backend.label(), "seconds": seconds,
+                "from": result.from, "to_exclusive": result.to_exclusive,
+                "orbit_checks": result.orbit_checks, "sieved": result.sieved,
+                "exact_replays": result.exact_replays, "unresolved_count": result.unresolved.len(),
+                "pending_total": progress.pending.len(), "lane_descended_below": progress.limit()
+            });
+            lane.checkpoint(&mut progress, "scan_finished", details)?;
             print_json(&json!({
                 "worker": worker, "lane": lane.exp, "backend": backend.label(),
                 "seconds": seconds, "block": result,
                 "pending_total": progress.pending.len(),
                 "lane_descended_below": progress.limit()
             }))?;
+        }
+        if !self.report_cycle()? {
+            self.report_goal(target)?;
         }
         Ok(())
     }
@@ -215,14 +350,22 @@ impl State {
             steps > 0 && limit > 0,
             "step and candidate limits must be positive"
         );
+        let _run = self.lock_run()?;
+        let target = self.target()?;
+        if self.report_cycle()? || self.report_goal(target)? {
+            return Ok(());
+        }
         let Some((lane, mut progress, _lock)) = self.claim(requested, |_, p| {
-            Ok(p.cycle.is_none() && p.pending.iter().any(|pending| pending.tried < steps))
+            Ok(p.cycle.is_none() && p.trace_candidate(steps, target)?.is_some())
         })?
         else {
             return print_json(&json!({"status": "no_claimable_candidates", "step_budget": steps}));
         };
         for _ in 0..limit {
-            let Some(index) = progress.pending.iter().position(|p| p.tried < steps) else {
+            if self.report_cycle()? {
+                return Ok(());
+            }
+            let Some(index) = progress.trace_candidate(steps, target)? else {
                 break;
             };
             let n = progress.pending[index].n.parse::<u128>()?;
@@ -234,22 +377,33 @@ impl State {
                 }
                 Outcome::StepLimit => progress.pending[index].tried = steps,
                 Outcome::Cycle => {
-                    progress.cycle = Some(serde_json::to_value(&result)?);
+                    let witness = serde_json::to_value(&result)?;
+                    self.record_cycle(
+                        json!({"source": "trace_work", "lane": lane.exp, "witness": witness}),
+                    )?;
+                    progress.cycle = Some(witness);
                 }
             }
-            lane.save(&progress)?;
-            print_json(
-                &json!({"worker": worker, "lane": lane.exp, "trace": result, "pending_total": progress.pending.len()}),
-            )?;
+            let details = json!({
+                "worker": worker, "lane": lane.exp, "trace": result, "pending_total": progress.pending.len()
+            });
+            lane.checkpoint(&mut progress, "trace_finished", details.clone())?;
+            print_json(&details)?;
             if progress.cycle.is_some() {
-                break;
+                self.report_cycle()?;
+                return Ok(());
             }
+        }
+        if !self.report_cycle()? {
+            self.report_goal(target)?;
         }
         Ok(())
     }
 
     pub fn status(&self) -> Result<()> {
+        let target = self.target()?;
         let mut frontier = self.known;
+        let mut scanned = self.known;
         let mut lanes = Vec::new();
         for exp in self.config.first_exp..=self.config.last_exp {
             let lane = self.lane(exp);
@@ -257,6 +411,9 @@ impl State {
             let covered = p.limit().parse::<u128>()?;
             if frontier >= lane.start && frontier < lane.end {
                 frontier = frontier.max(covered);
+            }
+            if scanned >= lane.start && scanned < lane.end {
+                scanned = scanned.max(p.next.parse()?);
             }
             let note = lane.path.join("active.json");
             let active =
@@ -269,22 +426,68 @@ impl State {
             lanes.push(json!({
                 "lane": exp, "search_from": lane.start.to_string(),
                 "to_exclusive": lane.end.to_string(), "next_to_scan": p.next,
+                "target_capped_end": lane.end.min(target.unwrap_or(lane.end)).max(lane.start).to_string(),
                 "lane_descended_below": p.limit(), "completed_blocks": p.completed_blocks.to_string(),
                 "pending": p.pending.len(),
                 "earliest_unresolved": p.pending.first(), "cycle": p.cycle,
-                "active": active
+                "active": active, "last_event": p.last_event
             }));
         }
         let (cycle_screens, cycle_claims) = reports(&self.root.join("cycles"))?;
         let (parity_batches, parity_claims) = reports(&self.root.join("words"))?;
+        let counterexample = self.counterexample()?;
+        let goal = target.map(|target| json!({
+            "target_below": target.to_string(), "scanned": scanned >= target, "reached": frontier >= target
+        }));
         print_json(&json!({
             "config": self.config, "verified_below_given_base": frontier.to_string(),
+            "goal": goal, "counterexample": counterexample,
+            "scanned_below_given_base": scanned.to_string(),
             "lanes": lanes, "cycle_screens": cycle_screens, "cycle_claims": cycle_claims,
             "parity_batches": parity_batches, "parity_claims": parity_claims
         }))
     }
 
+    pub fn history(&self, requested: Option<u32>, limit: usize) -> Result<()> {
+        ensure!(
+            (1..=1000).contains(&limit),
+            "history limit must be in 1..=1000"
+        );
+        let first = requested.unwrap_or(self.config.first_exp);
+        let last = requested.unwrap_or(self.config.last_exp);
+        ensure!(
+            first >= self.config.first_exp && last <= self.config.last_exp,
+            "lane outside configured exponents"
+        );
+        let mut events = Vec::new();
+        for exp in first..=last {
+            let lane = self.lane(exp);
+            let progress = lane.progress()?;
+            if let Some(last_event) = progress.last_event {
+                let from = last_event.sequence.saturating_sub(limit as u64 - 1).max(1);
+                for sequence in from..last_event.sequence {
+                    let event: Event =
+                        read_json(&lane.event_path(sequence))?.with_context(|| {
+                            format!("missing journal entry {sequence} for lane {exp}")
+                        })?;
+                    ensure!(
+                        event.lane == exp && event.sequence == sequence,
+                        "incorrect journal entry {sequence} for lane {exp}"
+                    );
+                    events.push(event);
+                }
+                // The checkpoint is authoritative if a crash interrupted the journal append.
+                events.push(last_event);
+            }
+        }
+        events.sort_unstable_by_key(|e| (e.completed_at_unix_ms, e.lane, e.sequence));
+        print_json(&json!({"events": &events[events.len().saturating_sub(limit)..]}))
+    }
+
     pub fn cycle_work(&self, exp: u32, list: usize) -> Result<()> {
+        if self.report_cycle()? {
+            return Ok(());
+        }
         ensure!(exp <= 126, "odd-count exponent must be at most 126");
         let directory = self.root.join("cycles");
         fs::create_dir_all(&directory)?;
@@ -302,6 +505,9 @@ impl State {
     }
 
     pub fn word_work(&self, length: u32, prefix_bits: u32, shard: u128) -> Result<()> {
+        if self.report_cycle()? {
+            return Ok(());
+        }
         ensure!(
             (1..=127).contains(&length) && prefix_bits <= length,
             "need 1 <= length <= 127 and prefix-bits <= length"
@@ -341,9 +547,21 @@ impl State {
             format!("{shard:0width$b}", width = prefix_bits as usize)
         };
         let report = cycle::words(length as usize, &prefix, 0, 1 << suffix_bits, self.known)?;
+        if let Some(witness) = report.cycles.first() {
+            self.record_cycle(json!({"source": "word_work", "witness": witness}))?;
+        }
         write_json(&path, &report)?;
         print_json(&report)
     }
+}
+
+fn validate_target(known: u128, first: u32, last: u32, target: u128) -> Result<()> {
+    ensure!(target >= 2, "target must be at least 2");
+    ensure!(
+        target <= known || (known >= 1u128 << first && target <= 1u128 << (last + 1)),
+        "target is outside the configured contiguous lanes or the base leaves an earlier gap"
+    );
+    Ok(())
 }
 
 fn reports(path: &Path) -> Result<(Vec<PathBuf>, Vec<PathBuf>)> {
@@ -378,6 +596,20 @@ fn reports(path: &Path) -> Result<(Vec<PathBuf>, Vec<PathBuf>)> {
 impl Progress {
     fn limit(&self) -> &str {
         self.pending.first().map_or(&self.next, |first| &first.n)
+    }
+
+    fn trace_candidate(&self, steps: u64, target: Option<u128>) -> Result<Option<usize>> {
+        for (index, candidate) in self.pending.iter().enumerate() {
+            if let Some(target) = target
+                && candidate.n.parse::<u128>()? >= target
+            {
+                break;
+            }
+            if candidate.tried < steps {
+                return Ok(Some(index));
+            }
+        }
+        Ok(None)
     }
 }
 
@@ -414,8 +646,41 @@ impl Lane {
         Ok(p)
     }
 
-    fn save(&self, progress: &Progress) -> Result<()> {
-        write_json(&self.path.join("progress.json"), progress)
+    fn event_path(&self, sequence: u64) -> PathBuf {
+        self.path
+            .join("journal")
+            .join(format!("{sequence:020}.json"))
+    }
+
+    fn archive_last_event(&self, progress: &Progress) -> Result<()> {
+        if let Some(event) = &progress.last_event {
+            let path = self.event_path(event.sequence);
+            if !path.exists() {
+                fs::create_dir_all(self.path.join("journal"))?;
+                write_json(&path, event)?;
+            }
+        }
+        Ok(())
+    }
+
+    fn checkpoint(
+        &self,
+        progress: &mut Progress,
+        stage: &str,
+        details: serde_json::Value,
+    ) -> Result<()> {
+        let previous = progress.last_event.as_ref().map_or(0, |e| e.sequence);
+        progress.last_event = Some(Event {
+            sequence: previous
+                .checked_add(1)
+                .context("journal sequence overflow")?,
+            lane: self.exp,
+            completed_at_unix_ms: now_ms(),
+            stage: stage.to_owned(),
+            details,
+        });
+        write_json(&self.path.join("progress.json"), progress)?;
+        self.archive_last_event(progress)
     }
 
     fn note_active(&self, worker: &str, mode: &str, start: u128, stop: u128) -> Result<Lease> {
@@ -424,11 +689,19 @@ impl Lane {
             &path,
             &json!({
                 "worker": worker, "pid": std::process::id(), "mode": mode,
+                "started_at_unix_ms": now_ms(),
                 "from": start.to_string(), "to_exclusive": stop.to_string()
             }),
         )?;
         Ok(Lease(path))
     }
+}
+
+fn now_ms() -> u64 {
+    SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .unwrap_or_default()
+        .as_millis() as u64
 }
 
 struct Lease(PathBuf);

@@ -59,7 +59,7 @@ pub struct Words {
     from_offset: String,
     to_offset_exclusive: String,
     minima_at_least: String,
-    cycles: Vec<Cycle>,
+    pub cycles: Vec<Cycle>,
 }
 
 pub fn words(length: usize, prefix: &str, offset: u128, count: u64, min: u128) -> Result<Words> {

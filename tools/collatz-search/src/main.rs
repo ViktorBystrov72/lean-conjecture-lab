@@ -60,6 +60,9 @@ enum Command {
         sieve_bits: u32,
         #[arg(long, default_value_t = 10_000)]
         steps: u32,
+        /// Exclusive target for the contiguous verified prefix.
+        #[arg(long)]
+        target_below: Option<u128>,
     },
     /// Claim a lane and scan bounded blocks, recording time and unresolved starts.
     Work {
@@ -80,6 +83,22 @@ enum Command {
     Status {
         #[arg(long)]
         state: PathBuf,
+    },
+    /// Set the exclusive goal in an existing state while scan and trace workers are idle.
+    SetTarget {
+        #[arg(long)]
+        state: PathBuf,
+        #[arg(long)]
+        target_below: u128,
+    },
+    /// Read the latest durable scan and trace events, including completed jobs.
+    History {
+        #[arg(long)]
+        state: PathBuf,
+        #[arg(long)]
+        lane: Option<u32>,
+        #[arg(long, default_value_t = 10)]
+        limit: usize,
     },
     /// Follow a single orbit using arbitrary-precision arithmetic and cycle detection.
     Trace {
@@ -174,15 +193,16 @@ fn main() -> Result<()> {
             block_bits,
             sieve_bits,
             steps,
+            target_below,
         } => {
             State::init(
                 &state,
                 known_below,
-                first_exp,
-                last_exp,
+                first_exp..=last_exp,
                 block_bits,
                 sieve_bits,
                 steps,
+                target_below,
             )?;
             State::open(&state)?.status()
         }
@@ -195,6 +215,15 @@ fn main() -> Result<()> {
             worker,
         } => State::open(&state)?.work(lane, blocks, backend, threads, &worker),
         Command::Status { state } => State::open(&state)?.status(),
+        Command::SetTarget {
+            state,
+            target_below,
+        } => {
+            let state = State::open(&state)?;
+            state.set_target(target_below)?;
+            state.status()
+        }
+        Command::History { state, lane, limit } => State::open(&state)?.history(lane, limit),
         Command::Trace {
             start,
             steps,

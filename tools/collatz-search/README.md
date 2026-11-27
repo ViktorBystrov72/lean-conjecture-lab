@@ -2,7 +2,9 @@
 
 ## Instructions for the M5 Max worker
 
-> Run bounded Collatz experiments on this Mac and share one local state directory with the other workers. Read its status before choosing a lane. Use the requested worker labels and return the exact half-open intervals, timings, and unresolved starts. For a cycle, return an exact witness and period. Report a step limit as an unresolved candidate and keep the stated base of the verified prefix.
+> Run a bounded Collatz pilot on the M5 Max. Use the same local state directory as the other workers. Read `status` before starting and `history` for your progress reports. The pilot goal is to verify all starts below 2392518189247130238976, given the base 2392518189229950369792. Stop scheduling scans when `goal.reached` is true or `counterexample` contains a cycle witness. If `goal.scanned` is true and `goal.reached` is false, follow the unresolved starts with `trace-work` and report any remaining ones. Return the exact interval, timings, and pending count.
+
+In BB, run the ERNIE agent in an environment on the M5 Max. The model tunnel carries inference requests. Shell commands run on the machine selected for the environment, so check the execution host with `sysctl -n machdep.cpu.brand_string` before starting a benchmark.
 
 Clone the research branch on the M5 Max. Build with [Rust 1.90 or newer](https://rustup.rs/) and the macOS Command Line Tools. Cargo pins the dependencies in `Cargo.lock`. The Metal backend compiles its shader through the installed Metal runtime.
 
@@ -22,6 +24,32 @@ to=2392518188131592336010
 "$bin" verify --from "$from" --to "$to" --backend cpu
 "$bin" verify --from "$from" --to "$to" --backend metal --threads 4
 ~~~
+
+## Run a pilot with an explicit stop
+
+This pilot covers four blocks of size $2^{32}$ immediately after the M3 Pro verification. Initialize the state once. Reuse the same absolute state path from each BB thread on the M5 Max.
+
+~~~sh
+bin="$PWD/target/release/collatz-search"
+state="$PWD/run-state/m5-pilot"
+"$bin" init --state "$state" --known-below 2392518189229950369792 \
+  --target-below 2392518189247130238976 --first-exp 71 --last-exp 71 \
+  --block-bits 32 --sieve-bits 24
+"$bin" work --state "$state" --lane 71 --worker m5-pilot --backend metal --threads 4 --blocks 4
+"$bin" status --state "$state"
+"$bin" history --state "$state" --limit 10
+~~~
+
+The last scan block is clipped at the exclusive target. `goal.scanned` marks a completed scan up to that point, while `goal.reached` requires every earlier start to have a descent certificate or a successful exact trace. A recorded cycle witness stops workers before they begin their next block, trace, or cycle assignment. Individual cycle assignments otherwise finish at their own bounded limit.
+
+For a longer batch, use a persistent terminal in the ERNIE thread on the M5 Max. Run the following in place of the foreground `work` command. While the terminal runs, read `status` and `history` from a separate shell to answer questions in the thread.
+
+~~~sh
+bb terminal create --thread "$BB_THREAD_ID" --title "Collatz pilot" -- \
+  "$bin" work --state "$state" --lane 71 --worker m5-pilot --backend metal --threads 4 --blocks 4
+~~~
+
+For an existing state, rebuild the workers and wait for active scans and traces to finish before running `set-target --state "$state" --target-below NUMBER`. It preserves all completed checkpoints. An older worker binary lacks the new goal and journal support.
 
 ## Shared scan and long-orbit jobs
 
@@ -47,6 +75,8 @@ Omit `--lane` to claim the first available lane with unscanned blocks. Each `wor
 ~~~
 
 `active` shows the owner and current interval for each busy lane. `lane_descended_below` marks the contiguous checked portion **within that lane**. `verified_below_given_base` advances only across an unbroken prefix with every earlier lane and candidate resolved. A result in lane 72 can therefore be useful even while the global prefix is still in lane 71.
+
+Each lane writes its completed scan and trace events under `lane-N/journal/` while holding its exclusive worker lock. The records include the worker, bounds or start, completion time and outcome. `history --state "$state" --lane 71 --limit 10` reads the saved events after a process exits. The newest event is also in the atomic checkpoint, so it remains visible if a process stops before archiving that event. Cycle-screen and parity jobs keep their own locked reports, listed in `status`.
 
 Workers doing long-orbit analysis pick up the existing backlog. `trace-work` can run in several lanes at once and retries only candidates whose previous budget was smaller.
 

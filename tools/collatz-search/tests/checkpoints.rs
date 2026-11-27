@@ -127,3 +127,61 @@ fn workers_resume_without_overlaps_or_claiming_across_gaps() {
     assert_eq!(status[0]["cycle_screens"].as_array().unwrap().len(), 1);
     assert_eq!(status[0]["parity_batches"].as_array().unwrap().len(), 2);
 }
+
+#[test]
+fn target_clips_blocks_and_waits_for_unresolved_starts() {
+    let state = StateDir(
+        PathBuf::from(env!("CARGO_TARGET_TMPDIR")).join(format!("goal-{}", std::process::id())),
+    );
+    state.run(
+        "init",
+        &[
+            "--known-below",
+            "32",
+            "--first-exp",
+            "5",
+            "--last-exp",
+            "6",
+            "--block-bits",
+            "3",
+            "--sieve-bits",
+            "0",
+            "--steps",
+            "1",
+            "--target-below",
+            "43",
+        ],
+    );
+    let blocks = state.run("work", &["--blocks", "8", "--threads", "1"]);
+    assert_eq!(blocks.len(), 2);
+    assert_eq!(blocks[0]["block"]["to_exclusive"], "40");
+    assert_eq!(blocks[1]["block"]["to_exclusive"], "43");
+    let status = state.run("status", &[]);
+    assert_eq!(status[0]["goal"]["scanned"], true);
+    assert_eq!(status[0]["goal"]["reached"], false);
+    assert_eq!(status[0]["verified_below_given_base"], "33");
+    assert_eq!(
+        state.run("work", &["--lane", "6"])[0]["status"],
+        "no_claimable_lane"
+    );
+
+    // Emulate interruption after the checkpoint was saved and before it was archived.
+    let missing = state.0.join("lane-5/journal/00000000000000000002.json");
+    std::fs::remove_file(&missing).unwrap();
+    let history = state.run("history", &["--limit", "2"]);
+    assert_eq!(history[0]["events"][1]["details"]["to_exclusive"], "43");
+    let trace = state.run("trace-work", &["--steps", "1000", "--limit", "64"]);
+    assert_eq!(trace.last().unwrap()["status"], "goal_reached");
+    assert!(missing.is_file());
+    assert_eq!(state.frontier(), "43");
+    assert_eq!(state.run("work", &[])[0]["status"], "goal_reached");
+    assert_eq!(
+        state.run("history", &["--lane", "5", "--limit", "1"])[0]["events"][0]["stage"],
+        "trace_finished"
+    );
+
+    state.run("set-target", &["--target-below", "46"]);
+    let next = state.run("work", &["--blocks", "8", "--threads", "1"]);
+    assert_eq!(next[0]["block"]["from"], "43");
+    assert_eq!(next[0]["block"]["to_exclusive"], "46");
+}
