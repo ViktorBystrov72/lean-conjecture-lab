@@ -1,0 +1,288 @@
+{
+  "enclosure_payload_sha256": "2175518abbbedc9acbf00dd203c6d9c96aed6f3b32709012d0ab6df75161cde7",
+  "geometry": "Producer outer enclosures; separately computed directed-interval endpoint rules.",
+  "lower_bound_guards": 20,
+  "middle_angle_pairs": 46684,
+  "leaves": [
+    {
+      "case": 82,
+      "leaf": "1.0",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 57,
+      "second_middle_bands": 57,
+      "band_pairs": 3249,
+      "first_probe_gap_units": 362552663335,
+      "second_probe_gap_units": 304289426620
+    },
+    {
+      "case": 82,
+      "leaf": "1.1",
+      "symmetry": [
+        1,
+        1,
+        1
+      ],
+      "first_middle_bands": 54,
+      "second_middle_bands": 54,
+      "band_pairs": 2916,
+      "first_probe_gap_units": 80837829986,
+      "second_probe_gap_units": 968155396722
+    },
+    {
+      "case": 82,
+      "leaf": "2.0",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 57,
+      "second_middle_bands": 57,
+      "band_pairs": 3249,
+      "first_probe_gap_units": 362531571381,
+      "second_probe_gap_units": 304289426620
+    },
+    {
+      "case": 82,
+      "leaf": "2.1",
+      "symmetry": [
+        1,
+        1,
+        1
+      ],
+      "first_middle_bands": 54,
+      "second_middle_bands": 54,
+      "band_pairs": 2916,
+      "first_probe_gap_units": 80751024118,
+      "second_probe_gap_units": 968058697083
+    },
+    {
+      "case": 82,
+      "leaf": "9.0",
+      "symmetry": [
+        0,
+        1,
+        0
+      ],
+      "first_middle_bands": 19,
+      "second_middle_bands": 22,
+      "band_pairs": 418,
+      "first_probe_gap_units": 915715131771,
+      "second_probe_gap_units": 889332381143
+    },
+    {
+      "case": 82,
+      "leaf": "9.1",
+      "symmetry": [
+        0,
+        0,
+        1
+      ],
+      "first_middle_bands": 48,
+      "second_middle_bands": 54,
+      "band_pairs": 2592,
+      "first_probe_gap_units": 433457870198,
+      "second_probe_gap_units": 294319950283
+    },
+    {
+      "case": 92,
+      "leaf": "0.0",
+      "symmetry": [
+        0,
+        0,
+        1
+      ],
+      "first_middle_bands": 51,
+      "second_middle_bands": 51,
+      "band_pairs": 2601,
+      "first_probe_gap_units": 254960300212,
+      "second_probe_gap_units": 333484291500
+    },
+    {
+      "case": 92,
+      "leaf": "1.0",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 56,
+      "second_middle_bands": 56,
+      "band_pairs": 3136,
+      "first_probe_gap_units": 267949651889,
+      "second_probe_gap_units": 355106179943
+    },
+    {
+      "case": 92,
+      "leaf": "3.2",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 53,
+      "second_middle_bands": 53,
+      "band_pairs": 2809,
+      "first_probe_gap_units": 262913317881,
+      "second_probe_gap_units": 163459791456
+    },
+    {
+      "case": 92,
+      "leaf": "3.4",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 53,
+      "second_middle_bands": 53,
+      "band_pairs": 2809,
+      "first_probe_gap_units": 262904505956,
+      "second_probe_gap_units": 163371791456
+    },
+    {
+      "case": 92,
+      "leaf": "3.6",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 43,
+      "second_middle_bands": 43,
+      "band_pairs": 1849,
+      "first_probe_gap_units": 272858609502,
+      "second_probe_gap_units": 169542213014
+    },
+    {
+      "case": 92,
+      "leaf": "3.8",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 43,
+      "second_middle_bands": 43,
+      "band_pairs": 1849,
+      "first_probe_gap_units": 272853144331,
+      "second_probe_gap_units": 169549213014
+    },
+    {
+      "case": 92,
+      "leaf": "4.0",
+      "symmetry": [
+        0,
+        0,
+        1
+      ],
+      "first_middle_bands": 44,
+      "second_middle_bands": 44,
+      "band_pairs": 1936,
+      "first_probe_gap_units": 257749227219,
+      "second_probe_gap_units": 160542782598
+    },
+    {
+      "case": 92,
+      "leaf": "4.1",
+      "symmetry": [
+        0,
+        0,
+        1
+      ],
+      "first_middle_bands": 42,
+      "second_middle_bands": 42,
+      "band_pairs": 1764,
+      "first_probe_gap_units": 258043938464,
+      "second_probe_gap_units": 333102391917
+    },
+    {
+      "case": 92,
+      "leaf": "4.2",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 62,
+      "second_middle_bands": 62,
+      "band_pairs": 3844,
+      "first_probe_gap_units": 254354036414,
+      "second_probe_gap_units": 154931761591
+    },
+    {
+      "case": 115,
+      "leaf": "6.0",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 61,
+      "second_middle_bands": 61,
+      "band_pairs": 3721,
+      "first_probe_gap_units": 357370351202,
+      "second_probe_gap_units": 155923318358
+    },
+    {
+      "case": 115,
+      "leaf": "7.0",
+      "symmetry": [
+        0,
+        0,
+        1
+      ],
+      "first_middle_bands": 15,
+      "second_middle_bands": 17,
+      "band_pairs": 255,
+      "first_probe_gap_units": 416082897023,
+      "second_probe_gap_units": 409477689458
+    },
+    {
+      "case": 115,
+      "leaf": "8.0",
+      "symmetry": [
+        0,
+        0,
+        0
+      ],
+      "first_middle_bands": 61,
+      "second_middle_bands": 61,
+      "band_pairs": 3721,
+      "first_probe_gap_units": 357336109145,
+      "second_probe_gap_units": 155505318358
+    },
+    {
+      "case": 115,
+      "leaf": "11.0",
+      "symmetry": [
+        0,
+        0,
+        1
+      ],
+      "first_middle_bands": 21,
+      "second_middle_bands": 25,
+      "band_pairs": 525,
+      "first_probe_gap_units": 403910116347,
+      "second_probe_gap_units": 393762133288
+    },
+    {
+      "case": 115,
+      "leaf": "12.0",
+      "symmetry": [
+        0,
+        0,
+        1
+      ],
+      "first_middle_bands": 21,
+      "second_middle_bands": 25,
+      "band_pairs": 525,
+      "first_probe_gap_units": 403918779448,
+      "second_probe_gap_units": 391671833823
+    }
+  ]
+}

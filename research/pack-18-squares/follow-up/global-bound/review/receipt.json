@@ -1,0 +1,1166 @@
+{
+ "side": "19/4",
+ "rack_side": "1205719/250000",
+ "erosion": "1/100000",
+ "kernel_sha256": "055d0ff0c503d66e24e3905e08f480f2db64d342e5f4d64e57ae3b0c9928c6a7",
+ "geometry_compiler": "LLVM Clang 23.1.1 (from the Lean 4.36 release), -O3 -ffp-contract=off; linked against system libc++",
+ "workers": 2,
+ "angle_schedule": [
+  25,
+  42,
+  64
+ ],
+ "round_cap": 75,
+ "closed_classes": 187,
+ "closed_unreduced_triples": 1330,
+ "first_exclusions_by_band": {
+  "25": 146,
+  "42": 40,
+  "64": 1
+ },
+ "full_187_closures_in_order__mask_weight_band_verdict": [
+  [
+   "ffbfe",
+   4,
+   42,
+   "guaranteed overlap 5 6 round 16"
+  ],
+  [
+   "ffdfe",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 7"
+  ],
+  [
+   "fffbe",
+   8,
+   42,
+   "empty owner 15 round 7"
+  ],
+  [
+   "fffde",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 5"
+  ],
+  [
+   "fffee",
+   8,
+   25,
+   "guaranteed overlap 13 16 round 5"
+  ],
+  [
+   "ffff6",
+   8,
+   25,
+   "guaranteed overlap 13 16 round 5"
+  ],
+  [
+   "ffffa",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 5"
+  ],
+  [
+   "17f7fe",
+   4,
+   25,
+   "guaranteed overlap 4 6 round 9"
+  ],
+  [
+   "17fbfe",
+   4,
+   42,
+   "guaranteed overlap 5 8 round 6"
+  ],
+  [
+   "17fdfe",
+   4,
+   25,
+   "empty owner 1 round 6"
+  ],
+  [
+   "17fefe",
+   8,
+   25,
+   "empty owner 13 round 5"
+  ],
+  [
+   "17ffbe",
+   8,
+   25,
+   "empty owner 15 round 12"
+  ],
+  [
+   "17ffde",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 5"
+  ],
+  [
+   "17ffee",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 5"
+  ],
+  [
+   "17fff6",
+   8,
+   25,
+   "guaranteed overlap 5 8 round 5"
+  ],
+  [
+   "17fffa",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 5"
+  ],
+  [
+   "17fffc",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 5"
+  ],
+  [
+   "19fffe",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 6"
+  ],
+  [
+   "1afffe",
+   8,
+   25,
+   "empty owner 5 round 6"
+  ],
+  [
+   "1b7ffe",
+   8,
+   25,
+   "guaranteed overlap 5 8 round 5"
+  ],
+  [
+   "1bbffe",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 11"
+  ],
+  [
+   "1bf7fe",
+   8,
+   25,
+   "empty owner 14 round 9"
+  ],
+  [
+   "1bfbfb",
+   2,
+   64,
+   "empty owner 6 round 14"
+  ],
+  [
+   "1bfbfe",
+   8,
+   42,
+   "guaranteed overlap 9 15 round 9"
+  ],
+  [
+   "1bfdfe",
+   8,
+   25,
+   "empty owner 6 round 9"
+  ],
+  [
+   "1bff7e",
+   4,
+   25,
+   "empty owner 10 round 8"
+  ],
+  [
+   "1bffbb",
+   8,
+   25,
+   "guaranteed overlap 9 12 round 10"
+  ],
+  [
+   "1bffbe",
+   8,
+   25,
+   "empty owner 14 round 9"
+  ],
+  [
+   "1bffdb",
+   4,
+   25,
+   "guaranteed overlap 6 10 round 6"
+  ],
+  [
+   "1bffde",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 7"
+  ],
+  [
+   "1bffeb",
+   4,
+   25,
+   "guaranteed overlap 11 13 round 6"
+  ],
+  [
+   "1bffee",
+   8,
+   25,
+   "empty owner 13 round 5"
+  ],
+  [
+   "1bfff6",
+   8,
+   25,
+   "guaranteed overlap 13 16 round 5"
+  ],
+  [
+   "1bfffa",
+   8,
+   25,
+   "empty owner 7 round 6"
+  ],
+  [
+   "1cfffe",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 5"
+  ],
+  [
+   "1d7ffe",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 5"
+  ],
+  [
+   "1dbffe",
+   8,
+   25,
+   "empty owner 10 round 14"
+  ],
+  [
+   "1ddffe",
+   4,
+   25,
+   "empty owner 1 round 6"
+  ],
+  [
+   "1df7fe",
+   8,
+   25,
+   "empty owner 4 round 9"
+  ],
+  [
+   "1dfbfe",
+   8,
+   42,
+   "empty owner 19 round 8"
+  ],
+  [
+   "1dfdfe",
+   8,
+   25,
+   "guaranteed overlap 1 6 round 6"
+  ],
+  [
+   "1dfefe",
+   8,
+   25,
+   "empty owner 1 round 6"
+  ],
+  [
+   "1dffbe",
+   8,
+   25,
+   "empty owner 19 round 7"
+  ],
+  [
+   "1dffde",
+   8,
+   25,
+   "guaranteed overlap 9 12 round 5"
+  ],
+  [
+   "1dffee",
+   8,
+   25,
+   "guaranteed overlap 9 12 round 5"
+  ],
+  [
+   "1dfff3",
+   4,
+   25,
+   "empty owner 1 round 7"
+  ],
+  [
+   "1dfff6",
+   8,
+   25,
+   "empty owner 1 round 6"
+  ],
+  [
+   "1dfffa",
+   8,
+   25,
+   "empty owner 1 round 6"
+  ],
+  [
+   "1dfffc",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 5"
+  ],
+  [
+   "1e7ffe",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1ebffe",
+   8,
+   25,
+   "empty owner 9 round 19"
+  ],
+  [
+   "1ef7fb",
+   8,
+   25,
+   "empty owner 6 round 8"
+  ],
+  [
+   "1ef7fe",
+   8,
+   25,
+   "guaranteed overlap 5 10 round 7"
+  ],
+  [
+   "1efbef",
+   2,
+   42,
+   "guaranteed overlap 11 13 round 12"
+  ],
+  [
+   "1efbfb",
+   4,
+   42,
+   "empty owner 5 round 10"
+  ],
+  [
+   "1efbfe",
+   8,
+   42,
+   "empty owner 1 round 12"
+  ],
+  [
+   "1efdfe",
+   8,
+   25,
+   "guaranteed overlap 5 6 round 7"
+  ],
+  [
+   "1eff7e",
+   4,
+   25,
+   "empty owner 4 round 5"
+  ],
+  [
+   "1effaf",
+   8,
+   42,
+   "empty owner 10 round 6"
+  ],
+  [
+   "1effbb",
+   8,
+   42,
+   "guaranteed overlap 7 9 round 7"
+  ],
+  [
+   "1effbe",
+   8,
+   42,
+   "guaranteed overlap 9 10 round 6"
+  ],
+  [
+   "1effdb",
+   8,
+   25,
+   "empty owner 0 round 5"
+  ],
+  [
+   "1effde",
+   8,
+   25,
+   "empty owner 4 round 6"
+  ],
+  [
+   "1effeb",
+   4,
+   25,
+   "empty owner 5 round 7"
+  ],
+  [
+   "1effee",
+   8,
+   25,
+   "empty owner 5 round 6"
+  ],
+  [
+   "1efff6",
+   8,
+   25,
+   "empty owner 5 round 6"
+  ],
+  [
+   "1efffa",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 5"
+  ],
+  [
+   "1f3ffe",
+   8,
+   25,
+   "empty owner 13 round 9"
+  ],
+  [
+   "1f5ffe",
+   4,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1f77fe",
+   8,
+   42,
+   "empty owner 4 round 4"
+  ],
+  [
+   "1f7bfe",
+   8,
+   42,
+   "empty owner 11 round 5"
+  ],
+  [
+   "1f7dfe",
+   8,
+   25,
+   "empty owner 1 round 5"
+  ],
+  [
+   "1f7efe",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1f7fbe",
+   8,
+   25,
+   "guaranteed overlap 11 13 round 7"
+  ],
+  [
+   "1f7fcf",
+   4,
+   25,
+   "empty owner 16 round 6"
+  ],
+  [
+   "1f7fdb",
+   4,
+   25,
+   "empty owner 4 round 6"
+  ],
+  [
+   "1f7fde",
+   8,
+   25,
+   "empty owner 4 round 6"
+  ],
+  [
+   "1f7fee",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1f7ff3",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1f7ff6",
+   8,
+   25,
+   "empty owner 1 round 5"
+  ],
+  [
+   "1f7ffa",
+   8,
+   25,
+   "empty owner 1 round 5"
+  ],
+  [
+   "1f7ffc",
+   8,
+   25,
+   "guaranteed overlap 5 8 round 5"
+  ],
+  [
+   "1fb7ef",
+   4,
+   42,
+   "guaranteed overlap 19 20 round 33"
+  ],
+  [
+   "1fb7fb",
+   4,
+   25,
+   "guaranteed overlap 6 9 round 9"
+  ],
+  [
+   "1fb7fe",
+   8,
+   42,
+   "empty owner 10 round 6"
+  ],
+  [
+   "1fbbbf",
+   2,
+   42,
+   "guaranteed overlap 0 1 round 10"
+  ],
+  [
+   "1fbbfe",
+   8,
+   42,
+   "guaranteed overlap 1 4 round 9"
+  ],
+  [
+   "1fbdfe",
+   8,
+   25,
+   "empty owner 15 round 13"
+  ],
+  [
+   "1fbefe",
+   8,
+   25,
+   "empty owner 10 round 13"
+  ],
+  [
+   "1fbfaf",
+   8,
+   42,
+   "empty owner 11 round 6"
+  ],
+  [
+   "1fbfbb",
+   8,
+   42,
+   "guaranteed overlap 0 4 round 8"
+  ],
+  [
+   "1fbfbe",
+   8,
+   42,
+   "empty owner 4 round 8"
+  ],
+  [
+   "1fbfcf",
+   4,
+   42,
+   "guaranteed overlap 10 11 round 19"
+  ],
+  [
+   "1fbfdb",
+   8,
+   25,
+   "empty owner 11 round 15"
+  ],
+  [
+   "1fbfde",
+   8,
+   42,
+   "empty owner 10 round 12"
+  ],
+  [
+   "1fbfee",
+   8,
+   25,
+   "guaranteed overlap 9 10 round 12"
+  ],
+  [
+   "1fbff3",
+   4,
+   25,
+   "empty owner 1 round 6"
+  ],
+  [
+   "1fbff6",
+   8,
+   42,
+   "empty owner 5 round 9"
+  ],
+  [
+   "1fbffa",
+   8,
+   25,
+   "guaranteed overlap 9 10 round 11"
+  ],
+  [
+   "1fbffc",
+   4,
+   25,
+   "empty owner 11 round 30"
+  ],
+  [
+   "1fdbfe",
+   4,
+   42,
+   "empty owner 11 round 5"
+  ],
+  [
+   "1fddfe",
+   8,
+   25,
+   "empty owner 15 round 11"
+  ],
+  [
+   "1fdf7e",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1fdfbe",
+   8,
+   25,
+   "empty owner 9 round 10"
+  ],
+  [
+   "1fdfde",
+   4,
+   25,
+   "empty owner 4 round 7"
+  ],
+  [
+   "1fdfee",
+   8,
+   25,
+   "empty owner 5 round 6"
+  ],
+  [
+   "1fdff6",
+   4,
+   25,
+   "empty owner 1 round 6"
+  ],
+  [
+   "1fdffa",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1feefe",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1fefbe",
+   8,
+   25,
+   "guaranteed overlap 15 19 round 7"
+  ],
+  [
+   "1fefde",
+   8,
+   25,
+   "empty owner 4 round 6"
+  ],
+  [
+   "1fefee",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1feff6",
+   8,
+   25,
+   "empty owner 1 round 5"
+  ],
+  [
+   "1feffa",
+   8,
+   25,
+   "empty owner 1 round 5"
+  ],
+  [
+   "1feffc",
+   8,
+   25,
+   "guaranteed overlap 4 7 round 5"
+  ],
+  [
+   "1ff3ef",
+   8,
+   42,
+   "empty owner 14 round 12"
+  ],
+  [
+   "1ff3fb",
+   8,
+   42,
+   "empty owner 6 round 9"
+  ],
+  [
+   "1ff3fe",
+   8,
+   42,
+   "empty owner 19 round 8"
+  ],
+  [
+   "1ff5bf",
+   4,
+   42,
+   "empty owner 14 round 6"
+  ],
+  [
+   "1ff5fe",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 23"
+  ],
+  [
+   "1ff77e",
+   8,
+   25,
+   "guaranteed overlap 5 10 round 11"
+  ],
+  [
+   "1ff7af",
+   8,
+   25,
+   "empty owner 5 round 12"
+  ],
+  [
+   "1ff7bb",
+   8,
+   25,
+   "guaranteed overlap 14 15 round 11"
+  ],
+  [
+   "1ff7be",
+   8,
+   25,
+   "empty owner 5 round 12"
+  ],
+  [
+   "1ff7db",
+   8,
+   25,
+   "empty owner 7 round 7"
+  ],
+  [
+   "1ff7de",
+   8,
+   25,
+   "empty owner 19 round 7"
+  ],
+  [
+   "1ff7eb",
+   8,
+   25,
+   "empty owner 14 round 8"
+  ],
+  [
+   "1ff7ee",
+   8,
+   25,
+   "guaranteed overlap 15 19 round 6"
+  ],
+  [
+   "1ff7f6",
+   8,
+   25,
+   "empty owner 4 round 8"
+  ],
+  [
+   "1ff7fa",
+   8,
+   25,
+   "guaranteed overlap 6 10 round 9"
+  ],
+  [
+   "1ff9bf",
+   4,
+   42,
+   "guaranteed overlap 11 14 round 4"
+  ],
+  [
+   "1ff9fe",
+   8,
+   25,
+   "empty owner 15 round 17"
+  ],
+  [
+   "1ffafe",
+   8,
+   42,
+   "guaranteed overlap 3 5 round 16"
+  ],
+  [
+   "1ffb7e",
+   4,
+   42,
+   "empty owner 1 round 7"
+  ],
+  [
+   "1ffbaf",
+   8,
+   25,
+   "empty owner 11 round 13"
+  ],
+  [
+   "1ffbbb",
+   8,
+   42,
+   "guaranteed overlap 11 14 round 4"
+  ],
+  [
+   "1ffbbe",
+   8,
+   42,
+   "empty owner 1 round 7"
+  ],
+  [
+   "1ffbcf",
+   4,
+   42,
+   "empty owner 11 round 20"
+  ],
+  [
+   "1ffbdb",
+   8,
+   42,
+   "guaranteed overlap 11 13 round 11"
+  ],
+  [
+   "1ffbde",
+   8,
+   42,
+   "empty owner 14 round 13"
+  ],
+  [
+   "1ffbeb",
+   4,
+   42,
+   "guaranteed overlap 11 14 round 4"
+  ],
+  [
+   "1ffbee",
+   8,
+   42,
+   "empty owner 1 round 7"
+  ],
+  [
+   "1ffbf3",
+   4,
+   25,
+   "empty owner 19 round 13"
+  ],
+  [
+   "1ffbf6",
+   8,
+   42,
+   "empty owner 11 round 9"
+  ],
+  [
+   "1ffbfa",
+   8,
+   25,
+   "empty owner 12 round 19"
+  ],
+  [
+   "1ffbfc",
+   4,
+   42,
+   "empty owner 15 round 9"
+  ],
+  [
+   "1ffcfe",
+   8,
+   25,
+   "empty owner 6 round 13"
+  ],
+  [
+   "1ffdaf",
+   4,
+   25,
+   "guaranteed overlap 12 15 round 8"
+  ],
+  [
+   "1ffdbb",
+   4,
+   25,
+   "empty owner 0 round 10"
+  ],
+  [
+   "1ffdbe",
+   8,
+   25,
+   "guaranteed overlap 12 15 round 8"
+  ],
+  [
+   "1ffdcf",
+   8,
+   25,
+   "empty owner 6 round 12"
+  ],
+  [
+   "1ffddb",
+   8,
+   25,
+   "guaranteed overlap 4 10 round 15"
+  ],
+  [
+   "1ffdde",
+   8,
+   25,
+   "guaranteed overlap 6 11 round 19"
+  ],
+  [
+   "1ffdee",
+   8,
+   25,
+   "empty owner 8 round 7"
+  ],
+  [
+   "1ffdf3",
+   8,
+   25,
+   "guaranteed overlap 5 8 round 8"
+  ],
+  [
+   "1ffdf6",
+   8,
+   25,
+   "empty owner 8 round 7"
+  ],
+  [
+   "1ffdfa",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1ffdfc",
+   8,
+   25,
+   "guaranteed overlap 5 8 round 7"
+  ],
+  [
+   "1ffe7e",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1ffebe",
+   8,
+   25,
+   "guaranteed overlap 11 13 round 5"
+  ],
+  [
+   "1ffeee",
+   8,
+   25,
+   "empty owner 13 round 5"
+  ],
+  [
+   "1ffefa",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1fff3e",
+   8,
+   25,
+   "guaranteed overlap 19 20 round 6"
+  ],
+  [
+   "1fff5e",
+   8,
+   25,
+   "empty owner 12 round 5"
+  ],
+  [
+   "1fff6e",
+   4,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1fff76",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1fff7a",
+   4,
+   25,
+   "empty owner 1 round 5"
+  ],
+  [
+   "1fff7c",
+   8,
+   25,
+   "empty owner 12 round 5"
+  ],
+  [
+   "1fff8f",
+   4,
+   25,
+   "empty owner 9 round 6"
+  ],
+  [
+   "1fff9b",
+   8,
+   25,
+   "empty owner 9 round 6"
+  ],
+  [
+   "1fff9e",
+   8,
+   25,
+   "empty owner 9 round 6"
+  ],
+  [
+   "1fffab",
+   8,
+   25,
+   "empty owner 13 round 6"
+  ],
+  [
+   "1fffae",
+   8,
+   25,
+   "guaranteed overlap 13 16 round 5"
+  ],
+  [
+   "1fffb3",
+   4,
+   25,
+   "guaranteed overlap 9 12 round 6"
+  ],
+  [
+   "1fffb6",
+   8,
+   25,
+   "empty owner 13 round 6"
+  ],
+  [
+   "1fffba",
+   8,
+   25,
+   "empty owner 13 round 6"
+  ],
+  [
+   "1fffbc",
+   4,
+   25,
+   "empty owner 9 round 6"
+  ],
+  [
+   "1fffcb",
+   8,
+   25,
+   "guaranteed overlap 9 12 round 5"
+  ],
+  [
+   "1fffce",
+   8,
+   25,
+   "empty owner 12 round 5"
+  ],
+  [
+   "1fffd6",
+   8,
+   25,
+   "guaranteed overlap 13 16 round 5"
+  ],
+  [
+   "1fffda",
+   8,
+   25,
+   "empty owner 12 round 5"
+  ],
+  [
+   "1fffe3",
+   8,
+   25,
+   "guaranteed overlap 11 13 round 6"
+  ],
+  [
+   "1fffe6",
+   8,
+   25,
+   "guaranteed overlap 13 16 round 5"
+  ],
+  [
+   "1fffea",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1fffec",
+   8,
+   25,
+   "empty owner 12 round 5"
+  ],
+  [
+   "1ffff2",
+   8,
+   25,
+   "guaranteed overlap 1 5 round 5"
+  ],
+  [
+   "1ffff8",
+   8,
+   25,
+   "empty owner 12 round 5"
+  ]
+ ],
+ "independent_rack_control": {
+  "bands": 257,
+  "nodes": 405869,
+  "leaves": 203063,
+  "depth": 20
+ },
+ "physical_centre_controls": {
+  "cases": [
+   53,
+   82,
+   137
+  ],
+  "source": "Three fresh-start packings in follow-up/global-starts, before and after chart refinement",
+  "initial_and_subsequent_rounds": 11,
+  "exact_outer_polygon_membership_tests": 902,
+  "lost": 0,
+  "additional_centred_control_side": "4.822875700",
+  "additional_centred_D4_poses": 8,
+  "additional_exact_checks": 224,
+  "additional_lost": 0
+ }
+}

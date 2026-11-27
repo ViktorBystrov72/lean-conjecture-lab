@@ -1,0 +1,25 @@
+{
+  "side": "24/5",
+  "rack": "RACK COVERED 391887 leaves 783262 nodes, max depth 19",
+  "raw_unused_triples": 1330,
+  "classes_excluded": 187,
+  "direct": 153,
+  "integer_traces": 27,
+  "remaining_routes": {
+    "three": [
+      22,
+      54,
+      132
+    ],
+    "special": [
+      0,
+      53,
+      55
+    ],
+    "guard": [
+      137
+    ]
+  },
+  "manifest_sha256": "c67af732bac0cf0aaaef57c4bbcf8276032614da6fe9d6b5aab8b3e364616309",
+  "certificates_sha256": "bd09e9239cc958f605c938e54cc15bc65f44c885034f1d9aefbc2c93742a01ef"
+}

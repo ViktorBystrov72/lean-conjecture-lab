@@ -1,0 +1,1363 @@
+{
+  "side": "24/5",
+  "wall_side_nano": 4800000000,
+  "rack_side_nano": 4822876000,
+  "direct": [
+    {
+      "case": 1,
+      "mask": "ffdfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 1 5 round 8"
+    },
+    {
+      "case": 2,
+      "mask": "fffbe",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 16 19 round 11"
+    },
+    {
+      "case": 3,
+      "mask": "fffde",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 12 15 round 13"
+    },
+    {
+      "case": 4,
+      "mask": "fffee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 11 13 round 10"
+    },
+    {
+      "case": 5,
+      "mask": "ffff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 8 round 12"
+    },
+    {
+      "case": 6,
+      "mask": "ffffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 12 15 round 11"
+    },
+    {
+      "case": 7,
+      "mask": "17f7fe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 14 15 round 12"
+    },
+    {
+      "case": 9,
+      "mask": "17fdfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 6 round 7"
+    },
+    {
+      "case": 10,
+      "mask": "17fefe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 10 11 round 11"
+    },
+    {
+      "case": 11,
+      "mask": "17ffbe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 16 round 15"
+    },
+    {
+      "case": 12,
+      "mask": "17ffde",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 14 round 14"
+    },
+    {
+      "case": 13,
+      "mask": "17ffee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 1 round 12"
+    },
+    {
+      "case": 14,
+      "mask": "17fff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 10 11 round 11"
+    },
+    {
+      "case": 15,
+      "mask": "17fffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 9 10 round 10"
+    },
+    {
+      "case": 16,
+      "mask": "17fffc",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 8 round 12"
+    },
+    {
+      "case": 17,
+      "mask": "19fffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 10 11 round 15"
+    },
+    {
+      "case": 18,
+      "mask": "1afffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 4 round 14"
+    },
+    {
+      "case": 19,
+      "mask": "1b7ffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 11 13 round 14"
+    },
+    {
+      "case": 20,
+      "mask": "1bbffe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 6 round 12"
+    },
+    {
+      "case": 21,
+      "mask": "1bf7fe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 14 round 10"
+    },
+    {
+      "case": 24,
+      "mask": "1bfdfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 4 6 round 9"
+    },
+    {
+      "case": 25,
+      "mask": "1bff7e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 4 round 12"
+    },
+    {
+      "case": 26,
+      "mask": "1bffbb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 7 9 round 11"
+    },
+    {
+      "case": 27,
+      "mask": "1bffbe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 9 round 10"
+    },
+    {
+      "case": 28,
+      "mask": "1bffdb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 4 round 8"
+    },
+    {
+      "case": 29,
+      "mask": "1bffde",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 6 10 round 16"
+    },
+    {
+      "case": 30,
+      "mask": "1bffeb",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 13"
+    },
+    {
+      "case": 31,
+      "mask": "1bffee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 12"
+    },
+    {
+      "case": 32,
+      "mask": "1bfff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 1 round 13"
+    },
+    {
+      "case": 33,
+      "mask": "1bfffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 12"
+    },
+    {
+      "case": 34,
+      "mask": "1cfffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 4 7 round 13"
+    },
+    {
+      "case": 35,
+      "mask": "1d7ffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 6 10 round 11"
+    },
+    {
+      "case": 36,
+      "mask": "1dbffe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 13 16 round 15"
+    },
+    {
+      "case": 37,
+      "mask": "1ddffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 6 round 12"
+    },
+    {
+      "case": 38,
+      "mask": "1df7fe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 4 6 round 8"
+    },
+    {
+      "case": 40,
+      "mask": "1dfdfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 1 round 7"
+    },
+    {
+      "case": 41,
+      "mask": "1dfefe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 10 14 round 15"
+    },
+    {
+      "case": 42,
+      "mask": "1dffbe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 15 round 9"
+    },
+    {
+      "case": 43,
+      "mask": "1dffde",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 15 19 round 15"
+    },
+    {
+      "case": 44,
+      "mask": "1dffee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 12 15 round 13"
+    },
+    {
+      "case": 45,
+      "mask": "1dfff3",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 5 6 round 14"
+    },
+    {
+      "case": 46,
+      "mask": "1dfff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 11 round 12"
+    },
+    {
+      "case": 47,
+      "mask": "1dfffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 9 14 round 9"
+    },
+    {
+      "case": 48,
+      "mask": "1dfffc",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 5 8 round 12"
+    },
+    {
+      "case": 49,
+      "mask": "1e7ffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 10 round 11"
+    },
+    {
+      "case": 50,
+      "mask": "1ebffe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 4 round 19"
+    },
+    {
+      "case": 51,
+      "mask": "1ef7fb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 6 9 round 9"
+    },
+    {
+      "case": 52,
+      "mask": "1ef7fe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 14 round 9"
+    },
+    {
+      "case": 56,
+      "mask": "1efdfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 4 round 19"
+    },
+    {
+      "case": 57,
+      "mask": "1eff7e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 5 11 round 16"
+    },
+    {
+      "case": 59,
+      "mask": "1effbb",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED empty owner 5 round 14"
+    },
+    {
+      "case": 61,
+      "mask": "1effdb",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 10 14 round 12"
+    },
+    {
+      "case": 62,
+      "mask": "1effde",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 14 15 round 13"
+    },
+    {
+      "case": 63,
+      "mask": "1effeb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 5 round 11"
+    },
+    {
+      "case": 64,
+      "mask": "1effee",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 11 round 13"
+    },
+    {
+      "case": 65,
+      "mask": "1efff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 7 round 12"
+    },
+    {
+      "case": 66,
+      "mask": "1efffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 4 round 9"
+    },
+    {
+      "case": 67,
+      "mask": "1f3ffe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 16 round 11"
+    },
+    {
+      "case": 68,
+      "mask": "1f5ffe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 1 round 9"
+    },
+    {
+      "case": 70,
+      "mask": "1f7bfe",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED empty owner 4 round 15"
+    },
+    {
+      "case": 71,
+      "mask": "1f7dfe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 20 round 16"
+    },
+    {
+      "case": 72,
+      "mask": "1f7efe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 1 6 round 8"
+    },
+    {
+      "case": 73,
+      "mask": "1f7fbe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 13 16 round 10"
+    },
+    {
+      "case": 74,
+      "mask": "1f7fcf",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 10 round 9"
+    },
+    {
+      "case": 75,
+      "mask": "1f7fdb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 9 round 10"
+    },
+    {
+      "case": 76,
+      "mask": "1f7fde",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 7 round 10"
+    },
+    {
+      "case": 77,
+      "mask": "1f7fee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 20 round 12"
+    },
+    {
+      "case": 78,
+      "mask": "1f7ff3",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 4 6 round 16"
+    },
+    {
+      "case": 79,
+      "mask": "1f7ff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 1 6 round 8"
+    },
+    {
+      "case": 80,
+      "mask": "1f7ffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 1 6 round 8"
+    },
+    {
+      "case": 81,
+      "mask": "1f7ffc",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 9 14 round 13"
+    },
+    {
+      "case": 83,
+      "mask": "1fb7fb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 9 round 10"
+    },
+    {
+      "case": 87,
+      "mask": "1fbdfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 11 13 round 15"
+    },
+    {
+      "case": 88,
+      "mask": "1fbefe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 4 7 round 15"
+    },
+    {
+      "case": 90,
+      "mask": "1fbfbb",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 5 11 round 17"
+    },
+    {
+      "case": 93,
+      "mask": "1fbfdb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 0 round 29"
+    },
+    {
+      "case": 95,
+      "mask": "1fbfee",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 13 16 round 8"
+    },
+    {
+      "case": 96,
+      "mask": "1fbff3",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 8 round 22"
+    },
+    {
+      "case": 97,
+      "mask": "1fbff6",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 6 10 round 14"
+    },
+    {
+      "case": 98,
+      "mask": "1fbffa",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 15 round 13"
+    },
+    {
+      "case": 99,
+      "mask": "1fbffc",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED empty owner 13 round 10"
+    },
+    {
+      "case": 101,
+      "mask": "1fddfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 11 round 14"
+    },
+    {
+      "case": 102,
+      "mask": "1fdf7e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 1 round 10"
+    },
+    {
+      "case": 103,
+      "mask": "1fdfbe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 9 10 round 12"
+    },
+    {
+      "case": 104,
+      "mask": "1fdfde",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 4 7 round 19"
+    },
+    {
+      "case": 105,
+      "mask": "1fdfee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 6 10 round 13"
+    },
+    {
+      "case": 106,
+      "mask": "1fdff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 1 round 8"
+    },
+    {
+      "case": 107,
+      "mask": "1fdffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 1 round 9"
+    },
+    {
+      "case": 108,
+      "mask": "1feefe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 1 round 10"
+    },
+    {
+      "case": 109,
+      "mask": "1fefbe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 9 10 round 10"
+    },
+    {
+      "case": 110,
+      "mask": "1fefde",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 11 round 16"
+    },
+    {
+      "case": 111,
+      "mask": "1fefee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 12"
+    },
+    {
+      "case": 112,
+      "mask": "1feff6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 10 round 11"
+    },
+    {
+      "case": 113,
+      "mask": "1feffa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 7 round 8"
+    },
+    {
+      "case": 114,
+      "mask": "1feffc",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 7 round 9"
+    },
+    {
+      "case": 116,
+      "mask": "1ff3fb",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 6 9 round 13"
+    },
+    {
+      "case": 119,
+      "mask": "1ff5fe",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 12 15 round 16"
+    },
+    {
+      "case": 120,
+      "mask": "1ff77e",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 20 round 15"
+    },
+    {
+      "case": 121,
+      "mask": "1ff7af",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 15 19 round 11"
+    },
+    {
+      "case": 122,
+      "mask": "1ff7bb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 14 15 round 14"
+    },
+    {
+      "case": 123,
+      "mask": "1ff7be",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 13 round 21"
+    },
+    {
+      "case": 124,
+      "mask": "1ff7db",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 4 round 8"
+    },
+    {
+      "case": 125,
+      "mask": "1ff7de",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 6 10 round 9"
+    },
+    {
+      "case": 126,
+      "mask": "1ff7eb",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 20 round 16"
+    },
+    {
+      "case": 127,
+      "mask": "1ff7ee",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 5 round 15"
+    },
+    {
+      "case": 128,
+      "mask": "1ff7f6",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 4 6 round 9"
+    },
+    {
+      "case": 129,
+      "mask": "1ff7fa",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 10 round 10"
+    },
+    {
+      "case": 131,
+      "mask": "1ff9fe",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED empty owner 15 round 23"
+    },
+    {
+      "case": 134,
+      "mask": "1ffbaf",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 11 14 round 11"
+    },
+    {
+      "case": 138,
+      "mask": "1ffbdb",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED empty owner 11 round 13"
+    },
+    {
+      "case": 142,
+      "mask": "1ffbf3",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED empty owner 14 round 13"
+    },
+    {
+      "case": 144,
+      "mask": "1ffbfa",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 14 15 round 13"
+    },
+    {
+      "case": 146,
+      "mask": "1ffcfe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 10 round 15"
+    },
+    {
+      "case": 147,
+      "mask": "1ffdaf",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 15 round 9"
+    },
+    {
+      "case": 148,
+      "mask": "1ffdbb",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 0 4 round 19"
+    },
+    {
+      "case": 149,
+      "mask": "1ffdbe",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 12 15 round 9"
+    },
+    {
+      "case": 150,
+      "mask": "1ffdcf",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED empty owner 15 round 6"
+    },
+    {
+      "case": 151,
+      "mask": "1ffddb",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 12 17 round 6"
+    },
+    {
+      "case": 152,
+      "mask": "1ffdde",
+      "bands": 64,
+      "round_limit": 60,
+      "verdict": "EXCLUDED guaranteed overlap 12 17 round 6"
+    },
+    {
+      "case": 153,
+      "mask": "1ffdee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 11 round 17"
+    },
+    {
+      "case": 154,
+      "mask": "1ffdf3",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 5 round 9"
+    },
+    {
+      "case": 155,
+      "mask": "1ffdf6",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED guaranteed overlap 5 6 round 8"
+    },
+    {
+      "case": 156,
+      "mask": "1ffdfa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 7 12 round 15"
+    },
+    {
+      "case": 157,
+      "mask": "1ffdfc",
+      "bands": 40,
+      "round_limit": 45,
+      "verdict": "EXCLUDED empty owner 6 round 9"
+    },
+    {
+      "case": 158,
+      "mask": "1ffe7e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 1 6 round 9"
+    },
+    {
+      "case": 159,
+      "mask": "1ffebe",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 9 12 round 17"
+    },
+    {
+      "case": 160,
+      "mask": "1ffeee",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 11 13 round 9"
+    },
+    {
+      "case": 161,
+      "mask": "1ffefa",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 1 6 round 8"
+    },
+    {
+      "case": 162,
+      "mask": "1fff3e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 14"
+    },
+    {
+      "case": 163,
+      "mask": "1fff5e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 10 round 10"
+    },
+    {
+      "case": 164,
+      "mask": "1fff6e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 15 round 10"
+    },
+    {
+      "case": 165,
+      "mask": "1fff76",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 11 13 round 11"
+    },
+    {
+      "case": 166,
+      "mask": "1fff7a",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 9 12 round 8"
+    },
+    {
+      "case": 167,
+      "mask": "1fff7c",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 9"
+    },
+    {
+      "case": 168,
+      "mask": "1fff8f",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 13 16 round 17"
+    },
+    {
+      "case": 169,
+      "mask": "1fff9b",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 13 16 round 20"
+    },
+    {
+      "case": 170,
+      "mask": "1fff9e",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 13 16 round 17"
+    },
+    {
+      "case": 171,
+      "mask": "1fffab",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 12 round 13"
+    },
+    {
+      "case": 172,
+      "mask": "1fffae",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 12"
+    },
+    {
+      "case": 173,
+      "mask": "1fffb3",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 5 11 round 23"
+    },
+    {
+      "case": 174,
+      "mask": "1fffb6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 13 round 19"
+    },
+    {
+      "case": 175,
+      "mask": "1fffba",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 9 12 round 13"
+    },
+    {
+      "case": 176,
+      "mask": "1fffbc",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 13 16 round 18"
+    },
+    {
+      "case": 177,
+      "mask": "1fffcb",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 10 round 12"
+    },
+    {
+      "case": 178,
+      "mask": "1fffce",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 10 round 11"
+    },
+    {
+      "case": 179,
+      "mask": "1fffd6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 10 11 round 10"
+    },
+    {
+      "case": 180,
+      "mask": "1fffda",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 9 12 round 8"
+    },
+    {
+      "case": 181,
+      "mask": "1fffe3",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 1 5 round 14"
+    },
+    {
+      "case": 182,
+      "mask": "1fffe6",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 5 round 11"
+    },
+    {
+      "case": 183,
+      "mask": "1fffea",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 9 round 10"
+    },
+    {
+      "case": 184,
+      "mask": "1fffec",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 10 11 round 10"
+    },
+    {
+      "case": 185,
+      "mask": "1ffff2",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED empty owner 4 round 10"
+    },
+    {
+      "case": 186,
+      "mask": "1ffff8",
+      "bands": 24,
+      "round_limit": 25,
+      "verdict": "EXCLUDED guaranteed overlap 4 7 round 8"
+    }
+  ],
+  "certified": [
+    {
+      "case": 8,
+      "mask": "17fbfe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 1571838 index 14 round 5 A",
+      "trace_sha256": "1a112b630c8ba4d1ff47cb5ab98bcc66cb404a3121204ce64486c593415b03b3"
+    },
+    {
+      "case": 23,
+      "mask": "1bfbfe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 1833982 index 12 round 6 A",
+      "trace_sha256": "b7c02a60b8858a033451402a2e9dc28d2a8d77d6eebd7066d055410bf375edc3"
+    },
+    {
+      "case": 39,
+      "mask": "1dfbfe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 1965054 index 17 round 4 A",
+      "trace_sha256": "6a6d51b8827c770781a1da8706874f1ad8e77caf601f27c47adff00d1db60d70"
+    },
+    {
+      "case": 58,
+      "mask": "1effaf",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2031535 index 16 round 5 A",
+      "trace_sha256": "97feac81538b236e0d1ad0d88e339725e43ad8135ff105df5dc5958f150cd549"
+    },
+    {
+      "case": 60,
+      "mask": "1effbe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2031550 index 13 round 6 A",
+      "trace_sha256": "8871a57f59ae5da8fea0f0a7a676bd8a280c731b64925571d8a6e8b62dcbdce7"
+    },
+    {
+      "case": 69,
+      "mask": "1f77fe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2062334 index 6 round 4 A",
+      "trace_sha256": "131732b55678db99bdd5d8b7fcb8a37a6026e7407002f4866b5b25602a165de8"
+    },
+    {
+      "case": 82,
+      "mask": "1fb7ef",
+      "side_nanounits": 4800000000,
+      "bands": 160,
+      "rounds": 50,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2078703 index 5 round 8 A",
+      "trace_sha256": "c650c6bc33e0b4c7c4cc45159572fbd3edb48ed9993be72e73ff2f77c65a7fb1"
+    },
+    {
+      "case": 84,
+      "mask": "1fb7fe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2078718 index 8 round 4 A",
+      "trace_sha256": "1be40acc39403bfb3a193ec310d3ff252134aad650763d16c5eb74743c088c84"
+    },
+    {
+      "case": 85,
+      "mask": "1fbbbf",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2079679 index 13 round 6 A",
+      "trace_sha256": "02146fba45274b4ce1d25e1709ed93c2ae298f610b66ad4900ed0b5d708690bf"
+    },
+    {
+      "case": 86,
+      "mask": "1fbbfe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 36,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2079742 index 17 round 5 A",
+      "trace_sha256": "f7f6046767771fe6211f52ab3b101f3a2a8d2c13b37eef2f27a1c6e47635b4d0"
+    },
+    {
+      "case": 89,
+      "mask": "1fbfaf",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2080687 index 17 round 3 A",
+      "trace_sha256": "df9459dcdd6fcc39f63a34fa72353ea71a62a8d191667f43dc4334a96cbe2c5b"
+    },
+    {
+      "case": 91,
+      "mask": "1fbfbe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 36,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2080702 index 9 round 4 A",
+      "trace_sha256": "5980773344ea22f0bf1d6b06fe68a100f119d13308ad14e87525b1d18b1c54ff"
+    },
+    {
+      "case": 92,
+      "mask": "1fbfcf",
+      "side_nanounits": 4800000000,
+      "bands": 160,
+      "rounds": 50,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2080719 index 7 round 10 A",
+      "trace_sha256": "1c2837ec8352209aa23da10d7ae0d3dda5ca757ba99740f83477525837f4312f"
+    },
+    {
+      "case": 94,
+      "mask": "1fbfde",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2080734 index 8 round 7 A",
+      "trace_sha256": "a2fff187554d124e3e4107da23a77318ba51e9aa2827d0d9441b30a74e42dfe9"
+    },
+    {
+      "case": 100,
+      "mask": "1fdbfe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2087934 index 9 round 6 A",
+      "trace_sha256": "dbb06993cce8d45c984c57de763ea461313dbbe3de5bf1b03917509010a14887"
+    },
+    {
+      "case": 115,
+      "mask": "1ff3ef",
+      "side_nanounits": 4800000000,
+      "bands": 160,
+      "rounds": 50,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2094063 index 11 round 7 A",
+      "trace_sha256": "a04e51e5dc0a47872da441c30bc98bef485b0c282d1938f913207cad49d6683a"
+    },
+    {
+      "case": 117,
+      "mask": "1ff3fe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2094078 index 17 round 6 A",
+      "trace_sha256": "4f2528ca68221e02487ce131916db7b06279cdf31e5f8086f87bf8fed15d38f2"
+    },
+    {
+      "case": 118,
+      "mask": "1ff5bf",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2094527 index 12 round 4 A",
+      "trace_sha256": "8e917524402d7b05afd9429a3ec382e033707d46ee1501613e701d9b072601f0"
+    },
+    {
+      "case": 130,
+      "mask": "1ff9bf",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2095551 index 11 round 4 A",
+      "trace_sha256": "af251aac91a168b30db3cc7e8b0a34b25b1b48add7d99bb21a84bb4038d3c762"
+    },
+    {
+      "case": 133,
+      "mask": "1ffb7e",
+      "side_nanounits": 4800000000,
+      "bands": 128,
+      "rounds": 50,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2095998 index 13 round 6 A",
+      "trace_sha256": "a10b9d72dd871b3d5384f3566582a90ccaed528bcc89dc732b7a3458c5956105"
+    },
+    {
+      "case": 135,
+      "mask": "1ffbbb",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2096059 index 11 round 4 A",
+      "trace_sha256": "944d70189bf2cc4874756e78ba7f7b0cd5087c9c1494909fb43def7068aa803c"
+    },
+    {
+      "case": 136,
+      "mask": "1ffbbe",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2096062 index 16 round 6 A",
+      "trace_sha256": "60ec1c8f414046f827b5d3ad4144c2d53a262f3934dcf0e850d0b2b8e31b3ff5"
+    },
+    {
+      "case": 139,
+      "mask": "1ffbde",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2096094 index 10 round 10 A",
+      "trace_sha256": "286f792527af4dd8c4898ecc8133aaa3eeb1e2074f1dfe4162ce78af7735eea6"
+    },
+    {
+      "case": 140,
+      "mask": "1ffbeb",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2096107 index 12 round 3 A",
+      "trace_sha256": "4acfaaa2b6cce3a75de8e4f752c295e755daafc00efa0fdebec3c6bd0c518485"
+    },
+    {
+      "case": 141,
+      "mask": "1ffbee",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2096110 index 16 round 6 A",
+      "trace_sha256": "5c7b40dffe639b3d6579562fd32fac7bd10db117bab8bba81cc902019fd6d375"
+    },
+    {
+      "case": 143,
+      "mask": "1ffbf6",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2096118 index 8 round 7 A",
+      "trace_sha256": "25f2465763a2714e97b31b765c52f03c9c139736e81e93179ec608ca72320c15"
+    },
+    {
+      "case": 145,
+      "mask": "1ffbfc",
+      "side_nanounits": 4800000000,
+      "bands": 96,
+      "rounds": 35,
+      "status": "excluded",
+      "verdict": "EXCLUDED mask 2096124 index 17 round 6 A",
+      "trace_sha256": "2fabe0611e6890bb6bfbe9adc4032bed5f2aec9eb5d5030b5047b6f39a3c9889"
+    }
+  ],
+  "three": [
+    22,
+    54,
+    132
+  ],
+  "special": [
+    0,
+    53,
+    55
+  ],
+  "guard": [
+    137
+  ]
+}
