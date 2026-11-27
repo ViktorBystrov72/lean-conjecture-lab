@@ -15,7 +15,7 @@ Proofs and counterexamples to published mathematical questions. Each entry links
 - 🟢 Partial Lean verification with a computer-assisted proof of the full result.
 - 🟡 Partial Lean verification of a written proof.
 - ⬜ Proof or verification outside Lean.
-- ★ Documented independent external review.
+- ★ Documented independent external confirmation of the result.
 
 The full packing verification uses C++ and Python. The linked reports credit the original authors and document the checks. The symbols follow Cinna Davis’s catalogue. [Source legend](https://github.com/1337isnot1337/solved-conjectures#results)
 
