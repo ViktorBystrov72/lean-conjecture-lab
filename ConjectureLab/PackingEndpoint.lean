@@ -139,4 +139,54 @@ theorem side_from_two_faces (hu : dot u u = 1) (hv : dot v v = 1) (positive : 0 
   · exact side_from_support v hv large
       ((second_face_bridge hu hv positive front back separating guard).trans upperV)
 end Endpoint
+
+section Chord
+
+/-- In the coordinates of a middle tile, its two faces are at x = ±1/2.
+The determinant inequality puts the ordinate of the entire intervening line
+strictly between its two transverse faces, including at the face crossings. -/
+theorem inside_chord_strip {dx dy k x y : ℝ}
+    (guard : |dy| + 2 * |k| < dx) (line : dx * y = k + dy * x)
+    (strip : |x| ≤ 1 / 2) : |y| < 1 / 2 := by
+  have positive : 0 < dx := by linarith [abs_nonneg dy, abs_nonneg k]
+  have h : dx * |y| ≤ |k| + |dy| * (1 / 2) := by
+    calc
+      dx * |y| = |dx * y| := by rw [abs_mul, abs_of_pos positive]
+      _ = |k + dy * x| := by rw [line]
+      _ ≤ |k| + |dy * x| := abs_add_le _ _
+      _ ≤ |k| + |dy| * (1 / 2) := by
+        rw [abs_mul]
+        exact add_le_add_right (mul_le_mul_of_nonneg_left strip (abs_nonneg dy)) _
+  by_contra! outside
+  have := mul_le_mul_of_nonneg_left outside positive.le
+  linarith
+
+/-- The corner at the start is outside the open middle tile and its normal
+coordinate is below the far face. The end corner satisfies the reversed test.
+Consequently the segment crosses both full face levels, with contact allowed. -/
+theorem crosses_both_faces {dx dy k px py qx qy : ℝ}
+    (guard : |dy| + 2 * |k| < dx)
+    (pLine : dx * py = k + dy * px) (qLine : dx * qy = k + dy * qx)
+    (pOutside : ¬ (|px| < 1 / 2 ∧ |py| < 1 / 2))
+    (qOutside : ¬ (|qx| < 1 / 2 ∧ |qy| < 1 / 2))
+    (pBefore : px < 1 / 2) (qAfter : -(1 / 2) < qx) :
+    px ≤ -(1 / 2) ∧ 1 / 2 ≤ qx := by
+  constructor
+  · by_contra! hp
+    have hs := abs_lt.mpr ⟨hp, pBefore⟩
+    exact pOutside ⟨hs, inside_chord_strip guard pLine hs.le⟩
+  · by_contra! hq
+    have hs := abs_lt.mpr ⟨qAfter, hq⟩
+    exact qOutside ⟨hs, inside_chord_strip guard qLine hs.le⟩
+
+/-- Two unit-wide chords on one segment with disjoint interiors give
+a segment of length at least two. The variables are distances from its start. -/
+theorem two_chords_length {a b c d length : ℝ}
+    (ha : 0 ≤ a) (hc : 0 ≤ c) (hb : b ≤ length) (hd : d ≤ length)
+    (width₁ : 1 ≤ b - a) (width₂ : 1 ≤ d - c) (disjoint : b ≤ c ∨ d ≤ a) :
+    2 ≤ length := by
+  rcases disjoint with order | order <;> linarith
+
+end Chord
+
 end ConjectureLab.PackingEndpoint
