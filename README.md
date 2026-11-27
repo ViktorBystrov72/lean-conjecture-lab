@@ -4,12 +4,20 @@ Proofs and counterexamples to published mathematical questions. Each entry links
 
 ## Results
 
-| No. | Question | Result | Lean |
+| No. | Question | Result | Lean verification |
 | ---: | --- | --- | --- |
 | 1 | [OEIS A250346](https://oeis.org/A250346) · Arrays with bounded entries and multiplicity | [Proof of Hardin’s recurrence for every length and Barker’s generating function](results/oeis-a250346/) | ✅ [Recurrence](ConjectureLab/ShiftedArrays.lean) · [Generating function](ConjectureLab/ShiftedArraysSeries.lean) |
-| 2 | [Packing eighteen unit squares](#packing-eighteen-unit-squares) | Minimum container side $(7+\sqrt{7})/2$ · [Independent verification](research/pack-18-squares/follow-up/endpoint.md) | [Supporting lemmas](ConjectureLab/PackingEndpoint.lean) |
+| 2 | [Packing eighteen unit squares](#packing-eighteen-unit-squares) | Minimum container side $(7+\sqrt{7})/2$ · [Independent verification](research/pack-18-squares/follow-up/endpoint.md) | 🟢 [Supporting lemmas](ConjectureLab/PackingEndpoint.lean) |
 
-✅ means Lean checked the full statement in the result column. The full packing verification uses C++ and Python. The linked reports credit the original authors and document the checks.
+### Verification symbols
+
+- ✅ Full result checked in Lean.
+- 🟢 Partial Lean verification with a computer-assisted proof of the full result.
+- 🟡 Partial Lean verification of a written proof.
+- ⬜ Proof or verification outside Lean.
+- ★ Documented independent external review.
+
+The full packing verification uses C++ and Python. The linked reports credit the original authors and document the checks. The symbols follow Cinna Davis’s catalogue. [Source legend](https://github.com/1337isnot1337/solved-conjectures#results)
 
 ## Packing eighteen unit squares
 
