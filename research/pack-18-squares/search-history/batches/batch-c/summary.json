@@ -1,0 +1,15 @@
+{
+ "rng": 181601,
+ "starts": 6000,
+ "best": 4.822875655532441,
+ "best_index": 1393,
+ "seconds": 60.515748833015095,
+ "counts": {
+  "within_1e-5": 1159,
+  "within_0.01": 1952
+ },
+ "seed_files": [
+  "seeds/hamalainen.json",
+  "seeds/mira-six-tilt.json"
+ ]
+}

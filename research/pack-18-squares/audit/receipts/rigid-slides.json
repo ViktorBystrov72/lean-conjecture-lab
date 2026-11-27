@@ -1,0 +1,41 @@
+[
+  {
+    "file": "gustafson-exact.json",
+    "sym": [
+      0,
+      0,
+      0
+    ],
+    "case": 82,
+    "leaf": "9.1",
+    "action": "faces",
+    "full_box": true,
+    "all_18_centres_in_kernel_for_every_translation": true
+  },
+  {
+    "file": "cantrell-exact.json",
+    "sym": [
+      0,
+      1,
+      0
+    ],
+    "case": 137,
+    "leaf": "2",
+    "action": "faces",
+    "full_box": true,
+    "all_18_centres_in_kernel_for_every_translation": true
+  },
+  {
+    "file": "cantrell-exact.json",
+    "sym": [
+      0,
+      1,
+      1
+    ],
+    "case": 137,
+    "leaf": "0",
+    "action": "faces",
+    "full_box": true,
+    "all_18_centres_in_kernel_for_every_translation": true
+  }
+]

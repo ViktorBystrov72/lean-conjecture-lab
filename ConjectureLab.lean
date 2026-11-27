@@ -2,3 +2,4 @@ module
 
 public import ConjectureLab.ShiftedArrays
 public import ConjectureLab.ShiftedArraysSeries
+public import ConjectureLab.SquarePacking

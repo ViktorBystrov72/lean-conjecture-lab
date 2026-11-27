@@ -10,6 +10,10 @@ Proofs and counterexamples to published mathematical questions. Each entry links
 
 ✅ means Lean checked the full statement in the result column. The result page credits the original authors and documents the scope of the literature search.
 
+## Research in progress
+
+[Can eighteen unit squares beat Hämäläinen’s packing?](research/pack-18-squares/) The unrestricted problem is open in the case register, with a published optimality claim under independent review. This branch records a finite-pool exclusion, exact contact constraints, and a Lean-checked trial.
+
 ## Verify
 
 From a clone with [Elan](https://lean-lang.org/install/) and Python 3 installed, run the following commands. The repository pins Lean and Mathlib to version 4.36.0.

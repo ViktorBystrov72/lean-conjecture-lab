@@ -1,0 +1,5 @@
+gustafson-exact.json charts 2 sampled {'random,82': 960, 'interpolation,82': 960} targets {'angles-exclude': 192, 'LP-infeasible': 144, 'LP-feasible': 0}
+cantrell-exact.json charts 2 sampled {'random,137': 848, 'interpolation,137': 907, 'random,92': 19, 'interpolation,92': 9, 'random,82': 62, 'interpolation,115': 21, 'failed-rationalization,115': 1, 'interpolation,82': 23, 'random,115': 31} targets {'angles-exclude': 0, 'LP-infeasible': 0, 'LP-feasible': 0}
+gensane-ryckelynck-exact.json charts 4 sampled {'random,53': 1920, 'interpolation,53': 1920} targets {'angles-exclude': 24, 'LP-infeasible': 2040, 'LP-feasible': 0}
+hamalainen-exact.json charts 4 sampled {'random,53': 1920, 'interpolation,53': 1920} targets {'angles-exclude': 24, 'LP-infeasible': 2040, 'LP-feasible': 0}
+mira-six-tilt-exact.json charts 4 sampled {'random,53': 1920, 'interpolation,53': 1920} targets {'angles-exclude': 24, 'LP-infeasible': 2040, 'LP-feasible': 0}

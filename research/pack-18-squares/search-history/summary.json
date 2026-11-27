@@ -1,0 +1,40 @@
+{
+  "total": 29407,
+  "batches": [
+    {
+      "batch": "batch-a",
+      "starts": 350,
+      "best_numerical_side": 4.822875655533797
+    },
+    {
+      "batch": "batch-b",
+      "starts": 350,
+      "best_numerical_side": 4.822875655533245
+    },
+    {
+      "batch": "batch-c",
+      "starts": 6000,
+      "best_numerical_side": 4.822875655532441
+    },
+    {
+      "batch": "batch-d",
+      "starts": 6000,
+      "best_numerical_side": 4.822875655532445
+    },
+    {
+      "batch": "batch-e",
+      "starts": 6000,
+      "best_numerical_side": 4.822875655532356
+    },
+    {
+      "batch": "batch-grid",
+      "starts": 5497,
+      "best_numerical_side": 4.822876186059604
+    },
+    {
+      "batch": "batch-neighbors",
+      "starts": 5210,
+      "best_numerical_side": 4.822875655535683
+    }
+  ]
+}
