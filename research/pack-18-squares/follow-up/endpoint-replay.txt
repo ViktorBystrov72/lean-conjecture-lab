@@ -1,0 +1,23 @@
+End-to-end replay on November 27, 2026
+Selected output lines in execution order
+
+Verified the exact 18-square construction at (7 + sqrt(7))/2.
+Validated 181 complete orbit partitions and 235 terminals. 3 orbits use angular cuts.
+Replayed 24 leaves for 18 additional complete orbits; cumulative 136/187.
+Excluded 91 terminal regions for all 45 remaining ordinary masks.
+Together with the previous 136 complete masks: 181/181 ordinary classes.
+All 181 ordinary classes excluded at side 4.822876.
+89/89 physical exclusions, 83/83 required by the reduced cover.
+All six leaves of class 137 accepted (3516 pairs).
+Case 55: 7/7 guard leaves verified. {'guard': 6, 'empty': 1}
+Case 53: 71/71 guard leaves verified. {'guard': 71}
+Receipt inventory only. Replay the geometry certificates and cover proof to establish the bounds.
+Case  Raw matched/total  Raw missing  Required matched/total  Required missing  Coverage
+  53  114/114              0          114/114                   0       complete
+  55   15/15               0           15/15                    0       complete
+  82   20/20               0           16/16                    0       complete
+  92   19/19               0           16/16                    0       complete
+ 115   19/19               0           19/19                    0       complete
+ 137    6/6                0            5/5                     0       complete
+ All  193/193              0          185/185                   0       complete
+All 187 classes preclude a packing below the exact construction side.

@@ -10,9 +10,9 @@ Proofs and counterexamples to published mathematical questions. Each entry links
 
 ✅ means Lean checked the full statement in the result column. The result page credits the original authors and documents the scope of the literature search.
 
-## Research in progress
+## Computer-assisted verification
 
-[Can eighteen unit squares beat Hämäläinen’s packing?](research/pack-18-squares/) The unrestricted problem is open in the case register, with a published optimality claim under independent review. This branch records an unrestricted computer-assisted lower bound of 4.80 and narrows any possible improvement over the historical construction to one rack class. [Full-side calculation](research/pack-18-squares/follow-up/endpoint.md)
+[The minimum side for eighteen unit squares](research/pack-18-squares/) is $(7+\sqrt7)/2$. This branch records an independent computational verification of Mira Cult's optimality argument for Hämäläinen's construction. Geometry checkers cover all 187 classes. Lean checks supporting geometric and algebraic lemmas. [Proof and scope](research/pack-18-squares/follow-up/endpoint.md) · [Recorded replay](research/pack-18-squares/follow-up/endpoint-replay.txt)
 
 ## Verify
 

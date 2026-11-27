@@ -1,16 +1,18 @@
 # Eighteen unit squares
 
-**Research status, November 27, 2026.** We are looking for 18 unit squares with disjoint interiors that fit in an axis-aligned square of side strictly less than $H=(7+\sqrt7)/2$. Each tile may rotate independently and boundary contact is allowed. Our search has produced no such packing. Our computer-assisted exclusion covers all arrangements at side $4.80$. The range between that bound and $H$ remains unresolved by our work.
+**Result, November 27, 2026.** The minimum side of a square container for eighteen unit squares is $H=(7+\sqrt7)/2$. Hämäläinen's 1980 construction attains this side. We independently verified the continuous geometry in Mira Cult's 2026 computer-assisted optimality proof. All translations and rotations are allowed, and tiles may meet along their boundaries. Our counterexample searches led to the full verification described below. [Proof, attribution and reproduction](follow-up/endpoint.md) · [Full-side replay output](follow-up/endpoint-replay.txt)
 
-## Unrestricted lower bound
+![Hämäläinen's construction, with the 21 rack marks](layouts/hamalainen-rack.svg)
 
-A complete composite replay excludes all 187 symmetry classes at side $24/5=4.80$. [Bound 4.80 and its verification](follow-up/global-bound/at480/) · [Independent aggregation audit](follow-up/global-bound/at480-review/)
+In the pictured packing, a dot is the rack mark assigned to a tile. Crosses show the three unassigned marks. This example belongs to class 53. The proof covers all 187 symmetry classes of unused triples and arbitrary real tile poses inside every class. [Exact coordinates and provenance](layouts/)
 
-An earlier centred-wall computation excludes all 187 classes at side $19/4=4.75$. It uses a separately implemented continuous-pose checker and independently checks the underlying 21-mark cover. A separate compilation and replay used different angular subdivisions. This bound concerns all eighteen free tiles. It exceeds the case register’s previously verified lower bound of 4.705, and is weaker than Mira Cult’s existing optimality claim. [Argument and full replay](follow-up/global-bound/)
+## Verification and earlier bounds
 
-At the test side $U=4.822876$, separate programs excluded every one of the 181 ordinary classes in Mira Cult's partition. They also verified all 89 empty leaves of the six exceptional classes. Complete independent geometry for classes 55, 82, 92, 115 and 137 establishes $L\ge H$ for those five classes. A strict improvement would have to occur in class 53. The row-guard checker derives the endpoint inequalities for all 71 of its remaining source leaves from the producer's enclosures. Independently deriving sufficiently tight enclosures for that last class is a separate calculation. [Ordinary classes](follow-up/ordinary-empty/) · [Exceptional empty leaves](follow-up/endpoint-empty/) · [Class 55](follow-up/row-guards/independent55/) · [Classes 82, 92 and 115](follow-up/endpoint-guards/independent-residual/) · [Class 137](follow-up/endpoint-guards/independent137/) · [Endpoint verification](follow-up/endpoint.md)
+Separate programs exclude all 181 ordinary classes even at the larger test side $U=4.822876$. In the other six classes, every one of the 193 terminal regions is either empty or forces the actual container side to satisfy $L\ge H$. The complete replay begins with the exact upper construction and finishes by checking the identities and coverage of the regions. [Ordinary classes](follow-up/ordinary-empty/) · [All six exceptional classes](follow-up/endpoint.md) · [Composite verifier](follow-up/verify_endpoint.py)
 
-C++ and Python implement the continuous geometry checks. Lean verifies the individual endpoint inequalities and the packing certificates identified below. [Formal endpoint lemma](../../ConjectureLab/PackingEndpoint.lean)
+C++ and Python verify the continuous enclosures and their terminal conditions. Lean verifies the endpoint support inequalities, the chord lemmas, and the specific declarations cited in the search sections below. [Formal endpoint lemmas](../../ConjectureLab/PackingEndpoint.lean) · [Wall probes](follow-up/endpoint-guards/WallProbes.lean)
+
+Earlier unrestricted computations separately ruled out every packing at side 4.75 and then at side 4.80. The 4.80 verification includes a full replay and a separate aggregation audit. [Bound 4.75](follow-up/global-bound/) · [Bound 4.80](follow-up/global-bound/at480/) · [Audit](follow-up/global-bound/at480-review/)
 
 ## Prior claim
 
