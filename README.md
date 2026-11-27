@@ -1,14 +1,15 @@
 # Lean Conjecture Lab
 
-Proofs and counterexamples to published mathematical questions. Each entry links to the original statement, explains the argument, and identifies the theorem checked by Lean.
+Proofs and counterexamples to published mathematical questions. Each entry links to the original statement, explains the argument, and identifies what Lean checked.
 
 ## Results
 
-| Question | Result | Lean |
-| --- | --- | --- |
-| [OEIS A250346](https://oeis.org/A250346) · Arrays with bounded entries and multiplicity | [Proof of Hardin’s recurrence for every length and Barker’s generating function](results/oeis-a250346/) | ✅ [Recurrence](ConjectureLab/ShiftedArrays.lean) · [Generating function](ConjectureLab/ShiftedArraysSeries.lean) |
+| No. | Question | Result | Lean |
+| ---: | --- | --- | --- |
+| 1 | [OEIS A250346](https://oeis.org/A250346) · Arrays with bounded entries and multiplicity | [Proof of Hardin’s recurrence for every length and Barker’s generating function](results/oeis-a250346/) | ✅ [Recurrence](ConjectureLab/ShiftedArrays.lean) · [Generating function](ConjectureLab/ShiftedArraysSeries.lean) |
+| 2 | [Packing eighteen unit squares](#packing-eighteen-unit-squares) | Minimum container side $(7+\sqrt{7})/2$ · [Independent verification](research/pack-18-squares/follow-up/endpoint.md) | [Supporting lemmas](ConjectureLab/PackingEndpoint.lean) |
 
-✅ means Lean checked the full statement in the result column. The result page credits the original authors and documents the scope of the literature search.
+✅ means Lean checked the full statement in the result column. The full packing verification uses C++ and Python. The linked reports credit the original authors and document the checks.
 
 ## Packing eighteen unit squares
 
