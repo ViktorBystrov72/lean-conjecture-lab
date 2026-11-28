@@ -55,6 +55,22 @@ The scan totals sum the per-block times in the saved journals. The elapsed `work
 
 Each block sieved 4,221,602,560 starts and checked 73,364,736 orbits on both backends. Every block returned `unresolved: []` and `exact_replays: 0`. The saved coverage in each state reports the same gap-free interval `[2392518189247130238976, 2392518189264310108160)` and the same conditional contiguous endpoint `2392518189264310108160`.
 
+## M5 Max Metal runs
+
+These runs use the Apple M5 Max GPU with Metal 4 and `--backend metal --threads 18`.
+
+Lane $e$ spans $[2^e,2^{e+1})$. Each row records the interval checked by four blocks of $2^{32}$ starts within that lane. The upper endpoints are exclusive. Elapsed time covers the full `work` command.
+
+| Lane | Descent-verified interval | Elapsed time (s) |
+| ---: | --- | ---: |
+| 71 | `[2392518189247130238976, 2392518189264310108160)` | 0.388866166 |
+| 72 | `[4722366482869645213696, 4722366482886825082880)` | 0.391170500 |
+| 73 | `[9444732965739290427392, 9444732965756470296576)` | 0.388321292 |
+| 74 | `[18889465931478580854784, 18889465931495760723968)` | 0.388571833 |
+| 75 | `[37778931862957161709568, 37778931862974341578752)` | 0.390201750 |
+
+Every run returned an empty unresolved list and zero exact CPU replays. The gap $[H,2^{72})$ separates the runs in lanes 72–75 from the contiguous prefix.
+
 ## What is known for infinitely many starts
 
 | Result | Quantifiers and conclusion |
