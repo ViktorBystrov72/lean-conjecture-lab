@@ -6,7 +6,7 @@
 
 In BB, run the ERNIE agent in an environment on the M5 Max. The model tunnel carries inference requests. Shell commands run on the machine selected for the environment, so check the execution host with `sysctl -n machdep.cpu.brand_string` before starting a benchmark.
 
-The 2025 paper established convergence for starts strictly below $2^{71}$. The project currently uses $G=2\,392\,518\,189\,247\,130\,238\,976$ as its next unchecked start, conditional on the base documented in the research report. Both $G$ and the M5 pilot target lie in lane 71, $[2^{71},2^{72})$. Lane 72 begins at $2^{72}$ and can be scanned independently. A lane 72 result advances the global prefix only after the intervening starts in lane 71 are covered. The $2^{40}$ in the timing section counts the starts in a benchmark block whose absolute starting value is listed beside it. [Published 2025 result](https://doi.org/10.1007/s11227-025-07337-0) · [How the project frontier reached G](../../results/collatz-3x-plus-1/README.md#how-far-the-computation-reaches)
+The 2025 paper established convergence for starts strictly below $2^{71}$. The M5 pilot starts at $G=2\,392\,518\,189\,247\,130\,238\,976$, where the M3 Pro verification ended. The pilot advances the project's next unchecked start to $H=2\,392\,518\,189\,264\,310\,108\,160$, conditional on the base documented in the research report. Both endpoints lie in lane 71, $[2^{71},2^{72})$. Lane 72 begins at $2^{72}$ and can be scanned independently. A lane 72 result advances the global prefix only after the intervening starts in lane 71 are covered. The $2^{40}$ in the timing section counts the starts in a benchmark block whose absolute starting value is listed beside it. [Published 2025 result](https://doi.org/10.1007/s11227-025-07337-0) · [Project coverage](../../results/collatz-3x-plus-1/README.md#how-far-the-computation-reaches)
 
 Clone the research branch on the M5 Max. Build with [Rust 1.90 or newer](https://rustup.rs/) and the macOS Command Line Tools. Cargo pins the dependencies in `Cargo.lock`. The Metal backend compiles its shader through the installed Metal runtime.
 
@@ -43,6 +43,8 @@ state="$PWD/run-state/m5-pilot"
 "$bin" coverage --state "$state" --save
 ~~~
 
+For a CPU replay, initialize a second fresh state with the same options. Use its absolute path in the `work` command and set `--backend cpu --threads 18` on the tested M5 Max. [Paired comparison](../../results/collatz-3x-plus-1/README.md#m5-max-lane-71-comparison)
+
 The last scan block is clipped at the exclusive target. `goal.scanned` marks a completed scan up to that point, while `goal.reached` requires every earlier start to have a descent certificate or a successful exact trace. A recorded cycle witness stops workers before they begin their next block, trace, or cycle assignment. Individual cycle assignments otherwise finish at their own bounded limit.
 
 For a longer batch, use a persistent terminal in the ERNIE thread on the M5 Max. Run the following in place of the foreground `work` command. While the terminal runs, read `status` and `history` from a separate shell to answer questions in the thread.
@@ -62,11 +64,11 @@ When the contiguous prefix advances, add the newly covered half-open interval, i
 
 ## Shared scan and long-orbit jobs
 
-Set the **same absolute path on the same local filesystem** in every worker terminal. Initialize once. The example below resumes at $G$ using the evidence chain in the research report. Omitting `--known-below` starts an independent replay at the exclusive $2^{71}$ bound from the 2025 paper. [Barina, §6 and Table 10](https://doi.org/10.1007/s11227-025-07337-0) · [Project evidence chain](../../results/collatz-3x-plus-1/README.md#how-far-the-computation-reaches)
+Set the **same absolute path on the same local filesystem** in every worker terminal. Initialize once. The example below resumes at $H$ using the evidence chain in the research report. Omitting `--known-below` starts an independent replay at the exclusive $2^{71}$ bound from the 2025 paper. [Barina, §6 and Table 10](https://doi.org/10.1007/s11227-025-07337-0) · [Project evidence chain](../../results/collatz-3x-plus-1/README.md#how-far-the-computation-reaches)
 
 ~~~sh
 state="$PWD/run-state/m5"
-"$bin" init --state "$state" --known-below 2392518189247130238976 \
+"$bin" init --state "$state" --known-below 2392518189264310108160 \
   --first-exp 71 --last-exp 73 --block-bits 32 --sieve-bits 24
 ~~~
 
@@ -74,7 +76,7 @@ Run these in separate terminals after setting `bin` and `state` in each of them.
 
 | Worker | Assigned starts | Command |
 | --- | --- | --- |
-| `metal-71` | $[G,2^{72})$ | `"$bin" work --state "$state" --lane 71 --worker metal-71 --backend metal --threads 4 --blocks 4` |
+| `metal-71` | $[H,2^{72})$ | `"$bin" work --state "$state" --lane 71 --worker metal-71 --backend metal --threads 4 --blocks 4` |
 | `cpu-72` | $[2^{72},2^{73})$ | `"$bin" work --state "$state" --lane 72 --worker cpu-72 --backend cpu --threads 6 --blocks 4` |
 | `cpu-73` | $[2^{73},2^{74})$ | `"$bin" work --state "$state" --lane 73 --worker cpu-73 --backend cpu --threads 6 --blocks 4` |
 
