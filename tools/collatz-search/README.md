@@ -23,8 +23,8 @@ Run this first check on the M5 Max. Both backends should produce an empty `unres
 bin=./target/release/collatz-search
 from=2392518188130518594186
 to=2392518188131592336010
-"$bin" verify --from "$from" --to "$to" --backend cpu
-"$bin" verify --from "$from" --to "$to" --backend metal --threads 4
+"$bin" verify --from "$from" --to "$to" --backend cpu --threads 18
+"$bin" verify --from "$from" --to "$to" --backend metal --threads 18
 ~~~
 
 ## Run a pilot with an explicit stop
@@ -37,13 +37,13 @@ state="$PWD/run-state/m5-pilot"
 "$bin" init --state "$state" --known-below 2392518189247130238976 \
   --target-below 2392518189264310108160 --first-exp 71 --last-exp 71 \
   --block-bits 32 --sieve-bits 24
-"$bin" work --state "$state" --lane 71 --worker m5-pilot --backend metal --threads 4 --blocks 4
+"$bin" work --state "$state" --lane 71 --worker m5-pilot --backend metal --threads 18 --blocks 4
 "$bin" status --state "$state"
 "$bin" history --state "$state" --limit 10
 "$bin" coverage --state "$state" --save
 ~~~
 
-For a CPU replay, initialize a second fresh state with the same options. Use its absolute path in the `work` command and set `--backend cpu --threads 18` on the tested M5 Max. [Paired comparison](../../results/collatz-3x-plus-1/README.md#m5-max-lane-71-comparison)
+For a CPU replay, initialize a second fresh state with the same options. Use its absolute path and `--backend cpu` in the `work` command. Both standalone runs use `--threads 18` on the tested M5 Max. [Paired comparison](../../results/collatz-3x-plus-1/README.md#m5-max-lane-71-comparison)
 
 The last scan block is clipped at the exclusive target. `goal.scanned` marks a completed scan up to that point, while `goal.reached` requires every earlier start to have a descent certificate or a successful exact trace. A recorded cycle witness stops workers before they begin their next block, trace, or cycle assignment. Individual cycle assignments otherwise finish at their own bounded limit.
 
@@ -51,7 +51,7 @@ For a longer batch, use a persistent terminal in the ERNIE thread on the M5 Max.
 
 ~~~sh
 bb terminal create --thread "$BB_THREAD_ID" --title "Collatz pilot" -- \
-  "$bin" work --state "$state" --lane 71 --worker m5-pilot --backend metal --threads 4 --blocks 4
+  "$bin" work --state "$state" --lane 71 --worker m5-pilot --backend metal --threads 18 --blocks 4
 ~~~
 
 For an existing state, rebuild the workers and wait for active scans and traces to finish before running `set-target --state "$state" --target-below NUMBER`. It preserves all completed checkpoints. An older worker binary lacks the new goal and journal support.
@@ -72,7 +72,7 @@ state="$PWD/run-state/m5"
   --first-exp 71 --last-exp 73 --block-bits 32 --sieve-bits 24
 ~~~
 
-Run these in separate terminals after setting `bin` and `state` in each of them. Set a larger `--last-exp` when initializing if more workers need their own exponent lanes.
+Run these in separate terminals after setting `bin` and `state` in each of them. The example budgets CPU threads across the simultaneous workers. Set a larger `--last-exp` when initializing if more workers need their own exponent lanes.
 
 | Worker | Assigned starts | Command |
 | --- | --- | --- |

@@ -36,20 +36,20 @@ Checking a huge individual input answers a different question about the computat
 
 ## M5 Max lane 71 comparison
 
-On 28 November 2026, we ran the four-block pilot on an Apple M5 Max with 18 CPU cores and 40 GPU cores, macOS 26.6.2, and Rust 1.100.1. Metal ran first with four host threads. The CPU replay used 18 Rayon threads. Each run started with a fresh state at $G$ and used the same exclusive target $H$, $2^{32}$ starts per block, a 24-bit sieve, and a limit of 10,000 shortcut steps. [Source revision](https://github.com/ViktorBystrov72/lean-conjecture-lab/commit/f06f8b30e366269df074c5196ce6a4208be72ea7) · [Replay commands](../../tools/collatz-search/README.md#run-a-pilot-with-an-explicit-stop)
+On 28 November 2026, we repeated the four-block pilot on an Apple M5 Max with 18 CPU cores and 40 GPU cores, macOS 26.6.2, and Rust 1.100.1. Metal ran first, followed by the CPU replay. Both used `--threads 18`. In Metal mode, this Rayon pool builds the sieve and performs any exact CPU replays. The Metal backend sets the shader grid size. Each run started with a fresh state at $G$ and used the same exclusive target $H$, $2^{32}$ starts per block, a 24-bit sieve, and a limit of 10,000 shortcut steps. [Source revision](https://github.com/ViktorBystrov72/lean-conjecture-lab/commit/f06f8b30e366269df074c5196ce6a4208be72ea7) · [Replay commands](../../tools/collatz-search/README.md#run-a-pilot-with-an-explicit-stop) · [Earlier measurement with four Metal host threads](https://github.com/ViktorBystrov72/lean-conjecture-lab/blob/d847ffd5f9c641a17522b0f90102f12cc311358f/results/collatz-3x-plus-1/README.md#m5-max-lane-71-comparison)
 
-Before the pilot, both backends passed the control on `[2392518188130518594186, 2392518188131592336010)` with an 18-bit sieve. Each sieved 1,043,042,304 starts, checked 30,699,520 orbits, and returned an empty unresolved list. The control scans took 0.034704792 s on Metal and 0.140093500 s on the CPU.
+Before the pilot, both backends passed the control on `[2392518188130518594186, 2392518188131592336010)` with an 18-bit sieve. Each sieved 1,043,042,304 starts, checked 30,699,520 orbits, and returned an empty unresolved list. The control scans took 0.034678250 s on Metal and 0.157525875 s on the CPU.
 
 | From | To, exclusive | Metal scan (s) | CPU scan (s) |
 | ---: | ---: | ---: | ---: |
-| `2392518189247130238976` | `2392518189251425206272` | 0.063276333 | 0.414930083 |
-| `2392518189251425206272` | `2392518189255720173568` | 0.063727166 | 0.412685583 |
-| `2392518189255720173568` | `2392518189260015140864` | 0.063432209 | 0.408971375 |
-| `2392518189260015140864` | `2392518189264310108160` | 0.061554875 | 0.408146875 |
-| **Total scan** | | **0.251990583** | **1.644733916** |
-| **Elapsed `work` command** | | **0.394893084** | **1.726106125** |
+| `2392518189247130238976` | `2392518189251425206272` | 0.063665875 | 0.408728917 |
+| `2392518189251425206272` | `2392518189255720173568` | 0.062232959 | 0.416680708 |
+| `2392518189255720173568` | `2392518189260015140864` | 0.062657167 | 0.413219750 |
+| `2392518189260015140864` | `2392518189264310108160` | 0.062683250 | 0.429017583 |
+| **Total scan** | | **0.251239251** | **1.667646958** |
+| **Elapsed `work` command** | | **0.388866166** | **1.755366583** |
 
-The scan totals sum the per-block times in the saved journals. The elapsed `work` times also include process startup, sieve construction, backend setup, and checkpoint writes. For this pair of runs, Metal delivered **6.53× the CPU scan throughput** and **4.37× the throughput across the full command**.
+The scan totals sum the per-block times in the saved journals. The elapsed `work` times also include process startup, sieve construction, backend setup, and checkpoint writes. For this pair of runs, Metal delivered **6.64× the CPU scan throughput** and **4.51× the throughput across the full command**.
 
 Each block sieved 4,221,602,560 starts and checked 73,364,736 orbits on both backends. Every block returned `unresolved: []` and `exact_replays: 0`. The saved coverage in each state reports the same gap-free interval `[2392518189247130238976, 2392518189264310108160)` and the same conditional contiguous endpoint `2392518189264310108160`.
 
