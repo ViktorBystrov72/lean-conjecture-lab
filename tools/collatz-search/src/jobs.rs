@@ -10,7 +10,7 @@ use std::path::{Path, PathBuf};
 use std::time::{SystemTime, UNIX_EPOCH};
 
 use crate::cycle;
-use crate::descent::{MAX_BLOCK_BITS, MAX_PENDING, MAX_SIEVE_BITS};
+use crate::descent::{Block, MAX_BLOCK_BITS, MAX_PENDING, MAX_SIEVE_BITS};
 use crate::scan::{Backend, Scan};
 use crate::trace::{Outcome, trace};
 
@@ -296,21 +296,30 @@ impl State {
             None
         };
         let scan = Scan::new(backend, threads, self.config.sieve_bits, self.config.steps)?;
-        for _ in 0..blocks {
-            if self.report_cycle()? {
-                return Ok(());
+        let start: u128 = progress.next.parse()?;
+        let block_size = 1u128 << self.config.block_bits;
+        let initial_pending = progress.pending.len();
+        let scan_blocks = |report: &mut dyn FnMut(u128, Block, f64) -> Result<()>| -> Result<()> {
+            let mut start = start;
+            let mut pending = initial_pending;
+            for _ in 0..blocks {
+                if self.counterexample()?.is_some() || start == end {
+                    break;
+                }
+                let stop = start.saturating_add(block_size).min(end);
+                let _lease = lane.note_active(worker, backend.label(), start, stop)?;
+                let (result, seconds) = scan.block(start, stop, self.config.steps)?;
+                pending += result.unresolved.len();
+                ensure!(
+                    pending <= MAX_PENDING,
+                    "pending queue is full; use trace-work before scanning more blocks"
+                );
+                report(stop, result, seconds)?;
+                start = stop;
             }
-            let start: u128 = progress.next.parse()?;
-            if start == end {
-                break;
-            }
-            let stop = start.saturating_add(1 << self.config.block_bits).min(end);
-            let _lease = lane.note_active(worker, backend.label(), start, stop)?;
-            let (result, seconds) = scan.block(start, stop, self.config.steps)?;
-            ensure!(
-                progress.pending.len() + result.unresolved.len() <= MAX_PENDING,
-                "pending queue is full; use trace-work before scanning more blocks"
-            );
+            Ok(())
+        };
+        let mut save_block = |stop: u128, result: Block, seconds: f64| {
             progress
                 .pending
                 .extend(result.unresolved.iter().map(|n| Pending {
@@ -332,7 +341,29 @@ impl State {
                 "seconds": seconds, "block": result,
                 "pending_total": progress.pending.len(),
                 "lane_descended_below": progress.limit()
-            }))?;
+            }))
+        };
+        if matches!(backend, Backend::Cpu) && blocks > 1 && end - start > block_size {
+            std::thread::scope(|scope| {
+                // The writer saves one checkpoint while the scan computes the next block.
+                let (send, receive) = std::sync::mpsc::sync_channel(0);
+                let writer = std::thread::Builder::new().spawn_scoped(scope, move || {
+                    receive
+                        .into_iter()
+                        .try_for_each(|(stop, result, seconds)| save_block(stop, result, seconds))
+                })?;
+                let scanned = scan_blocks(&mut |stop, result, seconds| {
+                    send.send((stop, result, seconds))
+                        .context("CPU checkpoint writer stopped")
+                });
+                drop(send);
+                writer
+                    .join()
+                    .map_err(|_| anyhow::anyhow!("CPU checkpoint writer panicked"))??;
+                scanned
+            })?;
+        } else {
+            scan_blocks(&mut save_block)?;
         }
         if !self.report_cycle()? {
             self.report_goal(target)?;

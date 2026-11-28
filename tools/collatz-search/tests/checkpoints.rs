@@ -196,3 +196,43 @@ fn target_clips_blocks_and_waits_for_unresolved_starts() {
     assert_eq!(next[0]["block"]["from"], "43");
     assert_eq!(next[0]["block"]["to_exclusive"], "46");
 }
+
+#[test]
+fn cpu_worker_resumes_after_checkpoint_archive_failure() {
+    let state = StateDir(
+        PathBuf::from(env!("CARGO_TARGET_TMPDIR")).join(format!("archive-{}", std::process::id())),
+    );
+    state.run(
+        "init",
+        &[
+            "--known-below",
+            "32",
+            "--first-exp",
+            "5",
+            "--last-exp",
+            "5",
+            "--block-bits",
+            "3",
+        ],
+    );
+
+    // Let the first checkpoint land, then fail when the writer archives its event.
+    let blocked = state.0.join("lane-5/journal/00000000000000000001.tmp");
+    std::fs::create_dir_all(&blocked).unwrap();
+    let output = state
+        .command("work", &["--backend", "cpu", "--blocks", "2", "--threads", "1"])
+        .output()
+        .unwrap();
+    assert!(!output.status.success());
+    let status = state.run("status", &[]);
+    assert_eq!(status[0]["lanes"][0]["next_to_scan"], "40");
+    assert_eq!(status[0]["lanes"][0]["completed_blocks"], "1");
+
+    std::fs::remove_dir(&blocked).unwrap();
+    let resumed = state.run("work", &["--backend", "cpu", "--threads", "1"]);
+    assert_eq!(resumed[0]["block"]["from"], "40");
+    assert_eq!(resumed[0]["block"]["to_exclusive"], "48");
+    let history = state.run("history", &["--lane", "5", "--limit", "2"]);
+    assert_eq!(history[0]["events"][0]["details"]["from"], "32");
+    assert_eq!(history[0]["events"][1]["details"]["from"], "40");
+}
